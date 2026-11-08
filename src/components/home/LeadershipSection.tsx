@@ -31,7 +31,7 @@ export default function LeadershipSection() {
   return (
     <section className="bg-white py-12 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
           <h2 className="text-xl font-black text-gray-900">
             {t('leadership.title')}
           </h2>
@@ -46,7 +46,7 @@ export default function LeadershipSection() {
           {OFFICIALS.map((official, idx) => (
             <div
               key={official.name}
-              className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
+              className="bg-white rounded-xl border border-gray-300 overflow-hidden"
               style={{
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'translateY(0)' : 'translateY(24px)',
@@ -62,10 +62,10 @@ export default function LeadershipSection() {
                   <span className="inline-block text-xs font-semibold text-primary-700 bg-primary-50 px-2 py-0.5 rounded-full border border-primary-100 mb-1.5">
                     {t(official.badgeKey)}
                   </span>
-                  <h3 className="font-black text-gray-900 text-sm leading-snug mb-0.5 truncate">
+                  <h3 className="font-black text-gray-900 text-base leading-snug mb-1">
                     {official.name}
                   </h3>
-                  <p className="text-gray-500 text-xs mb-3">
+                  <p className="text-gray-600 text-xs mb-3">
                     {t(official.titleKey)}
                   </p>
                   <div className="flex flex-col gap-1.5">
@@ -90,7 +90,7 @@ export default function LeadershipSection() {
                 <div className="shrink-0 self-start">
                   <Link
                     to="/government/departments/executive"
-                    className="text-primary-400 hover:text-primary-700 transition-colors"
+                    className="text-primary-700 hover:text-primary-800 inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg transition-colors"
                     aria-label={t('leadership.viewProfile')}
                   >
                     <ExternalLink className="h-4 w-4" />

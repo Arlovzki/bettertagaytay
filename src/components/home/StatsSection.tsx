@@ -37,7 +37,7 @@ export default function StatsSection() {
   return (
     <section className="bg-white border-b border-gray-100 py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
           <h2 className="text-xl font-black text-gray-900">
             {t('stats.title')}
           </h2>
@@ -52,7 +52,7 @@ export default function StatsSection() {
           {STATS.map(({ icon: Icon, value, label, description }, idx) => (
             <div
               key={description}
-              className="bg-gray-50 rounded-xl p-5 border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-200"
+              className="border-t border-gray-300 py-5"
               style={{
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'translateY(0)' : 'translateY(24px)',
@@ -62,7 +62,7 @@ export default function StatsSection() {
               <div className="bg-primary-100 text-primary-700 w-9 h-9 rounded-lg flex items-center justify-center mb-3">
                 <Icon className="h-4 w-4" />
               </div>
-              <div className="text-2xl font-black text-gray-900 leading-none mb-1">
+              <div className="text-2xl font-extrabold text-primary-800 leading-tight mb-1 break-words">
                 {value}
               </div>
               {label && (

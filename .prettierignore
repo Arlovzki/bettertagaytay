@@ -19,3 +19,4 @@ coverage
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+public/images/tagaytay-elevation-contours.svg

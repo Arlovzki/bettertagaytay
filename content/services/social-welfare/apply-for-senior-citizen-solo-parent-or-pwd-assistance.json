@@ -1,0 +1,21 @@
+{
+  "guide": {
+    "office": "OSCA (senior citizens), PDAO (PWDs), or CSWDO (assistance and referrals)",
+    "location": "Tagaytay City Hall, Akle St., Kaybagal South",
+    "hours": "Confirm current receiving hours with the office.",
+    "fees": "Confirm charges for the specific service; the 2025 Charter lists no fee for the ID steps.",
+    "processingTime": "Varies by service and assessment. Ask the receiving office for a release date.",
+    "contactLabel": "Call City Hall: (046) 888-9500",
+    "contactUrl": "tel:+63468889500",
+    "checkedAt": "2026-11-06",
+    "sourceName": "2025 Citizen’s Charter",
+    "sourceUrl": "https://www.tagaytay.gov.ph/pdf/citizenscharter.pdf#page=138",
+    "checklist": [
+      "Identify the office and exact ID or assistance service needed",
+      "Ask for the current requirements for your situation",
+      "Prepare identity and residency records requested by the office",
+      "Confirm whether a representative may file and what authority is needed"
+    ],
+    "forms": []
+  }
+}

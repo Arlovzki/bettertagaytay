@@ -15,7 +15,7 @@ export function useInView<T extends HTMLElement = HTMLElement>(
     if (!el) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry?.isIntersecting) {
           setInView(true);
           observer.disconnect();
         }
@@ -24,7 +24,7 @@ export function useInView<T extends HTMLElement = HTMLElement>(
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [options]);
 
   return { ref, inView };
 }

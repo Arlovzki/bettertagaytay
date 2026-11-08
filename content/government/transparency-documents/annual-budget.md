@@ -6,6 +6,10 @@ Under the **Full Disclosure Policy**, the city is required to post the approved 
 
 ---
 
+## Official 2026 Budget Report
+
+[Open the Annual Budget Report listed for 2026 (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/abr26.pdf). This file is linked from the official [Transparency Seal page](https://www.tagaytay.gov.ph/transparencyseal.html). Link checked on **5 November 2026**.
+
 ## Budget Sources
 
 Tagaytay City's budget is funded from:

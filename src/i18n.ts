@@ -9,6 +9,8 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
+    supportedLngs: ['en', 'fil'],
+    load: 'languageOnly',
     debug: import.meta.env.DEV,
     defaultNS: 'common',
     ns: ['common'],
@@ -21,12 +23,14 @@ i18n
       escapeValue: false,
     },
 
-    lng: 'en',
-
     detection: {
       order: ['localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage'],
     },
   });
+
+i18n.on('languageChanged', language => {
+  document.documentElement.lang = language.startsWith('fil') ? 'fil' : 'en';
+});
 
 export default i18n;

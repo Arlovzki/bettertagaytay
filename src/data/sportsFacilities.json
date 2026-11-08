@@ -1,0 +1,197 @@
+[
+  {
+    "id": "oval",
+    "name": "Tagaytay City Track Oval",
+    "activities": ["walking", "running"],
+    "location": {
+      "en": "Kaybagal South",
+      "fil": "Kaybagal South"
+    },
+    "description": {
+      "en": "A track used by local walkers and runners.",
+      "fil": "Track na ginagamit ng mga lokal na naglalakad at tumatakbo."
+    },
+    "access": {
+      "en": "Confirm today’s opening hours, entrance fee and renovation restrictions with venue staff. Published hours and recent visitor reports differ.",
+      "fil": "Kumpirmahin sa kawani ang oras, bayad at mga limitasyon dahil sa pagsasaayos. Magkakaiba ang nakalathalang oras at ulat ng mga bisita."
+    },
+    "mapUrl": "https://www.waze.com/live-map/directions/ph/calabarzon/tagaytay-city/tagaytay-city-track-oval?to=place.ChIJIVT3zJ93vTMRM1Du7cABL7M",
+    "checkedAt": "2026-11-06",
+    "sources": [
+      {
+        "label": "Cavite Ecological Profile 2024",
+        "url": "https://cavite.gov.ph/wp-content/uploads/2026/04/CEP_2024.pdf#page=217"
+      },
+      {
+        "label": "Waze",
+        "url": "https://www.waze.com/live-map/directions/ph/calabarzon/tagaytay-city/tagaytay-city-track-oval?to=place.ChIJIVT3zJ93vTMRM1Du7cABL7M"
+      },
+      {
+        "label": "Runner reports",
+        "url": "https://www.reddit.com/r/PHRunners/comments/1w247vr/tagaytay_oval_update/"
+      }
+    ]
+  },
+  {
+    "id": "concert-grounds",
+    "name": "Tagaytay City Concert Grounds",
+    "activities": ["community"],
+    "location": {
+      "en": "Tagaytay City; entrance to confirm",
+      "fil": "Tagaytay City; kumpirmahin ang pasukan"
+    },
+    "description": {
+      "en": "Community grounds documented in a January 2026 city tree-planting activity.",
+      "fil": "Lugar ng mga gawaing pangkomunidad, kabilang ang pagtatanim ng puno ng lungsod noong Enero 2026."
+    },
+    "access": {
+      "en": "Ask the city about permission for walking or group exercise, opening hours and event closures. A regular fitness or Zumba schedule has not been verified.",
+      "fil": "Itanong sa lungsod kung pinapayagan ang paglalakad o pangkatang ehersisyo, ang oras at pagsasara para sa mga event. Wala pang kumpirmadong regular na iskedyul ng fitness o Zumba."
+    },
+    "mapUrl": null,
+    "checkedAt": "2026-11-06",
+    "sources": [
+      {
+        "label": "Manila Standard, February 2026",
+        "url": "https://manilastandard.net/community-spotlight/314699422/youth-city-offices-unite-for-greener-tagaytay.html"
+      }
+    ]
+  },
+  {
+    "id": "skate-park",
+    "name": "Tagaytay Skate Park",
+    "activities": ["skating"],
+    "location": {
+      "en": "Tagaytay athletics oval complex",
+      "fil": "Kompleks ng athletics oval ng Tagaytay"
+    },
+    "description": {
+      "en": "A skateboarding facility in the city’s sports complex.",
+      "fil": "Pasilidad para sa skateboarding sa sports complex ng lungsod."
+    },
+    "access": {
+      "en": "Confirm public sessions, fees, age rules and protective equipment requirements before bringing your board.",
+      "fil": "Kumpirmahin ang mga pampublikong sesyon, bayad, tuntunin sa edad at kailangang kagamitang pangkaligtasan bago magdala ng skateboard."
+    },
+    "mapUrl": null,
+    "checkedAt": "2026-11-06",
+    "sources": [
+      {
+        "label": "PNA, March 2022",
+        "url": "https://www.pna.gov.ph/articles/1170846"
+      }
+    ]
+  },
+  {
+    "id": "bmx-park",
+    "name": "Tagaytay City BMX Park",
+    "activities": ["cycling"],
+    "location": {
+      "en": "Tagaytay sports complex",
+      "fil": "Sports complex ng Tagaytay"
+    },
+    "description": {
+      "en": "A covered BMX racing facility, with a freestyle park nearby.",
+      "fil": "May bubong na pasilidad para sa BMX racing, na may kalapit na freestyle park."
+    },
+    "access": {
+      "en": "Contact the venue about training, reservations, beginner sessions and permitted equipment.",
+      "fil": "Makipag-ugnayan sa pasilidad tungkol sa pagsasanay, reserbasyon, sesyon para sa baguhan at pinapayagang kagamitan."
+    },
+    "mapUrl": null,
+    "checkedAt": "2026-11-06",
+    "sources": [
+      {
+        "label": "Philippine Olympic Committee, June 2025",
+        "url": "https://www.olympic.ph/tolentino-on-tagaytay-velodrome-if-you-build-they-will-come"
+      },
+      {
+        "label": "Cavite Ecological Profile 2024",
+        "url": "https://cavite.gov.ph/wp-content/uploads/2026/04/CEP_2024.pdf#page=217"
+      }
+    ]
+  },
+  {
+    "id": "combat-center",
+    "name": "Tagaytay Combat Sports Center",
+    "activities": ["martial-arts"],
+    "location": {
+      "en": "Tagaytay sports complex",
+      "fil": "Sports complex ng Tagaytay"
+    },
+    "description": {
+      "en": "A venue for combat sports training and competitions.",
+      "fil": "Lugar para sa pagsasanay at kompetisyon sa combat sports."
+    },
+    "access": {
+      "en": "Ask about current classes, instructors, fees and reservations. Walk-in training availability is not confirmed.",
+      "fil": "Itanong ang kasalukuyang mga klase, instruktor, bayad at reserbasyon. Hindi pa kumpirmado ang pagsasanay nang walang appointment."
+    },
+    "mapUrl": null,
+    "checkedAt": "2026-11-06",
+    "sources": [
+      {
+        "label": "Cavite Ecological Profile 2024",
+        "url": "https://cavite.gov.ph/wp-content/uploads/2026/04/CEP_2024.pdf#page=217"
+      },
+      {
+        "label": "PNA, August 2026",
+        "url": "https://www.pna.gov.ph/index.php/articles/1281148"
+      }
+    ]
+  },
+  {
+    "id": "velodrome",
+    "name": "Tagaytay City Velodrome",
+    "activities": ["cycling"],
+    "location": {
+      "en": "Kaybagal South",
+      "fil": "Kaybagal South"
+    },
+    "description": {
+      "en": "A 250 m indoor cycling track that also hosts major sports events.",
+      "fil": "250 m na indoor cycling track na pinagdarausan din ng malalaking event sa sports."
+    },
+    "access": {
+      "en": "Confirm training sessions, track-bike requirements, coaching and spectator admission. Event schedules can affect access.",
+      "fil": "Kumpirmahin ang mga sesyon ng pagsasanay, kinakailangang track bike, coaching at pagpasok ng manonood. Maaaring makaapekto ang mga event sa paggamit."
+    },
+    "mapUrl": null,
+    "checkedAt": "2026-11-06",
+    "sources": [
+      {
+        "label": "Philippine Olympic Committee, June 2025",
+        "url": "https://www.olympic.ph/tolentino-on-tagaytay-velodrome-if-you-build-they-will-come"
+      },
+      {
+        "label": "PNA, August 2026",
+        "url": "https://www.pna.gov.ph/index.php/articles/1281148"
+      }
+    ]
+  },
+  {
+    "id": "barangay-courts",
+    "name": "Barangay basketball & covered courts",
+    "activities": ["court-sports"],
+    "location": {
+      "en": "Various barangays; ask your barangay hall",
+      "fil": "Iba’t ibang barangay; magtanong sa inyong barangay hall"
+    },
+    "description": {
+      "en": "The provincial inventory lists covered and open courts across Tagaytay barangays.",
+      "fil": "Nakatala sa imbentaryo ng lalawigan ang mga covered at open court sa mga barangay ng Tagaytay."
+    },
+    "access": {
+      "en": "Ask your barangay for the nearest court, allowed activities, booking times and fees. School and private courts have their own access rules.",
+      "fil": "Itanong sa barangay ang pinakamalapit na court, pinapayagang gawain, oras ng reserbasyon at bayad. May sariling tuntunin ang mga court ng paaralan at pribado."
+    },
+    "mapUrl": null,
+    "checkedAt": "2026-11-06",
+    "sources": [
+      {
+        "label": "Cavite Ecological Profile 2024",
+        "url": "https://cavite.gov.ph/wp-content/uploads/2026/04/CEP_2024.pdf#page=217"
+      }
+    ]
+  }
+]

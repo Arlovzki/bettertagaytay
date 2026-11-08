@@ -1,0 +1,21 @@
+{
+  "guide": {
+    "office": "City College of Tagaytay (CCT), Scholarship Office",
+    "location": "Akle St., Tagaytay Centrum, Tagaytay City",
+    "hours": "Confirm current receiving hours with the office.",
+    "fees": "Ask the Scholarship Office which tuition and other fees your grant covers.",
+    "processingTime": "Application and assessment dates follow the college’s current cycle.",
+    "contactLabel": "Email the CCT Scholarship Office",
+    "contactUrl": "mailto:scholarship@citycollegeoftagaytay.edu.ph",
+    "checkedAt": "2026-11-06",
+    "sourceName": "City College of Tagaytay scholarship information",
+    "sourceUrl": "https://citycollegeoftagaytay.edu.ph/homepage/scholarship",
+    "checklist": [
+      "Confirm the current application or enrollment cycle",
+      "Ask the Scholarship Office about eligibility for your situation",
+      "Get the current application and document checklist",
+      "Review grant coverage and retention conditions before accepting"
+    ],
+    "forms": []
+  }
+}

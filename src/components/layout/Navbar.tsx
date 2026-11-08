@@ -1,25 +1,40 @@
-import React, { useState, useEffect } from 'react';
-import { X, Menu, ChevronDown, Phone, Thermometer, Clock } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import {
+  X,
+  Menu,
+  ChevronDown,
+  Phone,
+  Thermometer,
+  Clock,
+  DollarSign,
+} from 'lucide-react';
 import { mainNavigation } from '../../data/navigation';
-import type { LanguageType } from '../../types/index';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useFooterBlend } from '../../hooks/useFooterBlend';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import {
+  useLiveData,
+  weatherSource,
+  forexSource,
+} from '../../hooks/useLiveData';
 
-function formatDatetime(): string {
+function formatDatetime() {
   const now = new Date();
-  const date = now.toLocaleDateString('en-PH', {
+  const options: Intl.DateTimeFormatOptions = {
     month: 'short',
     day: 'numeric',
-    year: 'numeric',
-    timeZone: 'Asia/Manila',
-  });
-  const time = now.toLocaleTimeString('en-PH', {
     hour: 'numeric',
     minute: '2-digit',
-    hour12: true,
     timeZone: 'Asia/Manila',
-  });
-  return `${date} · ${time} PHT`;
+  };
+  return {
+    full:
+      new Intl.DateTimeFormat('en-PH', { ...options, year: 'numeric' }).format(
+        now
+      ) + ' PHT',
+    compact: new Intl.DateTimeFormat('en-PH', options).format(now) + ' PHT',
+    iso: now.toISOString(),
+  };
 }
 
 const HOTLINES = [
@@ -35,363 +50,362 @@ const HOTLINES = [
   { labelKey: 'hotlines.cswdo', number: '(046) 483-0494', tel: '0464830494' },
 ];
 
-const Navbar: React.FC = () => {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
-  const { t, i18n } = useTranslation('common');
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  const handleNavClick = (
-    e: React.MouseEvent,
-    href: string,
-    onClose?: () => void
-  ) => {
-    if (href === '/#contact') {
-      e.preventDefault();
-      onClose?.();
-      if (location.pathname === '/') {
-        document
-          .getElementById('contact')
-          ?.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        navigate('/');
-        setTimeout(() => {
-          document
-            .getElementById('contact')
-            ?.scrollIntoView({ behavior: 'smooth' });
-        }, 300);
-      }
-    } else {
-      onClose?.();
-    }
-  };
-
-  const CURRENCIES = ['USD', 'EUR', 'JPY', 'GBP', 'SGD'] as const;
-  const CURRENCY_SYMBOLS: Record<string, string> = {
-    USD: '$',
-    EUR: '€',
-    JPY: '¥',
-    GBP: '£',
-    SGD: 'S$',
-  };
-  const [rates, setRates] = useState<Record<string, string>>({});
-  const [currencyIdx, setCurrencyIdx] = useState(0);
-  const [forexVisible, setForexVisible] = useState(true);
-  const [temp, setTemp] = useState('--');
+  const [hotlinesOpen, setHotlinesOpen] = useState(false);
   const [datetime, setDatetime] = useState(formatDatetime());
-
-  const activeCurrency = CURRENCIES[currencyIdx];
-  const forexDisplay = rates[activeCurrency]
-    ? `${CURRENCY_SYMBOLS[activeCurrency]}1 ${activeCurrency} = ₱${rates[activeCurrency]}`
-    : `1 ${activeCurrency} = ₱--`;
+  const navRef = useRef<HTMLElement>(null);
+  const blendFooter = useFooterBlend(navRef);
+  const mobileToggleRef = useRef<HTMLButtonElement>(null);
+  const hotlineToggleRef = useRef<HTMLButtonElement>(null);
+  const { t, i18n } = useTranslation('common');
+  const location = useLocation();
+  const weather = useLiveData(weatherSource);
+  const forex = useLiveData(forexSource);
 
   useEffect(() => {
     const timer = setInterval(() => setDatetime(formatDatetime()), 60_000);
-
-    // Fetch all rates at once from USD base, then derive cross rates
-    const cached = localStorage.getItem('bt_rates');
-    const cachedTime = localStorage.getItem('bt_rates_time');
-    if (cached && cachedTime && Date.now() - parseInt(cachedTime) < 3_600_000) {
-      setRates(JSON.parse(cached));
-    } else {
-      fetch('https://open.er-api.com/v6/latest/PHP')
-        .then(r => r.json())
-        .then(data => {
-          if (data?.rates) {
-            const phpRates = data.rates as Record<string, number>;
-            const computed: Record<string, string> = {};
-            for (const cur of ['USD', 'EUR', 'JPY', 'GBP', 'SGD']) {
-              if (phpRates[cur]) {
-                computed[cur] = (1 / phpRates[cur]).toFixed(2);
-              }
-            }
-            localStorage.setItem('bt_rates', JSON.stringify(computed));
-            localStorage.setItem('bt_rates_time', String(Date.now()));
-            setRates(computed);
-          }
-        })
-        .catch(() => {});
-    }
-
-    // Rotate currency every 3 seconds with fade
-    const currencyTimer = setInterval(() => {
-      setForexVisible(false);
-      setTimeout(() => {
-        setCurrencyIdx(i => (i + 1) % CURRENCIES.length);
-        setForexVisible(true);
-      }, 300);
-    }, 3_000);
-
-    const cachedTemp = localStorage.getItem('bt_temp');
-    const cachedTempTime = localStorage.getItem('bt_temp_time');
-    if (
-      cachedTemp &&
-      cachedTempTime &&
-      Date.now() - parseInt(cachedTempTime) < 1_800_000
-    ) {
-      setTemp(cachedTemp);
-    } else {
-      fetch(
-        'https://api.open-meteo.com/v1/forecast?latitude=14.1153&longitude=120.9621&current_weather=true'
-      )
-        .then(r => r.json())
-        .then(data => {
-          if (data?.current_weather?.temperature !== undefined) {
-            const t = `${Math.round(data.current_weather.temperature)}°C`;
-            localStorage.setItem('bt_temp', t);
-            localStorage.setItem('bt_temp_time', String(Date.now()));
-            setTemp(t);
-          }
-        })
-        .catch(() => {});
-    }
-
+    const closeOutside = (event: PointerEvent) => {
+      if (!navRef.current?.contains(event.target as Node)) {
+        setActiveMenu(null);
+        setIsOpen(false);
+        setHotlinesOpen(false);
+      }
+    };
+    document.addEventListener('pointerdown', closeOutside);
     return () => {
       clearInterval(timer);
-      clearInterval(currencyTimer);
+      document.removeEventListener('pointerdown', closeOutside);
     };
   }, []);
 
-  const toggleMenu = () => {
-    setIsOpen(prev => !prev);
+  useEffect(() => {
+    setIsOpen(false);
     setActiveMenu(null);
-  };
+    setHotlinesOpen(false);
+  }, [location.pathname, location.hash]);
 
   const closeMenu = () => {
     setIsOpen(false);
     setActiveMenu(null);
+    setHotlinesOpen(false);
   };
-
-  const toggleSubmenu = (label: string) => {
-    setActiveMenu(prev => (prev === label ? null : label));
+  const toggleNavigation = (menu: string) => {
+    setActiveMenu(current => (current === menu ? null : menu));
+    setHotlinesOpen(false);
   };
-
-  const changeLanguage = (lang: LanguageType) => {
-    i18n.changeLanguage(lang);
-  };
-
   const isActive = (href: string) =>
     href === '/'
       ? location.pathname === '/'
-      : location.pathname.startsWith(href);
+      : !href.includes('#') && location.pathname.startsWith(href);
+  const label = (item: { label: string; translationKey?: string }) =>
+    item.translationKey ? t(item.translationKey, item.label) : item.label;
+  const languages = (
+    <div
+      className="flex items-center rounded-lg border border-gray-300 overflow-hidden"
+      aria-label={t('nav.language')}
+    >
+      {(['en', 'fil'] as const).map(lang => (
+        <button
+          key={lang}
+          type="button"
+          lang={lang}
+          aria-label={lang === 'en' ? 'English' : 'Filipino'}
+          aria-pressed={i18n.resolvedLanguage === lang}
+          onClick={() => void i18n.changeLanguage(lang)}
+          className={`min-h-11 min-w-11 px-3 text-xs font-bold ${i18n.resolvedLanguage === lang ? 'bg-primary-700 text-white' : 'bg-white text-gray-700 hover:bg-primary-50'}`}
+        >
+          {lang === 'en' ? 'EN' : 'FIL'}
+        </button>
+      ))}
+    </div>
+  );
 
   return (
-    <nav className="sticky top-0 z-50">
-      {/* Emergency Hotlines Bar */}
-      <div className="bg-red-600 text-white overflow-x-auto whitespace-nowrap">
-        <div className="flex items-center px-6 py-2.5 min-w-max mx-auto gap-1">
-          <Phone className="h-3.5 w-3.5 mr-3 shrink-0 opacity-90" />
-          <span className="text-xs font-bold uppercase tracking-wide opacity-80 mr-3">
-            Emergency Hotlines
+    <header
+      ref={navRef}
+      className="sticky top-0 z-50 shrink-0"
+      data-footer-blend={blendFooter}
+      onKeyDown={event => {
+        if (event.key !== 'Escape') return;
+        if (hotlinesOpen) hotlineToggleRef.current?.focus();
+        else if (isOpen) mobileToggleRef.current?.focus();
+        else if (activeMenu)
+          navRef.current
+            ?.querySelector<HTMLButtonElement>(
+              `button[aria-controls="desktop-${activeMenu}"]`
+            )
+            ?.focus();
+        closeMenu();
+      }}
+      onBlur={event => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+          setActiveMenu(null);
+          setHotlinesOpen(false);
+        }
+      }}
+    >
+      <div
+        className="header-landscape-base absolute inset-0 pointer-events-none"
+        aria-hidden="true"
+      />
+      <div
+        className={`absolute inset-0 bg-white pointer-events-none transition-opacity duration-200 ${blendFooter ? 'opacity-0' : 'opacity-100'}`}
+        aria-hidden="true"
+      />
+      <div
+        className={`relative border-b border-gray-200 text-xs text-gray-700 transition-colors duration-200 ${blendFooter ? 'bg-transparent' : 'bg-gray-50'}`}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-[auto_1fr] sm:flex sm:flex-wrap sm:justify-end items-center gap-x-4 pb-1 sm:pb-0">
+          <span className="order-1 sm:order-2 inline-flex items-center gap-1.5 min-h-11">
+            <Thermometer className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+            Tagaytay{' '}
+            {weather.data
+              ? `${weather.data.temp}°C`
+              : t(weather.error ? 'liveData.unavailable' : 'liveData.loading')}
           </span>
-          {HOTLINES.map((h, i) => (
-            <React.Fragment key={h.labelKey}>
-              <a
-                href={`tel:${h.tel}`}
-                className="hover:underline transition-opacity hover:opacity-80 px-4 py-1 text-xs"
-              >
-                <span className="font-bold">{t(h.labelKey)}:</span>{' '}
-                <span className="opacity-90">{h.number}</span>
-              </a>
-              {i < HOTLINES.length - 1 && (
-                <span className="opacity-30 select-none mx-0.5">|</span>
-              )}
-            </React.Fragment>
-          ))}
-        </div>
-      </div>
-
-      {/* Info Bar: forex / weather / datetime */}
-      <div className="bg-primary-900 text-white text-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-end gap-6">
-          <span className="flex items-center gap-1.5 opacity-90">
-            <span
-              className="font-semibold transition-opacity duration-300"
-              style={{ opacity: forexVisible ? 1 : 0 }}
+          <span className="order-3 sm:order-1 inline-flex items-center gap-1.5 min-h-7">
+            <DollarSign className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+            {forex.data
+              ? `1 USD = ₱${forex.data}`
+              : t(
+                  forex.error
+                    ? 'liveData.ratesUnavailable'
+                    : 'liveData.ratesLoading'
+                )}
+          </span>
+          <time
+            dateTime={datetime.iso}
+            className="order-4 sm:order-3 inline-flex items-center justify-self-end gap-1.5 min-h-7 text-right"
+          >
+            <Clock
+              className="hidden sm:block h-3.5 w-3.5 shrink-0"
+              aria-hidden="true"
+            />
+            <span className="sm:hidden">{datetime.compact}</span>
+            <span className="hidden sm:inline">{datetime.full}</span>
+          </time>
+          <div className="relative order-2 sm:order-4 justify-self-end">
+            <button
+              ref={hotlineToggleRef}
+              type="button"
+              aria-label={t('nav.emergencyHotlines')}
+              aria-expanded={hotlinesOpen}
+              aria-controls="emergency-hotlines"
+              onClick={() => {
+                setHotlinesOpen(!hotlinesOpen);
+                setIsOpen(false);
+                setActiveMenu(null);
+              }}
+              className="flex items-center gap-2 min-h-11 text-primary-800 font-semibold hover:underline"
             >
-              {forexDisplay}
-            </span>
-          </span>
-          <span className="text-gray-600 hidden sm:inline">|</span>
-          <span className="hidden sm:flex items-center gap-1.5 opacity-90">
-            <Thermometer className="h-3 w-3 opacity-70" />
-            <span className="text-gray-300">Tagaytay</span>
-            <span className="font-semibold">{temp}</span>
-          </span>
-          <span className="text-gray-600 hidden sm:inline">|</span>
-          <span className="hidden md:flex items-center gap-1.5 opacity-90">
-            <Clock className="h-3 w-3 opacity-70" />
-            <span className="font-semibold">{datetime}</span>
-          </span>
-        </div>
-      </div>
-
-      {/* Main Navbar */}
-      <div className="bg-white shadow-sm border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex items-center justify-between h-20">
-            {/* Logo */}
-            <Link to="/" className="flex items-center shrink-0">
-              <img
-                src="/logo.png"
-                alt="BetterTagaytay"
-                className="h-16 w-auto"
+              <Phone className="h-3.5 w-3.5" aria-hidden="true" />
+              <span className="sm:hidden">{t('nav.emergencyShort')}</span>
+              <span className="hidden sm:inline">
+                {t('nav.emergencyHotlines')}
+              </span>
+              <ChevronDown
+                className={`h-3.5 w-3.5 transition-transform ${hotlinesOpen ? 'rotate-180' : ''}`}
+                aria-hidden="true"
               />
-            </Link>
-
-            {/* Desktop Nav */}
-            <div className="hidden lg:flex items-center gap-1">
-              {mainNavigation.map(item => (
-                <div key={item.label} className="relative group">
-                  {item.children ? (
-                    <>
-                      <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-700 rounded-md hover:bg-primary-50 transition-colors">
-                        {item.translationKey
-                          ? t(item.translationKey, item.label)
-                          : item.label}
-                        <ChevronDown className="h-3.5 w-3.5 opacity-60 group-hover:rotate-180 transition-transform duration-200" />
-                      </button>
-                      <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
-                        <div className="py-1">
-                          {item.children.map(child => (
-                            <Link
-                              key={child.label}
-                              to={child.href}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-700 transition-colors"
-                            >
-                              {child.translationKey
-                                ? t(child.translationKey, child.label)
-                                : child.label}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    </>
-                  ) : (
-                    <Link
-                      to={item.href}
-                      onClick={e => handleNavClick(e, item.href)}
-                      className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                        isActive(item.href)
-                          ? 'text-primary-700 bg-primary-50'
-                          : 'text-gray-700 hover:text-primary-700 hover:bg-primary-50'
-                      }`}
-                    >
-                      {item.translationKey
-                        ? t(item.translationKey, item.label)
-                        : item.label}
-                    </Link>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            {/* Language + Mobile toggle */}
-            <div className="flex items-center gap-2">
-              {/* Language toggle */}
-              <div className="hidden sm:flex items-center border border-gray-200 rounded-md overflow-hidden">
-                {(['en', 'fil'] as LanguageType[]).map((lang, idx) => (
-                  <button
-                    key={lang}
-                    onClick={() => changeLanguage(lang)}
-                    className={`px-3 py-1.5 text-xs font-bold uppercase transition-colors ${
-                      i18n.language === lang
-                        ? 'bg-primary-700 text-white'
-                        : 'bg-white text-gray-600 hover:bg-gray-50'
-                    } ${idx === 0 ? '' : 'border-l border-gray-200'}`}
+            </button>
+            {hotlinesOpen && (
+              <div
+                id="emergency-hotlines"
+                role="region"
+                aria-label={t('nav.emergencyHotlines')}
+                className="absolute top-full right-0 z-50 w-72 max-w-[calc(100vw-2rem)] rounded-xl border border-gray-300 bg-white p-2 shadow-lg"
+              >
+                {HOTLINES.map(h => (
+                  <a
+                    key={h.labelKey}
+                    href={`tel:${h.tel}`}
+                    className="flex min-h-11 items-center justify-between gap-3 rounded-lg px-3 text-sm hover:bg-primary-50"
                   >
-                    {lang === 'en' ? 'EN' : 'FIL'}
-                  </button>
+                    <strong>{t(h.labelKey)}</strong>
+                    <span className="tabular-nums">{h.number}</span>
+                  </a>
                 ))}
               </div>
-
-              {/* Mobile hamburger */}
-              <button
-                onClick={toggleMenu}
-                className="lg:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors"
-                aria-label="Toggle menu"
-              >
-                {isOpen ? (
-                  <X className="h-5 w-5" />
-                ) : (
-                  <Menu className="h-5 w-5" />
-                )}
-              </button>
-            </div>
+            )}
           </div>
         </div>
-
-        {/* Mobile Menu */}
+      </div>
+      <div className="relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-[4.5rem] sm:h-20 gap-4">
+          <Link
+            to="/"
+            className="flex items-center shrink-0"
+            onClick={closeMenu}
+          >
+            <img
+              src="/logo.png"
+              alt="BetterTagaytay"
+              className="h-12 sm:h-14 w-auto"
+              width="1692"
+              height="608"
+            />
+          </Link>
+          <nav
+            aria-label={t('nav.primary')}
+            className="hidden xl:flex items-center gap-1"
+          >
+            {mainNavigation.map(item => (
+              <div key={item.label} className="relative">
+                {item.children ? (
+                  <>
+                    <button
+                      type="button"
+                      aria-expanded={activeMenu === item.label}
+                      aria-controls={`desktop-${item.label}`}
+                      onClick={() => toggleNavigation(item.label)}
+                      className={`flex min-h-11 items-center gap-1 px-3 text-sm font-medium rounded-lg hover:bg-primary-50 ${isActive(item.href) ? 'bg-primary-50 text-primary-700' : 'text-gray-700'}`}
+                    >
+                      {label(item)}
+                      <ChevronDown
+                        className={`h-3.5 w-3.5 transition-transform ${activeMenu === item.label ? 'rotate-180' : ''}`}
+                        aria-hidden="true"
+                      />
+                    </button>
+                    {activeMenu === item.label && (
+                      <div
+                        id={`desktop-${item.label}`}
+                        className="absolute top-full left-0 pt-1 w-64 z-50"
+                      >
+                        <ul className="py-1 bg-white rounded-xl shadow-lg border border-gray-300 max-h-[65vh] overflow-y-auto">
+                          <li>
+                            <Link
+                              to={item.href}
+                              onClick={closeMenu}
+                              className="flex min-h-11 items-center px-4 py-2 text-sm font-semibold text-primary-700 hover:bg-primary-50"
+                            >
+                              {t('nav.overview', { section: label(item) })}
+                            </Link>
+                          </li>
+                          {item.children.map(child => (
+                            <li key={child.href}>
+                              <Link
+                                to={child.href}
+                                onClick={closeMenu}
+                                aria-current={
+                                  location.pathname === child.href
+                                    ? 'page'
+                                    : undefined
+                                }
+                                className="flex min-h-11 items-center px-4 py-2 text-sm text-gray-700 hover:bg-primary-50"
+                              >
+                                {label(child)}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    to={item.href}
+                    onClick={closeMenu}
+                    aria-current={isActive(item.href) ? 'page' : undefined}
+                    className={`inline-flex min-h-11 items-center px-3 text-sm font-medium rounded-lg hover:bg-primary-50 ${isActive(item.href) ? 'bg-primary-50 text-primary-700' : 'text-gray-700'}`}
+                  >
+                    {label(item)}
+                  </Link>
+                )}
+              </div>
+            ))}
+          </nav>
+          <div className="flex items-center gap-2">
+            <div className="hidden sm:block">{languages}</div>
+            <button
+              ref={mobileToggleRef}
+              type="button"
+              onClick={() => {
+                setIsOpen(!isOpen);
+                setActiveMenu(null);
+                setHotlinesOpen(false);
+              }}
+              aria-label={t(isOpen ? 'nav.closeMenu' : 'nav.openMenu')}
+              aria-expanded={isOpen}
+              aria-controls="mobile-navigation"
+              className="xl:hidden flex items-center justify-center w-11 h-11 rounded-lg text-gray-700 hover:bg-primary-50"
+            >
+              {isOpen ? (
+                <X className="h-5 w-5" aria-hidden="true" />
+              ) : (
+                <Menu className="h-5 w-5" aria-hidden="true" />
+              )}
+            </button>
+          </div>
+        </div>
         {isOpen && (
-          <div className="lg:hidden border-t border-gray-100 bg-white">
+          <nav
+            id="mobile-navigation"
+            aria-label={t('nav.primary')}
+            className="xl:hidden border-t border-gray-200 bg-white max-h-[calc(100dvh-11rem)] overflow-y-auto"
+          >
             <div className="px-4 py-3 space-y-1">
               {mainNavigation.map(item => (
                 <div key={item.label}>
                   {item.children ? (
                     <>
                       <button
-                        onClick={() => toggleSubmenu(item.label)}
-                        className="w-full flex justify-between items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md"
+                        type="button"
+                        aria-expanded={activeMenu === item.label}
+                        aria-controls={`mobile-${item.label}`}
+                        onClick={() => toggleNavigation(item.label)}
+                        className="w-full flex justify-between items-center min-h-11 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-primary-50 rounded-lg"
                       >
-                        {item.translationKey
-                          ? t(item.translationKey, item.label)
-                          : item.label}
+                        {label(item)}
                         <ChevronDown
-                          className={`h-4 w-4 transition-transform ${activeMenu === item.label ? 'rotate-180' : ''}`}
+                          className={`h-4 w-4 ${activeMenu === item.label ? 'rotate-180' : ''}`}
+                          aria-hidden="true"
                         />
                       </button>
                       {activeMenu === item.label && (
-                        <div className="ml-4 mt-1 space-y-1">
-                          {item.children.map(child => (
+                        <ul id={`mobile-${item.label}`} className="ml-4 mt-1">
+                          <li>
                             <Link
-                              key={child.label}
-                              to={child.href}
+                              to={item.href}
                               onClick={closeMenu}
-                              className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-700 hover:bg-primary-50 rounded-md"
+                              className="flex min-h-11 items-center px-3 py-2 text-sm font-semibold text-primary-700"
                             >
-                              {child.translationKey
-                                ? t(child.translationKey, child.label)
-                                : child.label}
+                              {t('nav.overview', { section: label(item) })}
                             </Link>
+                          </li>
+                          {item.children.map(child => (
+                            <li key={child.href}>
+                              <Link
+                                to={child.href}
+                                onClick={closeMenu}
+                                className="flex min-h-11 items-center px-3 py-2 text-sm text-gray-700 hover:bg-primary-50 rounded-lg"
+                              >
+                                {label(child)}
+                              </Link>
+                            </li>
                           ))}
-                        </div>
+                        </ul>
                       )}
                     </>
                   ) : (
                     <Link
                       to={item.href}
-                      onClick={e => handleNavClick(e, item.href, closeMenu)}
-                      className="block px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-md"
+                      onClick={closeMenu}
+                      className="flex min-h-11 items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-primary-50 rounded-lg"
                     >
-                      {item.translationKey
-                        ? t(item.translationKey, item.label)
-                        : item.label}
+                      {label(item)}
                     </Link>
                   )}
                 </div>
               ))}
-              <div className="pt-2 border-t border-gray-100 flex gap-2">
-                {(['en', 'fil'] as LanguageType[]).map(lang => (
-                  <button
-                    key={lang}
-                    onClick={() => changeLanguage(lang)}
-                    className={`px-4 py-1.5 text-xs font-bold uppercase rounded border transition-colors ${
-                      i18n.language === lang
-                        ? 'bg-primary-700 text-white border-primary-700'
-                        : 'bg-white text-gray-600 border-gray-300'
-                    }`}
-                  >
-                    {lang === 'en' ? 'EN' : 'FIL'}
-                  </button>
-                ))}
+              <div className="sm:hidden pt-3 border-t border-gray-200">
+                {languages}
               </div>
             </div>
-          </div>
+          </nav>
         )}
       </div>
-    </nav>
+    </header>
   );
-};
-
-export default Navbar;
+}

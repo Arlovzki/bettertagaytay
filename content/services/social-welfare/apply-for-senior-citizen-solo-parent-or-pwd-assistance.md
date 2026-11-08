@@ -1,73 +1,24 @@
-# Apply for Senior Citizen, Solo Parent, or PWD Assistance
+# Get Senior Citizen, PWD, or Solo Parent Assistance
 
-The City Social Welfare and Development Office (CSWDO) of Tagaytay City provides assistance programs for senior citizens, solo parents, and persons with disabilities (PWDs).
+Contact the office responsible for the service you need. An ID application, a financial-assistance request, and a pension application have separate assessments and requirements.
 
-## Senior Citizens (60 years old and above)
+## Senior citizens
 
-### Benefits Available
+Start with the **Office of Senior Citizens Affairs (OSCA)** for a senior citizen ID or pension-related inquiry. The 2025 Citizen’s Charter lists identity, age, residency, photo, and member-data documents for ID processing. Ask OSCA for its current checklist and any applicable residency requirement.
 
-- **20% discount** on medicines, medical services, transportation, restaurants, hotels, and other establishments
-- **Senior Citizen ID** for discount privileges
-- **Social pension** (₱500/month) for indigent senior citizens aged 60+ under DSWD program
-- Monthly financial assistance from the city (check current city budget)
+## Persons with disabilities
 
-### Requirements for Senior Citizen ID
+Start with the **Persons with Disability Affairs Office (PDAO)** for a PWD ID or assistive-device inquiry. The Charter’s ID checklist includes photos, barangay certification, identity records, and medical documentation of disability. The office determines the applicable documents after assessment.
 
-- Valid government-issued ID with photo and birthdate
-- Barangay certificate of residency
-- 1x1 or 2x2 ID photo
+## Solo parents
 
-**Apply at:** Office of Senior Citizens Affairs (OSCA) — City Hall
+Ask **CSWDO** to direct you to the city’s Solo Parent Office or designated desk for registration and the current checklist. [DSWD guidance](https://www.dswd.gov.ph/dswd-urges-solo-moms-dads-to-apply-update-solo-parent-ids-to-avail-of-services/) identifies LGU registration and the Solo Parent Identification Card and booklet as the route to applicable services.
 
----
+## Steps
 
-## Solo Parents
+1. Identify the exact service and get the receiving office’s current checklist.
+2. Prepare the requested documents and attend any intake interview or assessment.
+3. Submit through the designated office. Ask for your reference and expected release or follow-up date.
+4. Follow the office’s instructions for receiving the ID, referral, or assistance decision.
 
-### Benefits under RA 8972 (Solo Parents' Welfare Act)
-
-- **Solo Parent ID** for discounts and privileges
-- Flexible work arrangements (for employed solo parents)
-- Parental leave (7 days/year for employed solo parents)
-- Educational benefits for children
-- Housing priority
-
-### Requirements for Solo Parent ID
-
-- Proof of solo parent status (death certificate, court order, DSWD certificate)
-- Barangay certificate of residency
-- Birth certificates of children
-- Valid ID
-
-**Apply at:** City Social Welfare and Development Office (CSWDO)
-
----
-
-## Persons with Disabilities (PWDs)
-
-### Benefits under RA 10754
-
-- **PWD ID** for 20% discount and VAT exemption
-- Priority lanes and accessible facilities
-- Educational assistance
-- Livelihood and employment assistance
-
-### Requirements for PWD ID
-
-- Medical certificate from a licensed physician stating the disability
-- 1x1 or 2x2 ID photo
-- Barangay certificate of residency
-- Valid government-issued ID (if available)
-
-**Apply at:** City Social Welfare and Development Office (CSWDO)
-
----
-
-## Where to Go
-
-**City Social Welfare and Development Office (CSWDO)**
-Tagaytay City Hall, Akle St., Kaybagal South
-Telephone: (046) 483-0494
-
-**Office of Senior Citizens Affairs (OSCA)**
-Tagaytay City Hall
-Telephone: (046) 413-1220
+Local source: [2025 Citizen’s Charter, PDAO printed pages 137–139 and OSCA pages 145–147](https://www.tagaytay.gov.ph/pdf/citizenscharter.pdf#page=138). Ask the office about current benefit amounts and eligibility.

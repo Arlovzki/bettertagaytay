@@ -41,7 +41,7 @@ A private museum holding the world record for the largest collection of jigsaw p
 
 ### 6. Tagaytay City Velodrome
 
-A **world-class, internationally-certified velodrome** for cycling competitions and sports development. Open for training and events.
+A **world-class, internationally-certified velodrome** for cycling competitions and sports development. Contact the venue to confirm training sessions and event admission. See [Sports & exercise](/services/tourism/sports-and-exercise) for access information and sources.
 
 ### 7. Mahogany Market
 

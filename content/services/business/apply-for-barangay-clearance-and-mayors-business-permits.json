@@ -1,0 +1,30 @@
+{
+  "guide": {
+    "office": "Business Permit and Licensing Office (BPLO)",
+    "location": "Tagaytay City Hall, Akle St., Kaybagal South",
+    "hours": "Confirm current receiving hours with the office.",
+    "fees": "BPLO assesses taxes and fees under the city Revenue Code.",
+    "processingTime": "Confirm with BPLO after document review; published estimates differ.",
+    "contactLabel": "Call City Hall: (046) 888-9500",
+    "contactUrl": "tel:+63468889500",
+    "checkedAt": "2026-11-06",
+    "sourceName": "2025 Citizen’s Charter",
+    "sourceUrl": "https://www.tagaytay.gov.ph/pdf/citizenscharter.pdf",
+    "checklist": [
+      "Completed business permit application",
+      "DTI, SEC, or CDA registration for your business type",
+      "Barangay clearance and zoning/locational clearance",
+      "Sanitary, fire, and property/lease documents required by BPLO"
+    ],
+    "forms": [
+      {
+        "label": "Business permit application (PDF)",
+        "url": "https://www.tagaytay.gov.ph/pdf/Application-Form-for-Business-Permit.pdf"
+      },
+      {
+        "label": "Locational clearance form (PDF)",
+        "url": "https://www.tagaytay.gov.ph/pdf/Locational%20Clearance%20Form.pdf"
+      }
+    ]
+  }
+}

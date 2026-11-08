@@ -18,7 +18,17 @@
     "foiReleases": "FOI Releases",
     "cityProfile": "City Profile",
     "annualReport": "Annual Report",
-    "infrastructureProjects": "Infrastructure Projects"
+    "infrastructureProjects": "Infrastructure Projects",
+    "primary": "Main navigation",
+    "language": "Language",
+    "emergencyHotlines": "Emergency Hotlines",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "overview": "View all {{section}}",
+    "breadcrumb": "Breadcrumb",
+    "independent": "Community-run. Not an official city website.",
+    "independentShort": "Community-run. Unofficial.",
+    "emergencyShort": "Emergency"
   },
   "hotlines": {
     "police": "Police",
@@ -29,26 +39,31 @@
     "cswdo": "CSWDO"
   },
   "hero": {
-    "title": "BetterTagaytay",
+    "title": "Find services in Tagaytay.",
     "welcome": "Welcome to",
-    "subtitle": "Access government services, information, and resources for the people of Tagaytay City, Cavite.",
+    "subtitle": "Permits, public records, and local contacts in one place.",
     "browseServices": "Browse Services",
     "contactUs": "Contact Us",
-    "findService": "Find a Service",
-    "searchPlaceholder": "e.g., business permit, health services",
+    "findService": "What do you need?",
+    "searchPlaceholder": "e.g., permit",
     "popular": "Popular",
     "nationalId": "National ID",
     "birthCertificate": "Birth Certificate",
-    "businessRegistration": "Business Registration"
+    "businessRegistration": "Business Registration",
+    "commonTasks": "Common tasks",
+    "landscapeAlt": "Taal Lake and Volcano Island viewed from Maharlika West, Tagaytay.",
+    "landscapeLocation": "The view from Tagaytay",
+    "landscapeCaption": "Taal Lake, 2023. Photo:",
+    "landscapeAdaptation": "resized and cropped"
   },
   "infobar": {
     "usd": "1 USD =",
     "location": "Tagaytay"
   },
   "services": {
-    "title": "Services & Information",
+    "title": "Explore city services",
     "governmentServices": "Government Services",
-    "description": "Access official Tagaytay City government services quickly and easily. Find what you need for citizenship, business, health, education, and more.",
+    "description": "Find requirements, forms, and the office that can help.",
     "viewAll": "View All Services",
     "viewAllCategory": "View All",
     "categories": {
@@ -99,9 +114,9 @@
     },
     "tourismSpotlight": {
       "badge": "Tourism Spotlight",
-      "title": "Discover Tagaytay City",
-      "description": "Tagaytay is the second highest city in the Philippines, offering breathtaking views of Taal Volcano, fresh highland cuisine, and year-round cool weather.",
-      "cta": "Explore Tourism Services",
+      "title": "Discover Tagaytay",
+      "description": "Find places to visit, local attractions, and tourism services.",
+      "cta": "Explore Tagaytay",
       "taal": "Taal Volcano",
       "ridge": "Scenic Ridges",
       "food": "Bulalo & More",
@@ -172,7 +187,8 @@
     "foggy": "Foggy",
     "rainy": "Rainy",
     "showers": "Showers",
-    "thunderstorm": "Thunderstorm"
+    "thunderstorm": "Thunderstorm",
+    "unavailable": "Live weather could not load. Please try again."
   },
   "history": {
     "title": "Brief History of Tagaytay City",
@@ -257,7 +273,8 @@
     "contribute": "Contribute code with us",
     "copyright": "© 2026 BetterTagaytay.ph  MIT | CC BY 4.0  All public information sourced from official government portals.",
     "attribution": "All public information sourced from official government portals.",
-    "builtBy": "Built by"
+    "builtBy": "Built by",
+    "independent": "Community-run. Not an official city website. For official transactions, contact the city office concerned."
   },
   "navbar": {
     "government": "Government",
@@ -271,7 +288,9 @@
     "fallbackNotice": "This page has not yet been translated to Filipino. Content is shown in English.",
     "home": "Home",
     "services": "Services",
-    "government": "Government"
+    "government": "Government",
+    "recovery": "This page is unavailable or may have moved. Browse services or return home.",
+    "emptyCategory": "Information for this section has not been published yet. Visit tagaytay.gov.ph for official updates."
   },
   "joinUs": {
     "stripTitle": "🚀 Join the #CivicTech Revolution",
@@ -285,5 +304,140 @@
     "or": "or",
     "joinDiscord": "Join Discord",
     "features": "🚀 Infrastructure • 💡 Mentorship • 🤝 Community • 🏢 Office Space"
+  },
+  "search": {
+    "title": "Find a service",
+    "submit": "Search",
+    "loading": "Searching services…",
+    "error": "Search could not load. Refresh this page to try again.",
+    "results_one": "{{count}} service for “{{query}}”",
+    "results_other": "{{count}} services for “{{query}}”",
+    "empty": "Try a different keyword, such as business, health, or scholarship."
+  },
+  "liveData": {
+    "loading": "Loading…",
+    "unavailable": "Unavailable",
+    "ratesLoading": "Loading exchange rate…",
+    "ratesUnavailable": "Exchange rate unavailable",
+    "retry": "Try again"
+  },
+  "visits": {
+    "label": "Website visits",
+    "loading": "Loading visits…",
+    "unavailable": "Visit count unavailable"
+  },
+  "tables": {
+    "view": "Table display",
+    "table": "Table",
+    "list": "List",
+    "value": "Value"
+  },
+  "page": {
+    "loading": "Loading page…",
+    "error": "This page could not load.",
+    "reload": "Reload page"
+  },
+  "tasks": {
+    "newBusiness": "New business permit",
+    "renewBusiness": "Renew a business permit",
+    "building": "Apply for a building permit",
+    "scholarship": "Find scholarships",
+    "assistance": "Senior, PWD or solo parent support",
+    "forms": "Download forms"
+  },
+  "records": {
+    "title": "Document library",
+    "description": "Find official Tagaytay forms, checklists, budgets, and financial reports. Files open on the city’s website.",
+    "search": "Search documents",
+    "placeholder": "e.g., building permit",
+    "type": "Document type",
+    "year": "Year",
+    "quarter": "Quarter",
+    "allTypes": "All document types",
+    "allYears": "All years",
+    "allQuarters": "All quarters",
+    "quarterNumber": "Quarter {{quarter}}",
+    "results_one": "{{count}} document",
+    "results_other": "{{count}} documents",
+    "clear": "Clear filters",
+    "invalidFilters": "Some filters in this link were not recognized. Clear filters to start again.",
+    "open": "Open PDF",
+    "openNamed": "Open PDF: {{title}} (new tab)",
+    "source": "Source",
+    "sourceNamed": "Official source for {{title}} (new tab)",
+    "checked": "Link checked {{date}}",
+    "more": "Show more documents",
+    "emptyTitle": "No matching documents",
+    "emptyDescription": "Try fewer filters or a different keyword.",
+    "periodNote": "Periods follow the official source listing. Link checks confirm file availability; they do not audit the document’s contents.",
+    "types": {
+      "form": "Form",
+      "checklist": "Checklist",
+      "budget": "Budget",
+      "financial-report": "Financial report",
+      "procurement": "Procurement",
+      "reference": "Reference"
+    }
+  },
+  "guide": {
+    "office": "Responsible office",
+    "location": "Where to go",
+    "hours": "Receiving hours",
+    "fees": "Fees",
+    "processingTime": "Processing time",
+    "print": "Print guide",
+    "forms": "Forms and checklists",
+    "checklist": "Before you go",
+    "checked": "Sources checked {{date}}",
+    "correction": "Report incorrect information"
+  },
+  "homeRecords": {
+    "title": "Public records, within reach",
+    "description": "Browse documents published by the City Government of Tagaytay.",
+    "all": "View document library",
+    "financial": "Financial reports",
+    "financialDescription": "Annual reports and quarterly disclosures.",
+    "forms": "Application forms",
+    "formsDescription": "Official forms to prepare for your visit.",
+    "offices": "City offices & officials",
+    "officesDescription": "Find the department or representative you need."
+  },
+  "homeTourism": {
+    "eyebrow": "Around the city",
+    "title": "Make time for Tagaytay.",
+    "description": "Explore local attractions and find information for your visit.",
+    "services": "Tourism services",
+    "places": "Places to visit"
+  },
+  "terrain": {
+    "heroReference": "Tagaytay elevation contours · {{interval}} m · USGS / Mapzen",
+    "credit": "Elevation contours · {{interval}} m intervals"
+  },
+  "sports": {
+    "title": "Sports & exercise",
+    "description": "Find public sports and exercise facilities in Tagaytay.",
+    "notice": "Confirm current hours, fees and public sessions with the venue before visiting.",
+    "search": "Search facilities",
+    "activity": "Activity",
+    "all": "All activities",
+    "count": "{{count}} places",
+    "empty": "No matching places",
+    "clear": "Clear filters",
+    "access": "Before you visit",
+    "directions": "Directions",
+    "sources": "Sources and last checked date",
+    "checked": "Sources checked {{date}}",
+    "report": "Report incorrect information",
+    "enquiry": "For city facilities, call City Hall and ask for the office responsible for the venue.",
+    "activities": {
+      "walking": "Walking",
+      "running": "Running",
+      "community": "Community grounds",
+      "skating": "Skateboarding",
+      "cycling": "Cycling & BMX",
+      "martial-arts": "Martial arts",
+      "court-sports": "Court sports"
+    },
+    "count_one": "{{count}} place"
   }
 }

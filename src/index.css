@@ -7,17 +7,20 @@
 
 @theme {
   --font-serif: Georgia, 'Times New Roman', serif;
+  --color-white: #fcfdfd;
+  --color-black: #11191f;
 
-  --color-primary-50: #e6eef7;
-  --color-primary-100: #cdddf0;
-  --color-primary-200: #9bbce0;
-  --color-primary-300: #699ad1;
-  --color-primary-400: #3779c1;
-  --color-primary-500: #0052e0;
-  --color-primary-600: #0041b8;
-  --color-primary-700: #003087;
-  --color-primary-800: #002066;
-  --color-primary-900: #001044;
+  --color-primary-50: #eef4f6;
+  --color-primary-100: #dce8ed;
+  --color-primary-200: #b9cfd9;
+  --color-primary-300: #88acbe;
+  --color-primary-400: #5f8ba2;
+  --color-primary-500: #3f708a;
+  --color-primary-600: #2d5e78;
+  --color-primary-700: #214b64;
+  --color-primary-800: #193c52;
+  --color-primary-900: #122d3e;
+  --color-primary-950: #10232f;
 
   --color-secondary-50: #ffede6;
   --color-secondary-100: #ffdbcc;
@@ -74,16 +77,56 @@
   --color-error-800: #5a1212;
   --color-error-900: #2d0909;
 
-  --color-gray-50: #f8f9fa;
-  --color-gray-100: #f1f3f5;
-  --color-gray-200: #e9ecef;
-  --color-gray-300: #dee2e6;
-  --color-gray-400: #ced4da;
-  --color-gray-500: #adb5bd;
-  --color-gray-600: #868e96;
-  --color-gray-700: #495057;
-  --color-gray-800: #343a40;
-  --color-gray-900: #212529;
+  --color-gray-50: #f2f5f6;
+  --color-gray-100: #e9eef0;
+  --color-gray-200: #dce4e8;
+  --color-gray-300: #c4d0d6;
+  --color-gray-400: #91a3ad;
+  --color-gray-500: #607582;
+  --color-gray-600: #536773;
+  --color-gray-700: #41535e;
+  --color-gray-800: #32444e;
+  --color-gray-900: #24333c;
+  --color-gray-950: #17252f;
+
+  /* Keep Kapwa primitives in the same civic palette as local components. */
+  --color-kapwa-neutral-50: var(--color-white);
+  --color-kapwa-neutral-100: var(--color-gray-50);
+  --color-kapwa-neutral-200: var(--color-gray-100);
+  --color-kapwa-neutral-300: var(--color-gray-200);
+  --color-kapwa-gray-50: var(--color-gray-50);
+  --color-kapwa-gray-100: var(--color-gray-100);
+  --color-kapwa-gray-200: var(--color-gray-200);
+  --color-kapwa-gray-300: var(--color-gray-300);
+  --color-kapwa-gray-400: var(--color-gray-400);
+  --color-kapwa-gray-500: var(--color-gray-500);
+  --color-kapwa-gray-600: var(--color-gray-600);
+  --color-kapwa-gray-700: var(--color-gray-700);
+  --color-kapwa-gray-800: var(--color-gray-800);
+  --color-kapwa-gray-900: var(--color-gray-900);
+  --color-kapwa-gray-950: var(--color-gray-950);
+  --color-kapwa-brand-50: var(--color-primary-50);
+  --color-kapwa-brand-100: var(--color-primary-100);
+  --color-kapwa-brand-200: var(--color-primary-200);
+  --color-kapwa-brand-300: var(--color-primary-300);
+  --color-kapwa-brand-400: var(--color-primary-400);
+  --color-kapwa-brand-500: var(--color-primary-600);
+  --color-kapwa-brand-600: var(--color-primary-700);
+  --color-kapwa-brand-700: var(--color-primary-800);
+  --color-kapwa-brand-800: var(--color-primary-900);
+  --color-kapwa-brand-900: var(--color-primary-950);
+  --color-kapwa-brand-950: var(--color-primary-950);
+  --color-kapwa-blue-50: var(--color-primary-50);
+  --color-kapwa-blue-100: var(--color-primary-100);
+  --color-kapwa-blue-200: var(--color-primary-200);
+  --color-kapwa-blue-300: var(--color-primary-300);
+  --color-kapwa-blue-400: var(--color-primary-400);
+  --color-kapwa-blue-500: var(--color-primary-700);
+  --color-kapwa-blue-600: var(--color-primary-800);
+  --color-kapwa-blue-700: var(--color-primary-900);
+  --color-kapwa-blue-800: var(--color-primary-900);
+  --color-kapwa-blue-900: var(--color-primary-950);
+  --color-kapwa-blue-950: var(--color-primary-950);
 
   --animate-fade-in: fadeIn 0.5s ease-in-out;
   --animate-slide-in: slideIn 0.5s ease-out;
@@ -158,6 +201,61 @@
   --font-mono: var(--font-kapwa-mono);
 }
 
+:root {
+  --font-kapwa-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-kapwa-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-heading: 'Manrope', var(--font-kapwa-sans);
+  color: var(--color-gray-900);
+  background: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--color-primary-600);
+  outline-offset: 3px;
+}
+
+[data-tone='inverse'] :focus-visible {
+  outline-color: var(--color-primary-200);
+}
+
+.header-landscape-base {
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--color-white) 97%, transparent),
+    color-mix(in srgb, var(--color-white) 75%, transparent) calc(100% - 12px),
+    transparent
+  );
+}
+
+:where([id], a, button, input, [tabindex]) {
+  scroll-margin-top: 11rem;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  background: var(--color-primary-700);
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
 /* Animation utilities */
 .anim-fade-in-up {
   animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -173,6 +271,15 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
   .anim-fade-in-up,
   .anim-fade-in-left,
   .anim-fade-in-right,
@@ -200,14 +307,42 @@
   z-index: 10;
   width: var(--first-col-width, 12rem);
   min-width: var(--first-col-width, 12rem);
-  background-color: white;
-  border-right: 2px solid #9ca3af;
+  background-color: var(--color-white);
+  border-right: 2px solid var(--color-gray-300);
 }
 
 .sticky-table thead th:first-child {
-  background-color: #f9fafb;
+  background-color: var(--color-gray-50);
 }
 
 .sticky-table tbody tr:hover td:first-child {
-  background-color: #f3f4f6;
+  background-color: var(--color-gray-100);
+}
+
+@media print {
+  header,
+  footer,
+  .skip-link {
+    display: none !important;
+  }
+
+  main {
+    outline: none;
+  }
+
+  section {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  label,
+  dl > div {
+    break-inside: avoid;
+  }
 }

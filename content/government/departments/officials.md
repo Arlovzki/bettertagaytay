@@ -1,6 +1,6 @@
-# Local Officials Directory — {GOVERNMENT_NAME}
+# Local Officials Directory: {GOVERNMENT_NAME}
 
-This page lists all elected officials of the **City Government of {GOVERNMENT_NAME}** for the **{TERM} term**.
+The names below match the official [Local Officials page](https://www.tagaytay.gov.ph/localofficials.html), checked on **5 November 2026**. That page does not state a term of office; confirm current appointments with City Hall.
 
 ---
 

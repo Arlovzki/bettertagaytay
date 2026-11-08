@@ -6,7 +6,9 @@ The City Council is presided over by the **Vice Mayor** and is composed of **10 
 
 ---
 
-## Current City Council (2022–2025 Term)
+## Council Members Listed on the Official Website
+
+Source: [Tagaytay City Local Officials](https://www.tagaytay.gov.ph/localofficials.html), checked on **5 November 2026**. The source does not state a term of office.
 
 **Presiding Officer**
 

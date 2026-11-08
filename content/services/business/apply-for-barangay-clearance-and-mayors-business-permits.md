@@ -1,65 +1,24 @@
-# How to Set Up a Business Partnership
+# Apply for a Business Permit
 
-## Step 1: Register with SEC
+Start with Tagaytay City’s BPLO to register a new local business. The office checks your documents, assesses charges, and directs any required clearances or inspections.
 
-**Prepare documents:**
+## Requirements
 
-- Partnership name (check via [SEC eSPARC](https://espac.sec.gov.ph/))
-- Notarized Articles of Partnership
-- IDs/TINs of partners, office address, capital structure
+The city’s published checklist includes business registration (DTI, SEC, or CDA as applicable), barangay and zoning clearances, sanitary and fire documents, and property-tax or lease documents. BPLO determines which additional permits apply to your activity. Use its complete checklist before filing.
 
-**File online** through [SEC eSPARC](https://espac.sec.gov.ph/) and pay fees.
+## Steps
 
-**Output:** SEC Certificate of Recording + Approved Business Name
+1. Get the application and confirm your business-specific requirements with BPLO.
+2. Submit the completed form and supporting documents for review and assessment.
+3. Follow the office’s clearance and inspection instructions, then pay the assessed amount at the designated city cashier.
+4. Keep the official receipt and claim the permit, plate, and sticker as instructed.
 
-## Step 2: Apply for Business Permit
+## Fees and release date
 
-Go to **Tagaytay City BPLO** (Business Permit and Licensing Office).
+Charges follow the city Revenue Code and your assessment. The city website and 2025 Citizen’s Charter give different processing estimates. Ask BPLO for the expected release date after it checks your application.
 
-**Requirements:**
+## Barangay clearance
 
-- Unified Application Form
-- SEC Certificate of Registration + Articles of Partnership
-- Occupancy Permit (if owner) OR Lease Contract (if renting)
-- Community Tax Certificate (CTC)
+Ask the barangay serving your business location about its clearance process before submitting the city permit application.
 
-Apply in person or online via [Tagaytay City Online Business Permit Portal](https://tagaytay.gov.ph/business-permits/).
-
-> Note: Inspections may include zoning, sanitary, and fire safety checks.
-
-## Step 3: Register with BIR
-
-File at the **BIR Revenue District Office (RDO)** where your office is located.
-
-- Fill out [BIR Form 1903](https://www.bir.gov.ph/images/1903%20Jan%202024.pdf)
-- Submit SEC Certificate + Articles of Partnership + valid IDs
-- Pay registration fee + Documentary Stamp Tax (DST)
-
-**Within 30 days of receiving BIR Certificate:**
-
-- Apply for Authority to Print Receipts (Form 1906) OR enroll in e-invoicing
-- Register your Books of Accounts
-
-## Step 4: Register as Employer (if hiring)
-
-Enroll with:
-
-- [SSS](https://www.sss.gov.ph/)
-- [PhilHealth](https://www.philhealth.gov.ph/)
-- [Pag-IBIG](https://www.pagibigfund.gov.ph/)
-
-## Process Flow
-
-1. SEC name check + register via [SEC eSPARC](https://espac.sec.gov.ph/)
-2. Secure Barangay Certification + site/lease documents
-3. Apply for Business Permit at [Tagaytay City BPLO](https://tagaytay.gov.ph/business-permits/)
-4. File BIR Form 1903 → apply ATP → register books
-
-## Document Checklist
-
-- [ ] SEC Articles of Partnership + SEC Certificate
-- [ ] Lease Contract OR Occupancy/Building docs
-- [ ] Tagaytay City BPLO Unified Application Form + CTC
-- [ ] BIR Form 1903, IDs, ATP/Books
-
-With these steps, your partnership in Tagaytay City will be fully compliant and ready to operate!
+For the city’s published requirements, see [Business Permit and Licensing](https://www.tagaytay.gov.ph/business.html) and the [2025 Citizen’s Charter, printed pages 100–101](https://www.tagaytay.gov.ph/pdf/citizenscharter.pdf#page=101).

@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-11-06",
+  "purpose": "Downloaded official sports inventory sources; metadata only, not a live access directory",
+  "sources": [
+    {
+      "name": "city-profile-2021",
+      "url": "https://www.tagaytay.gov.ph/pdf/Ecological%20Profile.pdf",
+      "checkedAt": "2026-11-06",
+      "bytes": 14923600,
+      "sha256": "f7f96328f96938228627b4bcdbd0f316db8dd28c9ee1c91a5a2f09c4c01dd45b",
+      "relevantPdfPages": [111, 112, 113]
+    },
+    {
+      "name": "cavite-profile-2024",
+      "url": "https://cavite.gov.ph/wp-content/uploads/2026/04/CEP_2024.pdf",
+      "checkedAt": "2026-11-06",
+      "bytes": 26743998,
+      "sha256": "3652d4e2279dc91e759a62f1084c79deec9468c65f543fb905eca38851e266ba",
+      "relevantPdfPages": [217]
+    }
+  ]
+}

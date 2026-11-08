@@ -55,7 +55,7 @@ function TimelineItem({
       <div className="flex flex-col items-center shrink-0">
         <div className="w-3.5 h-3.5 rounded-full bg-primary-700 border-2 border-white ring-2 ring-primary-200 mt-1 shrink-0 z-10" />
         {index < EVENT_KEYS.length - 1 && (
-          <div className="w-0.5 flex-1 bg-gradient-to-b from-primary-300 to-primary-100 mt-1" />
+          <div className="w-0.5 flex-1 bg-primary-200 mt-1" />
         )}
       </div>
 
@@ -64,7 +64,7 @@ function TimelineItem({
           {year}
         </span>
         <h3 className="font-bold text-gray-900 text-sm mb-1">{title}</h3>
-        <p className="text-gray-500 text-sm leading-relaxed">{text}</p>
+        <p className="text-gray-600 text-sm leading-relaxed">{text}</p>
       </div>
     </div>
   );
@@ -89,23 +89,23 @@ export default function HistorySection() {
           </div>
 
           <div className="hidden lg:flex flex-col justify-center gap-4">
-            <div className="bg-primary-700 rounded-2xl p-6 text-white">
+            <div className="bg-primary-700 rounded-xl p-6 text-white">
               <div className="text-4xl font-black mb-2">1938</div>
-              <div className="text-blue-100 font-semibold text-lg mb-2">
+              <div className="text-primary-100 font-semibold text-lg mb-2">
                 {t('history.charteredYear')}
               </div>
-              <p className="text-blue-200 text-sm leading-relaxed">
+              <p className="text-primary-200 text-sm leading-relaxed">
                 {t('history.charteredDesc')}
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+            <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
               <div className="text-4xl font-black text-primary-700 mb-2">
                 ~600m
               </div>
               <div className="text-gray-800 font-semibold text-lg mb-2">
                 {t('history.elevationLabel')}
               </div>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 {t('history.elevationDesc')}
               </p>
             </div>

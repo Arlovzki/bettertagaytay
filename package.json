@@ -17,7 +17,8 @@
     "prepare": "husky",
     "convert-yaml": "node scripts/yaml-to-json.js",
     "dev:yaml": "npm run convert-yaml && npm run dev",
-    "setup": "node scripts/setup-starter-kit.js"
+    "setup": "node scripts/setup-starter-kit.js",
+    "test": "node --test tests/*.test.mjs server/visits/*.test.mjs"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

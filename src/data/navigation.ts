@@ -13,15 +13,22 @@ export const mainNavigation: NavigationItem[] = [
     label: 'Services',
     href: '/services',
     translationKey: 'nav.services',
-    children: (servicesData.categories as Category[]).map(c => ({
-      label: c.category,
-      href: `/services/${c.slug}`,
-      translationKey: `services.categories.${c.slug}.name`,
-    })),
+    children: [
+      {
+        label: 'Sports & exercise',
+        href: '/services/tourism/sports-and-exercise',
+        translationKey: 'sports.title',
+      },
+      ...(servicesData.categories as Category[]).map(c => ({
+        label: c.category,
+        href: `/services/${c.slug}`,
+        translationKey: `services.categories.${c.slug}.name`,
+      })),
+    ],
   },
   {
     label: 'Government',
-    href: '/government/departments',
+    href: '/government',
     translationKey: 'nav.government',
     children: [
       {
@@ -43,9 +50,14 @@ export const mainNavigation: NavigationItem[] = [
   },
   {
     label: 'Transparency',
-    href: '/government/transparency-documents',
+    href: '/documents',
     translationKey: 'nav.transparency',
     children: [
+      {
+        label: 'Document Library',
+        href: '/documents',
+        translationKey: 'records.title',
+      },
       {
         label: 'Full Disclosure',
         href: '/government/transparency-documents/full-disclosure',

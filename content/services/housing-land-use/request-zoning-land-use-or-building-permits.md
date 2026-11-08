@@ -1,53 +1,23 @@
-# Request Zoning, Land Use, or Building Permits
+# Apply for a Building Permit
 
-Before constructing, renovating, or using land in Tagaytay City, you are required to secure the appropriate permits from the City Planning and Development Office (CPDO) and the Office of the Building Official (OBO).
+Use the City Engineering Office’s current checklist to prepare a building-permit application. Requirements depend on the project, site, ownership, and building type.
 
-## Types of Permits
+## Prepare the application
 
-### Locational Clearance / Zoning Certification
+The official checklist calls for **six copies each**, with signed and sealed professional documents where specified. It covers ownership and tax records, authority to apply, barangay permission, locational clearance, plans, application forms, specifications, and cost estimates. It also identifies project-specific requirements such as structural analysis, soil testing, subdivision approval, and fire clearance.
 
-Required to verify that your intended land use is allowed in a specific zone.
+Download the complete checklist above and review it with the professionals responsible for your project. This summary does not replace that checklist.
 
-### Building Permit
+## Steps
 
-Required before constructing, renovating, or demolishing any structure.
+1. Confirm the applicable requirements with the Office of the Building Official / City Engineering Office.
+2. Coordinate locational clearance with the City Planning and Development Office and the project-specific clearances named in the checklist.
+3. Prepare the forms, plans, supporting documents, and required copies. Follow the official printing instructions for permit forms.
+4. Submit the complete application to City Engineering for technical review.
+5. Follow its assessment, payment, correction, and permit-release instructions.
 
-**Forms required:**
+## Follow-up
 
-- Building Permit Form
-- Architectural Permit (NBC Form A-01)
-- Civil/Structural Permit (NBC Form A-02)
-- Electrical Permit (NBC Form A-03)
-- Mechanical Permit (NBC Form A-04)
-- Sanitary/Plumbing Permit (NBC Form A-05)
-- Fencing Permit (if applicable)
+Ask City Engineering for the assessed charges, any missing documents, and the expected release schedule. Keep your application reference and receipts when following up.
 
-> Download forms at: [tagaytay.gov.ph/downloads.html](https://www.tagaytay.gov.ph/downloads.html)
-
-## Requirements for Building Permit
-
-- Duly accomplished permit application forms
-- Lot plan / survey plan
-- Building plans signed by licensed professionals (architect, engineer)
-- Proof of property ownership (TCT, tax declaration)
-- Barangay clearance
-- Fire safety evaluation clearance (from BFP)
-
-## Processing Steps
-
-1. Submit complete documents to the **Office of the Building Official (OBO)**
-2. Pay the assessed fees at the **City Treasurer's Office**
-3. OBO evaluates and approves the application
-4. Receive the permit and post it visibly at the construction site
-
-## Where to Go
-
-**City Planning and Development Office (CPDO)**
-**Office of the Building Official (OBO)**
-Tagaytay City Hall, Akle St., Kaybagal South
-Telephone: (046) 413-1220 / (046) 888-9500
-
-## Reference Documents
-
-- [Zoning Ordinance](https://www.tagaytay.gov.ph/downloads.html)
-- [Comprehensive Land Use Plan (CLUP)](https://www.tagaytay.gov.ph/downloads.html)
+The [city’s Building Permits page](https://www.tagaytay.gov.ph/buildingpermits.html) also links to fencing, occupancy, electrical, and related forms. Additional forms are in the [document library](/documents?type=form).

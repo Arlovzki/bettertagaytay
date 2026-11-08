@@ -24,8 +24,8 @@ export default function ContactSection() {
       primary: 'info@tagaytay.gov.ph',
       secondaryKey: 'contact.emailResponse',
       href: 'mailto:info@tagaytay.gov.ph',
-      color: 'text-green-700',
-      bg: 'bg-green-50',
+      color: 'text-primary-700',
+      bg: 'bg-primary-50',
     },
     {
       icon: MapPin,
@@ -33,15 +33,15 @@ export default function ContactSection() {
       primary: null,
       secondaryKey: 'contact.addressLine2',
       href: 'https://maps.google.com/?q=Tagaytay+City+Hall',
-      color: 'text-orange-700',
-      bg: 'bg-orange-50',
+      color: 'text-primary-700',
+      bg: 'bg-primary-50',
     },
   ];
 
   return (
     <section id="contact" className="bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
           <h2 className="text-xl font-black text-gray-900">
             {t('contact.title')}
           </h2>
@@ -63,7 +63,7 @@ export default function ContactSection() {
                 href={href}
                 target={labelKey === 'contact.address' ? '_blank' : undefined}
                 rel="noreferrer"
-                className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 flex gap-4 hover:shadow-md hover:-translate-y-1 transition-all duration-200 group"
+                className="bg-white rounded-xl border border-gray-300 p-5 flex gap-4 hover:border-primary-500 hover:bg-primary-50 transition-colors group"
                 style={{
                   opacity: inView ? 1 : 0,
                   transform: inView ? 'translateY(0)' : 'translateY(24px)',

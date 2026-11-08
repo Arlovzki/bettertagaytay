@@ -2,6 +2,10 @@
 # Information for tourists and tourism-related businesses
 
 pages:
+  - name: 'Sports & exercise in Tagaytay'
+    slug: 'sports-and-exercise'
+    description: 'Find the oval, concert grounds, BMX and skate parks, velodrome, courts and gyms for walking, running, cycling, swimming and fitness. Check access and sources.'
+
   - name: 'Explore tourist spots in Tagaytay City'
     slug: 'explore-tourist-spots'
     description: 'Discover the top tourist destinations in Tagaytay City, including Taal Volcano, Peoples Park in the Sky, and more.'

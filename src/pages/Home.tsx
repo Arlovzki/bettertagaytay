@@ -6,23 +6,27 @@ import HistorySection from '../components/home/HistorySection';
 import LeadershipSection from '../components/home/LeadershipSection';
 import ContactSection from '../components/home/ContactSection';
 import SEO from '../components/SEO';
+import RecordsSection from '../components/home/RecordsSection';
+import TourismSection from '../components/home/TourismSection';
 
 const Home: React.FC = () => {
   return (
     <>
       <SEO
-        description="BetterTagaytay — a community transparency portal for Tagaytay City, Cavite. Access government services, officials, budgets, and public information."
+        description="BetterTagaytay is a community transparency portal for Tagaytay City, Cavite. Find government services, officials, budgets, and public information."
         keywords="Tagaytay City, Cavite, government, services, transparency, officials, budget"
       />
-      <main>
+      <div>
         <Hero />
-        <ServicesSection />
+        <ServicesSection compact />
+        <RecordsSection />
+        <TourismSection />
         <StatsSection />
         <WeatherMapSection />
         <HistorySection />
         <LeadershipSection />
         <ContactSection />
-      </main>
+      </div>
     </>
   );
 };

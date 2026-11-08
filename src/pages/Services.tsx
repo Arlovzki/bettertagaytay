@@ -1,5 +1,5 @@
 import Section from '../components/ui/Section';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useSearchParams } from 'react-router-dom';
 import { Heading } from '../components/ui/Heading';
 import { Text } from '../components/ui/Text';
 import {
@@ -8,16 +8,20 @@ import {
   type Subcategory,
   type CategoryIndex,
 } from '../data/yamlLoader';
-import * as LucideIcons from 'lucide-react';
+import { getCategoryIcon } from '../lib/categoryIcons';
 import Breadcrumbs from '../components/ui/Breadcrumbs';
 import ServicesSection from '../components/home/ServicesSection';
 import SEO from '../components/SEO';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
+import ServiceSearch from '../components/ServiceSearch';
+import { useTranslation } from 'react-i18next';
 
 const Services: React.FC = () => {
   const { category } = useParams();
+  const [searchParams] = useSearchParams();
+  const { t } = useTranslation('common');
   const [categoryIndex, setCategoryIndex] = useState<CategoryIndex>({
     layout: 'list',
     pages: [],
@@ -30,18 +34,24 @@ const Services: React.FC = () => {
   };
 
   const categoryData = getCategory();
-  const Icon = LucideIcons[
-    categoryData?.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>;
+  const Icon = getCategoryIcon(categoryData?.icon);
 
   useEffect(() => {
+    let active = true;
     if (category && categoryData) {
       setLoading(true);
       getCategorySubcategories(category)
-        .then(setCategoryIndex)
+        .then(index => {
+          if (active) setCategoryIndex(index);
+        })
         .catch(console.error)
-        .finally(() => setLoading(false));
+        .finally(() => {
+          if (active) setLoading(false);
+        });
     }
+    return () => {
+      active = false;
+    };
   }, [category, categoryData]);
 
   if (!category) {
@@ -49,13 +59,11 @@ const Services: React.FC = () => {
       <>
         <SEO
           title="Services"
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
+          description={t('services.description')}
           keywords="government services, public services, local government, civic services"
         />
-        <ServicesSection
-          title={`All local government services`}
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
-        />
+        <ServiceSearch />
+        {!searchParams.get('q')?.trim() && <ServicesSection />}
       </>
     );
   }

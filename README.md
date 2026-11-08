@@ -69,6 +69,22 @@ A modern, multilingual, and accessible website template designed specifically fo
 7. **Open your browser**
    Navigate to `http://localhost:5173`
 
+## Service guides and public documents
+
+The [service and document release notes](docs/service-and-document-release.md) describe the five updated guides, homepage task shortcuts, searchable document catalogue, correction email, source checks, and maintenance paths.
+
+## Tagaytay visual identity
+
+The [visual identity notes](docs/design-identity-recommendation.md) describe the lake-blue palette, responsive homepage, shared component styling, image credits and verification scope.
+
+## Website audit and visit counter
+
+See [the website audit](docs/website-audit.md) for fixes, verification, official source updates, and remaining content issues. [Visit counter documentation](docs/visit-counter.md) covers storage, privacy, configuration, and Terraform maintenance.
+
+The [6 November 2026 production release](docs/production-release-2026-11-06.md) records the deployed artifact, hosting change and live checks. Existing Amplify settings are managed in [the hosting Terraform root](terraform/hosting/README.md).
+
+The [sports and exercise research](docs/sports-and-exercise-research.md) covers the oval, concert grounds, sports venues, private fitness options and access details that need confirmation before a public directory is published.
+
 ## 📚 Documentation
 
 - **[STARTER-KIT-README.md](STARTER-KIT-README.md)** - Complete setup and customization guide

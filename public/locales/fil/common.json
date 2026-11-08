@@ -18,7 +18,17 @@
     "foiReleases": "Mga Rekord ng FOI",
     "cityProfile": "Profil ng Lungsod",
     "annualReport": "Taunang Ulat",
-    "infrastructureProjects": "Mga Proyektong Imprastraktura"
+    "infrastructureProjects": "Mga Proyektong Imprastraktura",
+    "primary": "Pangunahing nabigasyon",
+    "language": "Wika",
+    "emergencyHotlines": "Mga Emergency Hotline",
+    "openMenu": "Buksan ang menu",
+    "closeMenu": "Isara ang menu",
+    "overview": "Tingnan ang lahat: {{section}}",
+    "breadcrumb": "Landas ng pahina",
+    "independent": "Gawa ng komunidad. Hindi opisyal na website ng lungsod.",
+    "independentShort": "Portal na di-opisyal.",
+    "emergencyShort": "Emergency"
   },
   "hotlines": {
     "police": "Pulis",
@@ -29,26 +39,31 @@
     "cswdo": "CSWDO"
   },
   "hero": {
-    "title": "BetterTagaytay",
+    "title": "Mga serbisyo sa Tagaytay.",
     "welcome": "Maligayang pagdating sa",
-    "subtitle": "I-access ang mga serbisyo ng pamahalaan, impormasyon, at mapagkukunan para sa mga mamamayan ng Lungsod ng Tagaytay, Cavite.",
+    "subtitle": "Mga permit, pampublikong dokumento, at lokal na tanggapan sa iisang lugar.",
     "browseServices": "Tingnan ang Mga Serbisyo",
     "contactUs": "Makipag-ugnayan",
-    "findService": "Maghanap ng Serbisyo",
-    "searchPlaceholder": "hal., permit sa negosyo, serbisyong pangkalusugan",
+    "findService": "Ano ang kailangan mo?",
+    "searchPlaceholder": "hal., permit",
     "popular": "Sikat",
     "nationalId": "National ID",
     "birthCertificate": "Sertipiko ng Kapanganakan",
-    "businessRegistration": "Pagpaparehistro ng Negosyo"
+    "businessRegistration": "Pagpaparehistro ng Negosyo",
+    "commonTasks": "Karaniwang kailangan",
+    "landscapeAlt": "Lawa ng Taal at Volcano Island mula sa Maharlika West, Tagaytay.",
+    "landscapeLocation": "Tanawin mula sa Tagaytay",
+    "landscapeCaption": "Lawa ng Taal, 2023. Larawan:",
+    "landscapeAdaptation": "binago ang laki at ginupit"
   },
   "infobar": {
     "usd": "1 USD =",
     "location": "Tagaytay"
   },
   "services": {
-    "title": "Mga Serbisyo at Impormasyon",
+    "title": "Mga serbisyo ng lungsod",
     "governmentServices": "Mga Serbisyo ng Pamahalaan",
-    "description": "I-access ang mga opisyal na serbisyo ng pamahalaan ng Lungsod ng Tagaytay nang mabilis at madali. Hanapin ang kailangan mo para sa pagkamamamayan, negosyo, kalusugan, edukasyon, at iba pa.",
+    "description": "Hanapin ang mga kinakailangan, form, at tanggapang makatutulong.",
     "viewAll": "Tingnan ang Lahat ng Serbisyo",
     "viewAllCategory": "Tingnan ang Lahat",
     "categories": {
@@ -99,9 +114,9 @@
     },
     "tourismSpotlight": {
       "badge": "Tampok sa Turismo",
-      "title": "Tuklasin ang Lungsod ng Tagaytay",
-      "description": "Ang Tagaytay ay ang pangalawang pinakamataas na lungsod sa Pilipinas, na nag-aalok ng kamangha-manghang tanawin ng Bulkang Taal, sariwang lutong bundok, at malamig na panahon buong taon.",
-      "cta": "Tuklasin ang mga Serbisyong Pangturismo",
+      "title": "Tuklasin ang Tagaytay",
+      "description": "Hanapin ang mga pasyalan, lokal na atraksyon, at serbisyo sa turismo.",
+      "cta": "Tuklasin ang Tagaytay",
       "taal": "Bulkang Taal",
       "ridge": "Magagandang Bangin",
       "food": "Bulalo at Iba Pa",
@@ -172,7 +187,8 @@
     "foggy": "Maulap",
     "rainy": "Maulan",
     "showers": "Ambon",
-    "thunderstorm": "Bagyo"
+    "thunderstorm": "Bagyo",
+    "unavailable": "Hindi makuha ang kasalukuyang panahon. Subukan muli."
   },
   "history": {
     "title": "Maikling Kasaysayan ng Lungsod ng Tagaytay",
@@ -257,7 +273,8 @@
     "contribute": "Mag-ambag ng code",
     "copyright": "© 2026 BetterTagaytay.ph  MIT | CC BY 4.0  Lahat ng pampublikong impormasyon ay hango sa opisyal na mga portal ng pamahalaan.",
     "attribution": "Lahat ng pampublikong impormasyon ay hango sa opisyal na mga portal ng pamahalaan.",
-    "builtBy": "Ginawa ni"
+    "builtBy": "Ginawa ni",
+    "independent": "Gawa ng komunidad. Hindi opisyal na website ng lungsod. Para sa opisyal na transaksyon, makipag-ugnayan sa kaukulang tanggapan ng lungsod."
   },
   "navbar": {
     "government": "Pamahalaan",
@@ -271,7 +288,9 @@
     "fallbackNotice": "Ang pahinang ito ay hindi pa naisasalin sa Filipino. Ang nilalaman ay nasa Ingles.",
     "home": "Tahanan",
     "services": "Mga Serbisyo",
-    "government": "Pamahalaan"
+    "government": "Pamahalaan",
+    "recovery": "Hindi available o nailipat ang pahinang ito. Tingnan ang mga serbisyo o bumalik sa simula.",
+    "emptyCategory": "Wala pang nailalathalang impormasyon para sa seksyong ito. Bisitahin ang tagaytay.gov.ph para sa opisyal na balita."
   },
   "joinUs": {
     "stripTitle": "🚀 Sumali sa #CivicTech Revolution",
@@ -285,5 +304,140 @@
     "or": "o",
     "joinDiscord": "Sumali sa Discord",
     "features": "🚀 Imprastraktura • 💡 Mentorship • 🤝 Komunidad • 🏢 Espasyo sa Opisina"
+  },
+  "search": {
+    "title": "Maghanap ng serbisyo",
+    "submit": "Hanapin",
+    "loading": "Hinahanap ang mga serbisyo…",
+    "error": "Hindi ma-load ang paghahanap. I-refresh ang pahina upang subukan muli.",
+    "results_one": "{{count}} serbisyo para sa “{{query}}”",
+    "results_other": "{{count}} serbisyo para sa “{{query}}”",
+    "empty": "Subukan ang ibang keyword, tulad ng business, health, o scholarship."
+  },
+  "liveData": {
+    "loading": "Naglo-load…",
+    "unavailable": "Hindi available",
+    "ratesLoading": "Kinukuha ang palitan ng pera…",
+    "ratesUnavailable": "Hindi available ang palitan ng pera",
+    "retry": "Subukan muli"
+  },
+  "visits": {
+    "label": "Mga pagbisita sa website",
+    "loading": "Kinukuha ang bilang ng pagbisita…",
+    "unavailable": "Hindi available ang bilang ng pagbisita"
+  },
+  "tables": {
+    "view": "Ayos ng talahanayan",
+    "table": "Talahanayan",
+    "list": "Listahan",
+    "value": "Halaga"
+  },
+  "page": {
+    "loading": "Naglo-load ng pahina…",
+    "error": "Hindi ma-load ang pahinang ito.",
+    "reload": "I-load muli ang pahina"
+  },
+  "tasks": {
+    "newBusiness": "Bagong business permit",
+    "renewBusiness": "Mag-renew ng business permit",
+    "building": "Kumuha ng building permit",
+    "scholarship": "Maghanap ng scholarship",
+    "assistance": "Tulong para sa senior, PWD o solo parent",
+    "forms": "Mag-download ng mga form"
+  },
+  "records": {
+    "title": "Mga dokumento",
+    "description": "Hanapin ang opisyal na mga form, checklist, badyet, at ulat ng Tagaytay. Bubukas ang mga file sa website ng lungsod.",
+    "search": "Maghanap ng dokumento",
+    "placeholder": "hal., building permit",
+    "type": "Uri ng dokumento",
+    "year": "Taon",
+    "quarter": "Quarter",
+    "allTypes": "Lahat ng uri",
+    "allYears": "Lahat ng taon",
+    "allQuarters": "Lahat ng quarter",
+    "quarterNumber": "Quarter {{quarter}}",
+    "results_one": "{{count}} dokumento",
+    "results_other": "{{count}} dokumento",
+    "clear": "Alisin ang mga filter",
+    "invalidFilters": "May filter sa link na hindi nakilala. Alisin ang mga filter upang magsimulang muli.",
+    "open": "Buksan ang PDF",
+    "openNamed": "Buksan ang PDF: {{title}} (bagong tab)",
+    "source": "Pinagmulan",
+    "sourceNamed": "Opisyal na pinagmulan ng {{title}} (bagong tab)",
+    "checked": "Sinuri ang link noong {{date}}",
+    "more": "Ipakita ang iba pang dokumento",
+    "emptyTitle": "Walang tumugmang dokumento",
+    "emptyDescription": "Bawasan ang mga filter o gumamit ng ibang keyword.",
+    "periodNote": "Batay sa opisyal na listahan ang mga panahon. Sinuri ang pagkakaroon ng file, hindi ang katumpakan ng nilalaman nito.",
+    "types": {
+      "form": "Form",
+      "checklist": "Checklist",
+      "budget": "Badyet",
+      "financial-report": "Ulat pinansiyal",
+      "procurement": "Procurement",
+      "reference": "Sanggunian"
+    }
+  },
+  "guide": {
+    "office": "Tanggapan",
+    "location": "Saan pupunta",
+    "hours": "Oras ng pagtanggap",
+    "fees": "Mga bayarin",
+    "processingTime": "Tagal ng proseso",
+    "print": "I-print ang gabay",
+    "forms": "Mga form at checklist",
+    "checklist": "Bago pumunta",
+    "checked": "Sinuri ang mga sanggunian noong {{date}}",
+    "correction": "Mag-ulat ng maling impormasyon"
+  },
+  "homeRecords": {
+    "title": "Mga dokumentong madaling mahanap",
+    "description": "Tingnan ang mga dokumentong inilathala ng Pamahalaang Lungsod ng Tagaytay.",
+    "all": "Tingnan ang mga dokumento",
+    "financial": "Mga ulat sa pananalapi",
+    "financialDescription": "Mga taunang ulat at quarterly disclosure.",
+    "forms": "Mga application form",
+    "formsDescription": "Mga opisyal na form para maihanda ang iyong pagpunta.",
+    "offices": "Mga tanggapan at opisyal",
+    "officesDescription": "Hanapin ang departamento o kinatawang kailangan mo."
+  },
+  "homeTourism": {
+    "eyebrow": "Sa paligid ng lungsod",
+    "title": "Tuklasin ang Tagaytay.",
+    "description": "Tingnan ang mga lokal na atraksyon at impormasyon para sa iyong pagbisita.",
+    "services": "Mga serbisyo sa turismo",
+    "places": "Mga pasyalan"
+  },
+  "terrain": {
+    "heroReference": "Mga contour ng Tagaytay · {{interval}} m · USGS / Mapzen",
+    "credit": "Mga contour ng taas · {{interval}} m ang pagitan"
+  },
+  "sports": {
+    "title": "Sports at ehersisyo",
+    "description": "Maghanap ng mga pampublikong pasilidad para sa sports at ehersisyo sa Tagaytay.",
+    "notice": "Kumpirmahin muna sa pasilidad ang kasalukuyang oras, bayad at mga pampublikong sesyon bago pumunta.",
+    "search": "Maghanap ng pasilidad",
+    "activity": "Gawain",
+    "all": "Lahat ng gawain",
+    "count": "{{count}} lugar",
+    "empty": "Walang tumugmang lugar",
+    "clear": "Alisin ang mga filter",
+    "access": "Bago pumunta",
+    "directions": "Mga direksiyon",
+    "sources": "Mga sanggunian at petsa ng pagsusuri",
+    "checked": "Sinuri ang mga sanggunian noong {{date}}",
+    "report": "Iulat ang maling impormasyon",
+    "enquiry": "Para sa pasilidad ng lungsod, tumawag sa City Hall at itanong ang tanggapang namamahala sa lugar.",
+    "activities": {
+      "walking": "Paglalakad",
+      "running": "Pagtakbo",
+      "community": "Lugar pangkomunidad",
+      "skating": "Skateboarding",
+      "cycling": "Cycling at BMX",
+      "martial-arts": "Martial arts",
+      "court-sports": "Mga laro sa court"
+    },
+    "count_one": "{{count}} lugar"
   }
 }

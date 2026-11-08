@@ -88,7 +88,7 @@ Reusable primitives live in `src/components/ui/`: `Section`, `Heading`, `Text`, 
 
 ## Deployment (AWS Amplify — Manual)
 
-This app is deployed manually to AWS Amplify (app ID: `d2hrjmoigt8q4w`, region: `ap-southeast-1`) using the `arlou` AWS CLI profile.
+This app is deployed manually to AWS Amplify (app ID: `d2hrjmoigt8q4w`, region: `ap-southeast-1`) using the `arloubeloria` AWS CLI profile.
 
 **Always zip from inside the `dist/` folder** so `index.html` is at the root of the zip (not nested under `dist/`):
 
@@ -105,7 +105,7 @@ Then deploy:
 aws amplify create-deployment \
   --app-id d2hrjmoigt8q4w \
   --branch-name main \
-  --profile arlou \
+  --profile arloubeloria \
   --region ap-southeast-1
 
 # 2. Upload zip to the returned zipUploadUrl
@@ -116,6 +116,6 @@ aws amplify start-deployment \
   --app-id d2hrjmoigt8q4w \
   --branch-name main \
   --job-id <jobId> \
-  --profile arlou \
+  --profile arloubeloria \
   --region ap-southeast-1
 ```

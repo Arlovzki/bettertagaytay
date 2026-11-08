@@ -10,6 +10,30 @@ Tagaytay City complies with the **Full Disclosure Policy (FDP)** by publishing t
 
 ---
 
+## Documents Listed for 2026
+
+The official [Transparency Seal page](https://www.tagaytay.gov.ph/transparencyseal.html) lists the following files. Links checked on **5 November 2026**. The year and quarter below follow the official page labels; this portal has not independently audited the PDF contents.
+
+- [Annual Procurement Plan (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/app26.pdf)
+- [Annual Budget Report (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/abr26.pdf)
+- [Annual GAD Accomplishment Report (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/gad26.pdf)
+- [Supplemental Procurement Plan (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/spp26.pdf)
+
+### Third Quarter Reports
+
+- [Statement of Cash Flows (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Statement%20of%20Cash%20Flows%20Q3%202026.pdf)
+- [Utilization of the 20 of the National Tax Allotment (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Utilization%20of%20the%2020%20of%20the%20National%20Tax%20Allotment%20Q3%202026.pdf)
+- [Consolidated Quarterly Report on Government Projects, Programs or Activities (TFU) (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Consolidated%20Quarterly%20Report%20on%20Government%20Projects%2C%20Programs%20or%20Activities%20%28TFU%29%20Q3%202026.pdf)
+- [Local Disaster Risk Reduction and Management Fund Utilization (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Local%20Disaster%20Risk%20Reduction%20and%20Management%20Fund%20Utilization%20Q3%202026.pdf)
+- [Unliquidated Cash Advances (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Unliquidated%20Cash%20Advances%20Q3%202026.pdf)
+- [Human Resource Complement (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Human%20Resource%20Complement%20Q3%202026.pdf)
+- [Bid-out (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Bid-out%20Q3%202026.pdf)
+- [Special Education Fund Utilization (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Special%20Education%20Fund%20Utilization%20Q3%202026.pdf)
+- [Statement of Indebtedness, Payments and Balances (SIPB) (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Statement%20of%20Indebtedness%2C%20Payments%20and%20Balances%20%28SIPB%29%20Q3%202026.pdf)
+- [Statement of Receipts and Expenditures (PDF)](https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Statement%20of%20Receipts%20and%20Expenditures%20Q3%202026.pdf)
+
+First-quarter reports and prior years remain available on the official Transparency Seal page. Links labelled for other quarters may be placeholders; follow a link only when the source provides a file.
+
 ## Required FDP Documents
 
 ### Budget Documents

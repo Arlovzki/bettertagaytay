@@ -1,4 +1,6 @@
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 interface SEOProps {
   title?: string;
@@ -8,6 +10,7 @@ interface SEOProps {
   url?: string;
   type?: string;
   siteName?: string;
+  noIndex?: boolean;
 }
 
 export default function SEO({
@@ -17,12 +20,15 @@ export default function SEO({
   image,
   url,
   type = 'website',
-  siteName = import.meta.env.VITE_GOVERNMENT_NAME || 'Local Government Website',
+  siteName = 'BetterTagaytay.org',
+  noIndex = false,
 }: SEOProps) {
+  const { pathname } = useLocation();
+  const { i18n } = useTranslation('common');
   const defaultTitle = 'BetterTagaytay.org | Transparency Portal';
   const defaultDescription =
     import.meta.env.VITE_SITE_DESCRIPTION ||
-    `Official website of ${siteName}. Access government services, information, and resources.`;
+    'A community transparency portal for Tagaytay City, Cavite. Find government services, officials, budgets, and public information.';
   const defaultKeywords =
     import.meta.env.VITE_SITE_KEYWORDS ||
     'government, local government, services, public services, civic services';
@@ -30,9 +36,13 @@ export default function SEO({
   const fullTitle = title ? `${title} | ${siteName}` : defaultTitle;
   const fullDescription = description || defaultDescription;
   const fullKeywords = keywords || defaultKeywords;
-  const fullUrl = url || import.meta.env.VITE_WEBSITE_URL || '';
+  const baseUrl =
+    import.meta.env.VITE_WEBSITE_URL || 'https://bettertagaytay.org';
+  const fullUrl = url || new URL(pathname, baseUrl).href;
   const fullImage =
-    image || import.meta.env.VITE_OG_IMAGE_URL || `${fullUrl}/og-image.jpg`;
+    image ||
+    import.meta.env.VITE_OG_IMAGE_URL ||
+    new URL('/logo.png', baseUrl).href;
   const twitterHandle = import.meta.env.VITE_TWITTER_HANDLE || '';
 
   return (
@@ -42,8 +52,14 @@ export default function SEO({
       <meta name="description" content={fullDescription} />
       <meta name="keywords" content={fullKeywords} />
       <meta name="author" content={siteName} />
-      <meta name="robots" content="index, follow" />
-      <meta name="language" content="English" />
+      <meta
+        name="robots"
+        content={noIndex ? 'noindex, follow' : 'index, follow'}
+      />
+      <meta
+        name="language"
+        content={i18n.resolvedLanguage === 'fil' ? 'Filipino' : 'English'}
+      />
       <meta name="revisit-after" content="7 days" />
 
       {/* Open Graph / Facebook */}
@@ -53,7 +69,10 @@ export default function SEO({
       <meta property="og:description" content={fullDescription} />
       <meta property="og:image" content={fullImage} />
       <meta property="og:site_name" content={siteName} />
-      <meta property="og:locale" content="en_US" />
+      <meta
+        property="og:locale"
+        content={i18n.resolvedLanguage === 'fil' ? 'fil_PH' : 'en_PH'}
+      />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
@@ -74,24 +93,8 @@ export default function SEO({
       <link rel="canonical" href={fullUrl} />
 
       {/* Favicon */}
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicon-16x16.png"
-      />
+      <link rel="icon" type="image/png" href="/favicon.png" />
+      <link rel="apple-touch-icon" href="/favicon.png" />
 
       {/* Preconnect to external domains */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -1,0 +1,34 @@
+{
+  "guide": {
+    "office": "Office of the Building Official / City Engineering Office",
+    "location": "Tagaytay City Hall, Akle St., Kaybagal South",
+    "hours": "Confirm current receiving hours with the office.",
+    "fees": "City Engineering assesses the applicable permit charges.",
+    "processingTime": "Confirm the review and release schedule with City Engineering.",
+    "contactLabel": "Call Engineering: (046) 483-9374, local 205",
+    "contactUrl": "tel:+63464839374;ext=205",
+    "checkedAt": "2026-11-06",
+    "sourceName": "Official building permit checklist",
+    "sourceUrl": "https://www.tagaytay.gov.ph/pdf/Forms/Checklist%20for%20Application%20of%20Bldg%20Permit.pdf",
+    "checklist": [
+      "Download and review the complete official building checklist",
+      "Prepare the required title, tax, lease, and authority documents",
+      "Arrange signed and sealed plans/forms with the responsible professionals",
+      "Follow the checklist’s copy count and project-specific clearances"
+    ],
+    "forms": [
+      {
+        "label": "Building permit forms (2026 PDF)",
+        "url": "https://www.tagaytay.gov.ph/pdf/Forms/BUILDING%20PERMIT%20FORMS%20%282026%29.pdf"
+      },
+      {
+        "label": "Full building requirements checklist (PDF)",
+        "url": "https://www.tagaytay.gov.ph/pdf/Forms/Checklist%20for%20Application%20of%20Bldg%20Permit.pdf"
+      },
+      {
+        "label": "Locational clearance application (PDF)",
+        "url": "https://www.tagaytay.gov.ph/pdf/Application%20Form%20for%20Locational%20Clearance.pdf"
+      }
+    ]
+  }
+}

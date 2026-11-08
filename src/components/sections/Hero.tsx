@@ -1,70 +1,34 @@
 import { useState, useRef, useEffect } from 'react';
 import {
   Search,
-  ArrowRight,
-  Users,
   Briefcase,
-  Heart,
   GraduationCap,
-  Trash2,
-  TreePine,
-  Home,
+  RefreshCw,
+  Building2,
+  Accessibility,
+  FileText,
 } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { serviceCategories, loadCategoryIndex } from '../../data/yamlLoader';
+import {
+  loadServiceIndex,
+  searchServices,
+  type ServiceSearchResult,
+} from '../../lib/serviceSearch';
+import { popularTasks } from '../../data/popularTasks';
+import { landscape } from '../../data/landscape';
+import terrain from '../../data/terrain.json';
+import RidgeDivider from '../ui/RidgeDivider';
+import ContourBackdrop from '../ui/ContourBackdrop';
 
-interface ServicePage {
-  name: string;
-  slug: string;
-  categorySlug: string;
-  categoryName: string;
-}
-
-const POPULAR_CATEGORIES = [
-  {
-    labelKey: 'services.categories.business.name',
-    label: 'Business',
-    slug: 'business',
-    icon: Briefcase,
-    color: 'text-blue-600 bg-blue-50',
-  },
-  {
-    labelKey: 'services.categories.health-services.name',
-    label: 'Health',
-    slug: 'health-services',
-    icon: Heart,
-    color: 'text-red-500 bg-red-50',
-  },
-  {
-    labelKey: 'services.categories.education.name',
-    label: 'Education',
-    slug: 'education',
-    icon: GraduationCap,
-    color: 'text-green-600 bg-green-50',
-  },
-  {
-    labelKey: 'services.categories.garbage-waste-disposal.name',
-    label: 'Waste',
-    slug: 'garbage-waste-disposal',
-    icon: Trash2,
-    color: 'text-orange-500 bg-orange-50',
-  },
-  {
-    labelKey: 'services.categories.environment.name',
-    label: 'Environment',
-    slug: 'environment',
-    icon: TreePine,
-    color: 'text-emerald-600 bg-emerald-50',
-  },
-  {
-    labelKey: 'services.categories.housing-land-use.name',
-    label: 'Housing',
-    slug: 'housing-land-use',
-    icon: Home,
-    color: 'text-purple-600 bg-purple-50',
-  },
-];
+const taskIcons = {
+  business: Briefcase,
+  renewal: RefreshCw,
+  building: Building2,
+  education: GraduationCap,
+  assistance: Accessibility,
+  forms: FileText,
+};
 
 function highlight(text: string, query: string) {
   if (!query.trim()) return <>{text}</>;
@@ -73,7 +37,7 @@ function highlight(text: string, query: string) {
   return (
     <>
       {text.slice(0, idx)}
-      <mark className="bg-yellow-200 text-gray-900 rounded px-0.5">
+      <mark className="bg-primary-100 text-primary-900 rounded px-0.5">
         {text.slice(idx, idx + query.length)}
       </mark>
       {text.slice(idx + query.length)}
@@ -84,45 +48,24 @@ function highlight(text: string, query: string) {
 export default function Hero() {
   const [query, setQuery] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
-  const [allServices, setAllServices] = useState<ServicePage[]>([]);
-  const [mounted, setMounted] = useState(false);
+  const [allServices, setAllServices] = useState<ServiceSearchResult[]>([]);
+  const [activeResult, setActiveResult] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const { t } = useTranslation('common');
 
-  useEffect(() => {
-    const id = requestAnimationFrame(() => setMounted(true));
-    return () => cancelAnimationFrame(id);
-  }, []);
-
   // Build search index from category index.yaml files
   useEffect(() => {
-    const cats = serviceCategories.categories as {
-      category: string;
-      slug: string;
-    }[];
-    Promise.all(
-      cats.map(cat =>
-        loadCategoryIndex(cat.slug).then(idx => ({
-          cat,
-          pages: idx.pages,
-        }))
-      )
-    ).then(results => {
-      const pages: ServicePage[] = [];
-      for (const { cat, pages: catPages } of results) {
-        for (const page of catPages) {
-          pages.push({
-            name: page.name,
-            slug: page.slug,
-            categorySlug: cat.slug,
-            categoryName: cat.category,
-          });
-        }
-      }
-      setAllServices(pages);
-    });
+    let active = true;
+    loadServiceIndex()
+      .then(pages => {
+        if (active) setAllServices(pages);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
   }, []);
 
   // Close dropdown when clicking outside
@@ -141,15 +84,8 @@ export default function Hero() {
     return () => document.removeEventListener('mousedown', handler);
   }, []);
 
-  const results = query.trim()
-    ? allServices
-        .filter(
-          s =>
-            s.name.toLowerCase().includes(query.toLowerCase()) ||
-            s.categoryName.toLowerCase().includes(query.toLowerCase())
-        )
-        .slice(0, 8)
-    : [];
+  const results = searchServices(allServices, query).slice(0, 8);
+  const expanded = showDropdown && query.trim().length > 0;
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -159,176 +95,229 @@ export default function Hero() {
     }
   };
 
-  const handleSelect = (page: ServicePage) => {
+  const handleSelect = (page: ServiceSearchResult) => {
     setShowDropdown(false);
     setQuery('');
     navigate(`/services/${page.categorySlug}/${page.slug}`);
   };
 
   return (
-    <div
-      className="relative text-white overflow-hidden"
-      style={{
-        backgroundColor: '#003087',
-        backgroundImage:
-          'radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px)',
-        backgroundSize: '24px 24px',
-      }}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* Left — headline + CTAs */}
-          <div>
-            <p
-              className="text-blue-100 text-sm font-medium uppercase tracking-widest mb-1"
-              style={{
-                opacity: mounted ? 1 : 0,
-                transform: mounted ? 'translateX(0)' : 'translateX(-20px)',
-                transition: 'opacity 0.6s ease 0ms, transform 0.6s ease 0ms',
-              }}
+    <section className="relative bg-gray-50" aria-labelledby="hero-title">
+      <ContourBackdrop />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pt-9 pb-8 sm:pt-12 lg:pt-14 lg:pb-12">
+        <div className="grid lg:grid-cols-[1.18fr_1fr] gap-9 lg:gap-16 items-center">
+          <div className="min-w-0">
+            <a
+              href={terrain.sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block text-xs leading-5 text-gray-600 underline decoration-gray-300 underline-offset-4 hover:text-primary-700 transition-colors mb-3"
             >
-              {t('hero.welcome', 'WELCOME TO')}
-            </p>
+              {t('terrain.heroReference', { interval: terrain.intervalMetres })}
+            </a>
             <h1
-              className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-4"
-              style={{
-                opacity: mounted ? 1 : 0,
-                transform: mounted ? 'translateX(0)' : 'translateX(-24px)',
-                transition:
-                  'opacity 0.6s ease 100ms, transform 0.6s ease 100ms',
-              }}
+              id="hero-title"
+              className="text-[2.5rem] sm:text-5xl xl:text-[3.75rem] font-extrabold tracking-tight leading-[1.08] text-primary-900 mb-5 text-balance"
             >
-              BetterTagaytay.org
+              {t('hero.title')}
             </h1>
-            <p
-              className="text-blue-100 text-base md:text-lg leading-relaxed mb-8 max-w-md"
-              style={{
-                opacity: mounted ? 1 : 0,
-                transform: mounted ? 'translateY(0)' : 'translateY(16px)',
-                transition:
-                  'opacity 0.6s ease 200ms, transform 0.6s ease 200ms',
-              }}
-            >
+            <p className="text-base sm:text-lg leading-relaxed text-gray-700 max-w-lg mb-7">
               {t('hero.subtitle')}
             </p>
-            <div
-              className="flex flex-wrap gap-3"
-              style={{
-                opacity: mounted ? 1 : 0,
-                transform: mounted ? 'translateY(0)' : 'translateY(16px)',
-                transition:
-                  'opacity 0.6s ease 320ms, transform 0.6s ease 320ms',
-              }}
+            <label
+              htmlFor="hero-search"
+              className="block text-gray-900 font-semibold text-sm mb-2"
             >
-              <Link
-                to="/services"
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-primary-700 font-bold text-sm rounded-lg hover:bg-blue-50 hover:scale-105 active:scale-95 transition-all duration-200"
-              >
-                <ArrowRight className="h-4 w-4" />
-                {t('hero.browseServices', 'Browse Services')}
-              </Link>
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-white text-white font-bold text-sm rounded-lg hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-200"
-              >
-                <Users className="h-4 w-4" />
-                {t('hero.contactUs', 'Contact Us')}
-              </a>
-            </div>
-          </div>
+              {t('hero.findService')}
+            </label>
 
-          {/* Right — search card */}
-          <div
-            style={{
-              opacity: mounted ? 1 : 0,
-              transform: mounted ? 'translateX(0)' : 'translateX(32px)',
-              transition: 'opacity 0.7s ease 150ms, transform 0.7s ease 150ms',
-            }}
-          >
-            <div className="bg-white rounded-2xl p-6 shadow-2xl">
-              <p className="text-gray-800 font-bold text-base mb-3">
-                {t('hero.findService', 'Search Services')}
-              </p>
-
-              {/* Search input + live dropdown */}
-              <div className="relative mb-5">
-                <form onSubmit={handleSearch}>
-                  <div className="relative">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none" />
-                    <input
-                      ref={inputRef}
-                      type="text"
-                      value={query}
-                      onChange={e => {
-                        setQuery(e.target.value);
+            {/* Search input + live dropdown */}
+            <div className="relative mb-7">
+              <form
+                role="search"
+                aria-label={t('hero.findService')}
+                onSubmit={handleSearch}
+                className="flex gap-2"
+              >
+                <div className="relative flex-1 min-w-0">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-600 pointer-events-none" />
+                  <input
+                    ref={inputRef}
+                    id="hero-search"
+                    type="search"
+                    role="combobox"
+                    aria-autocomplete="list"
+                    aria-expanded={expanded}
+                    aria-controls="hero-search-results"
+                    aria-activedescendant={
+                      expanded && activeResult >= 0
+                        ? `hero-result-${activeResult}`
+                        : undefined
+                    }
+                    value={query}
+                    onChange={e => {
+                      setQuery(e.target.value);
+                      setActiveResult(-1);
+                      setShowDropdown(true);
+                    }}
+                    onFocus={() => setShowDropdown(true)}
+                    onKeyDown={event => {
+                      if (event.key === 'Escape') {
+                        setShowDropdown(false);
+                        setActiveResult(-1);
+                      }
+                      if (
+                        event.key === 'ArrowDown' ||
+                        event.key === 'ArrowUp'
+                      ) {
+                        event.preventDefault();
                         setShowDropdown(true);
+                        setActiveResult(index =>
+                          results.length
+                            ? (index +
+                                (event.key === 'ArrowDown'
+                                  ? 1
+                                  : results.length - 1) +
+                                results.length) %
+                              results.length
+                            : -1
+                        );
+                      }
+                      if (
+                        event.key === 'Enter' &&
+                        expanded &&
+                        results[activeResult]
+                      ) {
+                        event.preventDefault();
+                        handleSelect(results[activeResult]);
+                      }
+                      if (event.key === 'Tab') setShowDropdown(false);
+                    }}
+                    placeholder={t(
+                      'hero.searchPlaceholder',
+                      'Search for a service...'
+                    )}
+                    className="w-full min-h-12 border border-gray-500 bg-white rounded-lg pl-10 pr-3 py-3 text-base text-gray-800 placeholder:text-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  aria-label={t('search.submit')}
+                  className="flex items-center justify-center min-h-12 px-4 shrink-0 rounded-lg bg-primary-700 text-white text-sm font-semibold hover:bg-primary-800 transition-colors"
+                >
+                  {t('search.submit')}
+                </button>
+              </form>
+
+              {expanded && (
+                <div
+                  ref={dropdownRef}
+                  id="hero-search-results"
+                  role="listbox"
+                  aria-label={t('search.title')}
+                  className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-40 max-h-80 overflow-y-auto"
+                >
+                  {results.map((page, index) => (
+                    <button
+                      key={`${page.categorySlug}/${page.slug}`}
+                      id={`hero-result-${index}`}
+                      type="button"
+                      role="option"
+                      aria-selected={activeResult === index}
+                      tabIndex={-1}
+                      onMouseDown={e => {
+                        e.preventDefault();
                       }}
-                      onFocus={() => setShowDropdown(true)}
-                      placeholder={t(
-                        'hero.searchPlaceholder',
-                        'Search for a service...'
-                      )}
-                      className="w-full border border-gray-200 rounded-lg pl-9 pr-4 py-2.5 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    />
-                  </div>
-                </form>
-
-                {showDropdown && results.length > 0 && (
-                  <div
-                    ref={dropdownRef}
-                    className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-100 rounded-lg shadow-lg z-50 overflow-hidden"
-                  >
-                    {results.map(page => (
-                      <button
-                        key={`${page.categorySlug}/${page.slug}`}
-                        onMouseDown={e => {
-                          e.preventDefault();
-                          handleSelect(page);
-                        }}
-                        className="w-full text-left px-4 py-2.5 text-sm hover:bg-primary-50 transition-colors flex items-center gap-2"
-                      >
-                        <Search className="h-3.5 w-3.5 text-primary-400 shrink-0" />
-                        <span className="text-gray-800 flex-1">
-                          {highlight(page.name, query)}
-                        </span>
-                        <span className="text-xs text-gray-400 shrink-0">
-                          {page.categoryName}
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Popular service icon cards */}
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">
-                {t('hero.popular', 'Popular Services')}
-              </p>
-              <div className="grid grid-cols-3 gap-2">
-                {POPULAR_CATEGORIES.map(cat => {
-                  const Icon = cat.icon;
-                  return (
-                    <Link
-                      key={cat.slug}
-                      to={`/services/${cat.slug}`}
-                      className="flex flex-col items-center gap-1.5 p-3 rounded-xl border border-gray-100 hover:border-primary-200 hover:bg-primary-50 transition-all text-center group"
+                      onClick={() => handleSelect(page)}
+                      className={`w-full min-h-11 text-left px-4 py-3 text-sm hover:bg-primary-50 transition-colors flex items-center gap-2 ${activeResult === index ? 'bg-primary-50' : ''}`}
                     >
-                      <div
-                        className={`p-2 rounded-lg ${cat.color} group-hover:scale-110 transition-transform`}
-                      >
-                        <Icon className="h-5 w-5" />
-                      </div>
-                      <span className="text-xs font-medium text-gray-700 leading-tight">
-                        {t(cat.labelKey, cat.label)}
+                      <Search className="h-3.5 w-3.5 text-primary-400 shrink-0" />
+                      <span className="text-gray-800 flex-1">
+                        {highlight(page.name, query)}
                       </span>
-                    </Link>
-                  );
-                })}
-              </div>
+                      <span className="text-xs text-gray-700 max-w-24 shrink-0">
+                        {page.categoryName}
+                      </span>
+                    </button>
+                  ))}
+                  {!results.length && (
+                    <div
+                      className="px-4 py-3 text-sm text-gray-700"
+                      role="status"
+                    >
+                      {t('search.empty')}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
+            <h2 className="text-sm font-semibold text-gray-600 mb-1">
+              {t('hero.commonTasks')}
+            </h2>
+            <div className="grid grid-cols-1 min-[400px]:grid-cols-2 gap-x-5">
+              {popularTasks.map(task => {
+                const Icon = taskIcons[task.icon];
+                return (
+                  <Link
+                    key={task.key}
+                    to={task.href}
+                    className="group flex min-h-14 items-center gap-3 py-3 border-b border-gray-300 hover:text-primary-700 transition-colors text-left"
+                  >
+                    <Icon
+                      className="h-5 w-5 text-primary-700 shrink-0"
+                      aria-hidden="true"
+                    />
+                    <span className="text-sm font-semibold text-gray-800 group-hover:text-primary-700 leading-snug">
+                      {t(`tasks.${task.key}`)}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
           </div>
+          <figure className="min-w-0 lg:self-stretch flex flex-col">
+            <div className="relative flex-1 overflow-hidden rounded-xl bg-primary-100 min-h-60 lg:min-h-[420px]">
+              <img
+                src="/images/tagaytay-ridge-960.webp"
+                srcSet="/images/tagaytay-ridge-480.webp 480w, /images/tagaytay-ridge-960.webp 960w, /images/tagaytay-ridge-1440.webp 1440w"
+                sizes="(min-width: 1280px) 520px, (min-width: 1024px) 42vw, calc(100vw - 48px)"
+                alt={t('hero.landscapeAlt')}
+                width="1440"
+                height="1080"
+                fetchPriority="high"
+                className="w-full h-64 sm:h-80 lg:absolute lg:h-full object-cover object-[57%_60%]"
+              />
+              <span className="absolute left-4 bottom-4 bg-white text-primary-900 text-xs font-semibold rounded-md px-3 py-2">
+                {t('hero.landscapeLocation')}
+              </span>
+            </div>
+            <figcaption className="text-xs leading-relaxed text-gray-600 mt-3">
+              {t('hero.landscapeCaption')}{' '}
+              <a
+                href={landscape.sourceUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-2 hover:text-primary-700"
+              >
+                {landscape.author}
+              </a>
+              {' · '}
+              <a
+                href={landscape.licenseUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-2 hover:text-primary-700"
+              >
+                {landscape.license}
+              </a>
+              {' · '}
+              {t('hero.landscapeAdaptation')}
+            </figcaption>
+          </figure>
         </div>
       </div>
-    </div>
+      <RidgeDivider />
+    </section>
   );
 }

@@ -8,16 +8,18 @@ import {
   type Subcategory,
   type CategoryIndex,
 } from '../data/yamlLoader';
-import * as LucideIcons from 'lucide-react';
+import { getCategoryIcon } from '../lib/categoryIcons';
 import Breadcrumbs from '../components/ui/Breadcrumbs';
 import GovernmentActivitySection from '../components/home/GovernmentActivitySection';
 import SEO from '../components/SEO';
 import { Card, CardContent } from '@bettergov/kapwa/card';
 import { Banner } from '@bettergov/kapwa/banner';
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Government: React.FC = () => {
   const { category } = useParams();
+  const { t } = useTranslation('common');
   const [categoryIndex, setCategoryIndex] = useState<CategoryIndex>({
     layout: 'list',
     pages: [],
@@ -30,31 +32,37 @@ const Government: React.FC = () => {
   };
 
   const categoryData = getCategory();
-  const Icon = LucideIcons[
-    categoryData?.icon as keyof typeof LucideIcons
-  ] as React.ComponentType<{ className?: string }>;
+  const Icon = getCategoryIcon(categoryData?.icon);
 
   useEffect(() => {
+    let active = true;
     if (category && categoryData) {
       setLoading(true);
       getCategorySubcategories(category)
-        .then(setCategoryIndex)
+        .then(index => {
+          if (active) setCategoryIndex(index);
+        })
         .catch(console.error)
-        .finally(() => setLoading(false));
+        .finally(() => {
+          if (active) setLoading(false);
+        });
     }
+    return () => {
+      active = false;
+    };
   }, [category, categoryData]);
 
   if (!category) {
     return (
       <>
         <SEO
-          title="Services"
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
+          title={t('nav.government')}
+          description={t('governmentActivity.description')}
           keywords="government services, public services, local government, civic services"
         />
         <GovernmentActivitySection
-          title={`All local government services`}
-          description={`All services provided by the ${import.meta.env.VITE_GOVERNMENT_NAME} government. Find what you need for citizenship, business, education, and more.`}
+          title={t('governmentActivity.title')}
+          description={t('governmentActivity.description')}
         />
       </>
     );
@@ -92,6 +100,9 @@ const Government: React.FC = () => {
           </div>
         ) : (
           <>
+            {!subcategories.length && (
+              <p className="text-gray-700">{t('document.emptyCategory')}</p>
+            )}
             {categoryIndex.title && (
               <Heading level={3}>{categoryIndex.title}</Heading>
             )}
