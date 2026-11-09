@@ -1,0 +1,2172 @@
+{
+  "checkedOn": "2026-11-09",
+  "defaultPeriod": "2026-q3",
+  "sources": [
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2026/Q1/Statement%20of%20Receipts%20and%20Expenditures%20Q1%202026.pdf",
+      "sha256": "d1dcde9326cd5f5b5812b7c4fd650f2aca308074142ee41aceab3c6fe101f589",
+      "bytes": 956763,
+      "pages": 1,
+      "listingYear": 2026,
+      "id": "2026-q1",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2026-q1.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2026/Q2/Statement%20of%20Receipts%20and%20Expenditures%20Q2%202026.pdf",
+      "sha256": "ab3173f7c9268ad002c0c1005dce5cc79392bb955e874bae8f81e9843fdbfbad",
+      "bytes": 922904,
+      "pages": 1,
+      "listingYear": 2026,
+      "id": "2026-q2",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2026-q2.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Statement%20of%20Receipts%20and%20Expenditures%20Q3%202026.pdf",
+      "sha256": "fa85e59b496a62c3e756d677f0e2d6df74136c9d4da84c734e89974b06092f92",
+      "bytes": 1516655,
+      "pages": 2,
+      "listingYear": 2026,
+      "id": "2026-q3",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/2026-q3/receipts-q3-2026.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2025/Q1/sre.pdf",
+      "sha256": "7a5a05e1d82ac81ce56ba8cb905a06e5f99868b60e81d4bf937bc15da2ea9109",
+      "bytes": 959987,
+      "pages": 1,
+      "listingYear": 2025,
+      "id": "2025-q1",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2025-q1.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2025/Q2/sre.pdf",
+      "sha256": "b28676b180c5520a993b1020412f00d9310cabcf95834816c4c357bf0fdf0ccb",
+      "bytes": 978582,
+      "pages": 1,
+      "listingYear": 2025,
+      "id": "2025-q2",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2025-q2.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2025/Q3/sre3.pdf",
+      "sha256": "e35dd36b340b8cc68f658977ea1aea27877e8ae47a96cb86b7ffbb2661c79208",
+      "bytes": 933022,
+      "pages": 1,
+      "listingYear": 2025,
+      "id": "2025-q3",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2025-q3.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2025/Q4/sre425.pdf",
+      "sha256": "c0220f86e7127cb39b24178d273859bb9aae3be68abe998812b607c771945fbe",
+      "bytes": 652131,
+      "pages": 1,
+      "listingYear": 2025,
+      "id": "2025-q4",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2025-q4.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2024/Q1/sre1.pdf",
+      "sha256": "a8c894e943c34631083f064d78d9bf65fad24a8824bfa58990c0a9fd81e5ac7c",
+      "bytes": 1095939,
+      "pages": 2,
+      "listingYear": 2024,
+      "id": "2024-q1",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2024-q1.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2024/Q2/SRE.pdf",
+      "sha256": "88e64919e27a6b593a3d2259fa8f7e0e3eb6a39798bc559fdcf27bf58eb6ccf9",
+      "bytes": 981660,
+      "pages": 1,
+      "listingYear": 2024,
+      "id": "2024-q2",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2024-q2.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2024/Q3/SRE.pdf",
+      "sha256": "2ae5341002df79877d50b6b714724ac0ce19fb003286cafc601b94ec300fefcf",
+      "bytes": 1065183,
+      "pages": 1,
+      "listingYear": 2024,
+      "id": "2024-q3",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2024-q3.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2024/Q4/sre.pdf",
+      "sha256": "5ec605e68a7b3d6196ba645e28910a9d19b43a4e938bb83522017d9b206b1ba4",
+      "bytes": 973857,
+      "pages": 1,
+      "listingYear": 2024,
+      "id": "2024-q4",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2024-q4.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2023/SRE2022.pdf",
+      "sha256": "d93c0411ae573a7d9d600e62930f698e99e4be25714d8cafc8af303a8940bc6a",
+      "bytes": 1724036,
+      "pages": 3,
+      "listingYear": 2023,
+      "id": "2023-annual",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2023-annual.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2023/Q1/sre1st.pdf",
+      "sha256": "b27399e74e9787a4cdc06c556fa9f89734bd1a76e200a783f3c5b4cac474ea11",
+      "bytes": 816229,
+      "pages": 1,
+      "listingYear": 2023,
+      "id": "2023-q1",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2023-q1.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2023/Q2/sre00751520230915141902.pdf",
+      "sha256": "a2263617373838516fe15125bfb1c28aa9275f5f4f373bc74a17657e189ef4af",
+      "bytes": 1616621,
+      "pages": 2,
+      "listingYear": 2023,
+      "id": "2023-q2",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2023-q2.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2023/Q3/sre%203rd.pdf",
+      "sha256": "1c865bbf2d62966d4764e208ba65a7238dadf538fcf77a8c4e1e1136d93e3ebe",
+      "bytes": 1385190,
+      "pages": 2,
+      "listingYear": 2023,
+      "id": "2023-q3",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2023-q3.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2023/Q4/sre4th.pdf",
+      "sha256": "58c8282aef24ecc8483ff3c7971ac0dc29985b9b31898084aa5170834cb08ff6",
+      "bytes": 849652,
+      "pages": 1,
+      "listingYear": 2023,
+      "id": "2023-q4",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2023-q4.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2022/SRE2021.pdf",
+      "sha256": "89902020e902ea91f0e058d71c46761005d2db3ea8fd52b354393a4d78e12854",
+      "bytes": 106103,
+      "pages": 1,
+      "listingYear": 2022,
+      "id": "2022-annual",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2022-annual.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2020/SRE%202020.pdf",
+      "sha256": "0bde8151efcdcd9719f1d138db827beab88dca24f27b7ffabe583a5dd6676123",
+      "bytes": 469211,
+      "pages": 1,
+      "listingYear": 2020,
+      "id": "2020-annual",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2020-annual.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2019/SRE%202019.pdf",
+      "sha256": "130e4fb487ba50daae252430e0d625b57ee9d00f0f6e8cb7fb3905ef61b6bf0e",
+      "bytes": 1065058,
+      "pages": 5,
+      "listingYear": 2019,
+      "id": "2019-annual",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2019-annual.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2018/SRE%202018.pdf",
+      "sha256": "c8952a790abd03fa5519c52a684c65bd3249f10a5fd4ee038a39d438ab298317",
+      "bytes": 3197278,
+      "pages": 6,
+      "listingYear": 2018,
+      "id": "2018-annual",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2018-annual.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2017/SRE%202017.pdf",
+      "sha256": "188d1b6873a74450a6d18c0e8ceb852f1dc1166097aefda4b3f0229b0e732410",
+      "bytes": 3138049,
+      "pages": 10,
+      "listingYear": 2017,
+      "id": "2017-annual",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2017-annual.pdf"
+    },
+    {
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2016/receipts%20and%20expenditures%202016.pdf",
+      "sha256": "586b3a0078cc5b02a72a4b3c13be0d0399990386fe5d57b93f331158d2e45277",
+      "bytes": 4987675,
+      "pages": 10,
+      "listingYear": 2016,
+      "id": "2016-annual",
+      "title": "Statement of Receipts and Expenditures",
+      "copyUrl": "/city-finances/sources/2016-annual.pdf"
+    },
+    {
+      "id": "development-2026-q3",
+      "title": "20% Development Fund Utilization",
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Utilization%20of%20the%2020%20of%20the%20National%20Tax%20Allotment%20Q3%202026.pdf",
+      "copyUrl": "/city-finances/2026-q3/development-fund-q3-2026.pdf",
+      "sha256": "fa48cc4a48ab0f3a2afb4dd9458e1f7502c8aa81bf8f3538180ba2ea00e35c94",
+      "bytes": 428589,
+      "pages": 1,
+      "listingYear": 2026
+    }
+  ],
+  "periods": [
+    {
+      "id": "2026-q3",
+      "year": 2026,
+      "quarter": "Q3",
+      "label": "Q3 2026 return",
+      "sourceId": "2026-q3",
+      "citedPages": [2],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [
+        "The PDF contains two copies of the same return. Page 2 is used once."
+      ],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 192074461553,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 2
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 51132806938,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 2
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 7511641550,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 2
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 192074461553,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 129755072153
+          },
+          {
+            "label": "National Tax Allotment",
+            "centavos": 62319389400
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "What operating expenditure covered",
+        "totalCentavos": 51132806938,
+        "rows": [
+          {
+            "label": "General public services",
+            "centavos": 30276062094
+          },
+          {
+            "label": "Education, culture, sports and manpower development",
+            "centavos": 8952534196
+          },
+          {
+            "label": "Economic services",
+            "centavos": 5322669650
+          },
+          {
+            "label": "Health, nutrition and population control",
+            "centavos": 5265803184
+          },
+          {
+            "label": "Social services and social welfare",
+            "centavos": 1269592363
+          },
+          {
+            "label": "Labor and employment",
+            "centavos": 26220315
+          },
+          {
+            "label": "Housing and community development",
+            "centavos": 19925136
+          },
+          {
+            "label": "Debt service: interest and other charges",
+            "centavos": 0
+          }
+        ],
+        "note": "The city’s own operating-function categories. Capital expenditure is separate."
+      },
+      "development": {
+        "listedProjectCostCentavos": 16618400000,
+        "balanceRowCentavos": 103800,
+        "printedTotalCentavos": 16618503800,
+        "projects": [
+          {
+            "id": 1,
+            "label": "5,025.12 m² lot",
+            "location": "Maharlika West",
+            "costCentavos": 5618400000,
+            "incurredCentavos": 5618400000,
+            "completionPercent": null,
+            "sourceRow": 1
+          },
+          {
+            "id": 2,
+            "label": "Concrete bridge",
+            "location": "Maitim II Central",
+            "costCentavos": 450000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 2
+          },
+          {
+            "id": 3,
+            "label": "Road concreting",
+            "location": "Garbage Transfer Station, Maitim II West",
+            "costCentavos": 1000000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 3
+          },
+          {
+            "id": 4,
+            "label": "Drainage improvement",
+            "location": "Mahogany Market, Kaybagal South",
+            "costCentavos": 800000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 4
+          },
+          {
+            "id": 5,
+            "label": "Road widening and concreting",
+            "location": "Mah. East, SC West, Maitim II West and Central (as listed)",
+            "costCentavos": 300000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 5
+          },
+          {
+            "id": 6,
+            "label": "Bleacher chairs with backing",
+            "location": "Tagaytay Arena, Maitim II East",
+            "costCentavos": 2300000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 6
+          },
+          {
+            "id": 7,
+            "label": "Interior painting and rubberized flooring",
+            "location": "Tagaytay Arena, Maitim II East",
+            "costCentavos": 500000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 7
+          },
+          {
+            "id": 8,
+            "label": "Lighting fixtures",
+            "location": "Tagaytay Arena, Maitim II East",
+            "costCentavos": 1000000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 8
+          },
+          {
+            "id": 9,
+            "label": "Retractable bleachers",
+            "location": "Tagaytay Arena, Maitim II East",
+            "costCentavos": 1500000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 9
+          },
+          {
+            "id": 10,
+            "label": "Plastering, railings and ramps",
+            "location": "Tagaytay Arena, Maitim II East",
+            "costCentavos": 200000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 10
+          },
+          {
+            "id": 11,
+            "label": "Hybrid lamps and lamp posts",
+            "location": "Tagaytay Arena, Maitim II East",
+            "costCentavos": 675000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 11
+          },
+          {
+            "id": 12,
+            "label": "Air-conditioning units",
+            "location": "Tagaytay City Velodrome, Kaybagal South",
+            "costCentavos": 350000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 12
+          },
+          {
+            "id": 13,
+            "label": "Air-conditioning units",
+            "location": "Tagaytay Combat Sports, Kaybagal South",
+            "costCentavos": 350000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 13
+          },
+          {
+            "id": 14,
+            "label": "Additional septic tank at the housing project",
+            "location": "Zambal",
+            "costCentavos": 100000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 14
+          },
+          {
+            "id": 15,
+            "label": "Asphalt patching",
+            "location": "Mayor’s Drive, Mendez Crossing East",
+            "costCentavos": 200000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 15
+          },
+          {
+            "id": 16,
+            "label": "Day care building, second floor",
+            "location": "Bagong Tubig",
+            "costCentavos": 230000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 16
+          },
+          {
+            "id": 17,
+            "label": "Multipurpose court roof construction or extension",
+            "location": "Zambal",
+            "costCentavos": 95000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 17
+          },
+          {
+            "id": 18,
+            "label": "Service entrance main feeder",
+            "location": "Super Health Center, Sungay West",
+            "costCentavos": 125000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 18
+          },
+          {
+            "id": 19,
+            "label": "Water tank and pipeline",
+            "location": "CHO, Kaybagal South",
+            "costCentavos": 25000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 19
+          },
+          {
+            "id": 20,
+            "label": "Two mini dump trucks",
+            "location": "CENRO, Maitim II Central",
+            "costCentavos": 800000000,
+            "incurredCentavos": null,
+            "completionPercent": null,
+            "sourceRow": 20
+          }
+        ],
+        "sourceId": "development-2026-q3",
+        "sourcePage": 1
+      }
+    },
+    {
+      "id": "2026-q2",
+      "year": 2026,
+      "quarter": "Q2",
+      "label": "Q2 2026 return",
+      "sourceId": "2026-q2",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 156111134049,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 25742771583,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 6525509000,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 156111134049,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 114564874449
+          },
+          {
+            "label": "External sources",
+            "centavos": 41546259600
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 25742771583,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 23890365609
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 1852405974
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2026-q1",
+      "year": 2026,
+      "quarter": "Q1",
+      "label": "Q1 2026 return",
+      "sourceId": "2026-q1",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 116538930789,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 9391586319,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 732000000,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 116538930789,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 95765800989
+          },
+          {
+            "label": "External sources",
+            "centavos": 20773129800
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 9391586319,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 8752003101
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 639583218
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2025-q4",
+      "year": 2025,
+      "quarter": "Q4",
+      "label": "Q4 2025 return",
+      "sourceId": "2025-q4",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 210986393129,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 116425129919,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 81588957365,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 210986393129,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 138344537529
+          },
+          {
+            "label": "External sources",
+            "centavos": 72641855600
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 116425129919,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 104079649260
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 12345480659
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2025-q3",
+      "year": 2025,
+      "quarter": "Q3",
+      "label": "Q3 2025 return",
+      "sourceId": "2025-q3",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 177421645375,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 48943581174,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 1754557550,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 177421645375,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 122940253475
+          },
+          {
+            "label": "External sources",
+            "centavos": 54481391900
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 48943581174,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 46697292382
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 2246288792
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2025-q2",
+      "year": 2025,
+      "quarter": "Q2",
+      "label": "Q2 2025 return",
+      "sourceId": "2025-q2",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 145692998611,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 33114418812,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 535786750,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 145692998611,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 109372070611
+          },
+          {
+            "label": "External sources",
+            "centavos": 36320928000
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 33114418812,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 31531650695
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 1582768117
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2025-q1",
+      "year": 2025,
+      "quarter": "Q1",
+      "label": "Q1 2025 return",
+      "sourceId": "2025-q1",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 112866435128,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 9154401713,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 285993600,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 112866435128,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 94705971128
+          },
+          {
+            "label": "External sources",
+            "centavos": 18160464000
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 9154401713,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 8592477153
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 561924560
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2024-q4",
+      "year": 2024,
+      "quarter": "Q4",
+      "label": "Q4 2024 return",
+      "sourceId": "2024-q4",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 189780434153,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 102577425146,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 56548679362,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 189780434153,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 128547181253
+          },
+          {
+            "label": "External sources",
+            "centavos": 61233252900
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 102577425146,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 92606507737
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 9970917409
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2024-q3",
+      "year": 2024,
+      "quarter": "Q3",
+      "label": "Q3 2024 return",
+      "sourceId": "2024-q3",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 160369571821,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 54312878954,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 13677275450,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 160369571821,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 114444632146
+          },
+          {
+            "label": "External sources",
+            "centavos": 45924939675
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 54312878954,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 46691646222
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 7621232732
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2024-q2",
+      "year": 2024,
+      "quarter": "Q2",
+      "label": "Q2 2024 return",
+      "sourceId": "2024-q2",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 131062140980,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 30814224228,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 1464197300,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 131062140980,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 100445514530
+          },
+          {
+            "label": "External sources",
+            "centavos": 30616626450
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 30814224228,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 29258291557
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 1555932671
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2024-q1",
+      "year": 2024,
+      "quarter": "Q1",
+      "label": "Q1 2024 return",
+      "sourceId": "2024-q1",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 99551787267,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 8943023244,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 1383607600,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 99551787267,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 84243474042
+          },
+          {
+            "label": "External sources",
+            "centavos": 15308313225
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 8943023244,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 8363534516
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 579488728
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2023-q4",
+      "year": 2023,
+      "quarter": "Q4",
+      "label": "Q4 2023 return",
+      "sourceId": "2023-q4",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 165685154177,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 95873247185,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 69276798007,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 165685154177,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 107845544873
+          },
+          {
+            "label": "External sources",
+            "centavos": 57839609304
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 95873247185,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 86173293376
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 9699953809
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2023-q3",
+      "year": 2023,
+      "quarter": "Q3",
+      "label": "Q3 2023 return",
+      "sourceId": "2023-q3",
+      "citedPages": [1, 2],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 93566474168,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 34446865015,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 413404450,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 2
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 93566474168,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 93566474168
+          },
+          {
+            "label": "External sources",
+            "centavos": 0
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 34446865015,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 29783553190
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 4663311825
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2023-q2",
+      "year": 2023,
+      "quarter": "Q2",
+      "label": "Q2 2023 return",
+      "sourceId": "2023-q2",
+      "citedPages": [1, 2],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 85338599303,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 21435451071,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 213996650,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 2
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 85338599303,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 84338599303
+          },
+          {
+            "label": "External sources",
+            "centavos": 1000000000
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 21435451071,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 20162297748
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 1273153323
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2023-q1",
+      "year": 2023,
+      "quarter": "Q1",
+      "label": "Q1 2023 return",
+      "sourceId": "2023-q1",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The outer header says quarter 1, while the inner form says January–December 2023. The portal retains the posted Q1 label and flags the conflict. Do not use this return for period comparisons.",
+      "notes": [
+        "The capital-expenditure cells contain dashes, not numeric amounts. They are not converted to zero."
+      ],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 84974350931,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 9218313869,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": null,
+          "help": "The source shows dashes instead of a numeric capital amount.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 84974350931,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 70514448731
+          },
+          {
+            "label": "External sources",
+            "centavos": 14459902200
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 9218313869,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 8734008737
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 484305132
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2022-annual",
+      "year": 2022,
+      "quarter": "annual",
+      "label": "2022 annual return",
+      "sourceId": "2023-annual",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "Uses the Current Year / Total column, covering both semesters. The Actual Year and Budget Year columns are different columns and are excluded.",
+      "notes": [
+        "The file is in the 2023 directory, but its heading says CY 2022. It contains three copies of the return; page 1 is used once."
+      ],
+      "metrics": [
+        {
+          "id": "receipts",
+          "label": "Total receipts",
+          "centavos": 171467583900,
+          "help": "The report’s receipts total; this older layout differs from operating income.",
+          "sourcePage": 1
+        },
+        {
+          "id": "expenditure",
+          "label": "Total expenditures (reported)",
+          "centavos": 156975322913,
+          "help": "Includes the expenditure categories in the printed total; not just operating costs.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Receipts by source",
+        "totalCentavos": 171467583900,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 103460665500
+          },
+          {
+            "label": "External sources",
+            "centavos": 68006918400
+          }
+        ],
+        "note": "Uses the printed source or fund totals. Older receipts layouts are not relabelled as operating-income returns."
+      },
+      "expenseBreakdown": {
+        "title": "Reported expenditure breakdown",
+        "totalCentavos": 156975322913,
+        "rows": [
+          {
+            "label": "General services",
+            "centavos": 95270513558
+          },
+          {
+            "label": "Economic services",
+            "centavos": 16544922154
+          },
+          {
+            "label": "Social services",
+            "centavos": 14906928377
+          },
+          {
+            "label": "Debt services",
+            "centavos": 2023238009
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 28229720815
+          }
+        ],
+        "note": "Uses the categories or fund totals in the reported expenditure total. These are not individual payments."
+      },
+      "development": null
+    },
+    {
+      "id": "2021-annual",
+      "year": 2021,
+      "quarter": "annual",
+      "label": "2021 annual return",
+      "sourceId": "2022-annual",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "Uses the Current Year / Total column, covering both semesters. The Actual Year and Budget Year columns are different columns and are excluded.",
+      "notes": [
+        "The file is in the 2022 directory, but its heading says CY 2021."
+      ],
+      "metrics": [
+        {
+          "id": "receipts",
+          "label": "Total receipts",
+          "centavos": 128722565907,
+          "help": "The report’s receipts total; this older layout differs from operating income.",
+          "sourcePage": 1
+        },
+        {
+          "id": "expenditure",
+          "label": "Total expenditures (reported)",
+          "centavos": 123156268089,
+          "help": "Includes the expenditure categories in the printed total; not just operating costs.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Receipts by source",
+        "totalCentavos": 128722565907,
+        "rows": [
+          {
+            "label": "Tax revenue",
+            "centavos": 64623903261
+          },
+          {
+            "label": "Non-tax revenue",
+            "centavos": 16230920646
+          },
+          {
+            "label": "External sources",
+            "centavos": 47867742000
+          }
+        ],
+        "note": "Uses the printed source or fund totals. Older receipts layouts are not relabelled as operating-income returns."
+      },
+      "expenseBreakdown": {
+        "title": "Reported expenditure breakdown",
+        "totalCentavos": 123156268089,
+        "rows": [
+          {
+            "label": "General services",
+            "centavos": 79125459118
+          },
+          {
+            "label": "Economic services",
+            "centavos": 15016840599
+          },
+          {
+            "label": "Social services",
+            "centavos": 9030078847
+          },
+          {
+            "label": "Debt services",
+            "centavos": 2192264527
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 17791624998
+          }
+        ],
+        "note": "Uses the categories or fund totals in the reported expenditure total. These are not individual payments."
+      },
+      "development": null
+    },
+    {
+      "id": "2019-annual",
+      "year": 2019,
+      "quarter": "annual",
+      "label": "2019 annual return",
+      "sourceId": "2020-annual",
+      "citedPages": [1],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "Uses the Current Year / Total column, covering both semesters. The Actual Year and Budget Year columns are different columns and are excluded.",
+      "notes": [
+        "The file is in the 2020 directory, but its heading says CY 2019."
+      ],
+      "metrics": [
+        {
+          "id": "receipts",
+          "label": "Total receipts",
+          "centavos": 151765664694,
+          "help": "The report’s receipts total; this older layout differs from operating income.",
+          "sourcePage": 1
+        },
+        {
+          "id": "expenditure",
+          "label": "Total expenditures (reported)",
+          "centavos": 139529281618,
+          "help": "Includes the expenditure categories in the printed total; not just operating costs.",
+          "sourcePage": 1
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Receipts by source",
+        "totalCentavos": 151765664694,
+        "rows": [
+          {
+            "label": "Tax revenue",
+            "centavos": 71090685223
+          },
+          {
+            "label": "Non-tax revenue",
+            "centavos": 40844347771
+          },
+          {
+            "label": "Internal Revenue Allotment",
+            "centavos": 39830631700
+          }
+        ],
+        "note": "Uses the printed source or fund totals. Older receipts layouts are not relabelled as operating-income returns."
+      },
+      "expenseBreakdown": {
+        "title": "Reported expenditure breakdown",
+        "totalCentavos": 139529281618,
+        "rows": [
+          {
+            "label": "General services",
+            "centavos": 93607389619
+          },
+          {
+            "label": "Economic services",
+            "centavos": 13266854565
+          },
+          {
+            "label": "Social services",
+            "centavos": 8373475984
+          },
+          {
+            "label": "Debt services",
+            "centavos": 2417097405
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 21864464045
+          }
+        ],
+        "note": "Uses the categories or fund totals in the reported expenditure total. These are not individual payments."
+      },
+      "development": null
+    },
+    {
+      "id": "2019-q1",
+      "year": 2019,
+      "quarter": "Q1",
+      "label": "Q1 2019 receipts statement",
+      "sourceId": "2019-annual",
+      "citedPages": [1, 4, 5],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "Uses the actual-receipts column for the Q1 2019 period printed on the report. No quarter-only or cumulative interpretation is inferred.",
+      "notes": [
+        "This PDF is a statement of receipts sources for Q1 2019. It does not contain an expenditure statement."
+      ],
+      "metrics": [
+        {
+          "id": "receipts",
+          "label": "Total receipts",
+          "centavos": 68984946579,
+          "help": "The report’s receipts total; this older layout differs from operating income.",
+          "sourcePage": 5
+        },
+        {
+          "id": "expenditure",
+          "label": "Total expenditures (reported)",
+          "centavos": null,
+          "help": "This receipts-only PDF does not provide an expenditure total.",
+          "sourcePage": 5
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Receipts by fund",
+        "totalCentavos": 68984946579,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 51016899890
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 17968046689
+          }
+        ],
+        "note": "Uses the printed source or fund totals. Older receipts layouts are not relabelled as operating-income returns."
+      },
+      "expenseBreakdown": null,
+      "development": null
+    },
+    {
+      "id": "2018-annual",
+      "year": 2018,
+      "quarter": "annual",
+      "label": "2018 annual return",
+      "sourceId": "2018-annual",
+      "citedPages": [1, 3, 6],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "Uses the stated annual period and the actual total columns, not the approved budget or variance columns.",
+      "notes": [
+        "The heading states January–December 2018. The summary uses the total actual receipts and total actual expenditure columns."
+      ],
+      "metrics": [
+        {
+          "id": "receipts",
+          "label": "Total receipts",
+          "centavos": 138325231949,
+          "help": "The report’s receipts total; this older layout differs from operating income.",
+          "sourcePage": 3
+        },
+        {
+          "id": "expenditure",
+          "label": "Total expenditures (reported)",
+          "centavos": 136149519167,
+          "help": "Includes the expenditure categories in the printed total; not just operating costs.",
+          "sourcePage": 6
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Receipts by fund",
+        "totalCentavos": 138325231949,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 116397976398
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 21927255551
+          }
+        ],
+        "note": "Uses the printed source or fund totals. Older receipts layouts are not relabelled as operating-income returns."
+      },
+      "expenseBreakdown": {
+        "title": "Reported expenditure breakdown",
+        "totalCentavos": 136149519167,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 112941471844
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 23208047323
+          }
+        ],
+        "note": "Uses the categories or fund totals in the reported expenditure total. These are not individual payments."
+      },
+      "development": null
+    },
+    {
+      "id": "2017-annual",
+      "year": 2017,
+      "quarter": "annual",
+      "label": "2017 annual return",
+      "sourceId": "2017-annual",
+      "citedPages": [1, 5, 9, 10],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "Uses the stated annual period and the actual total columns, not the approved budget or variance columns.",
+      "notes": [
+        "The heading states Year 2017. The expenditure metric reproduces the Total Expenditures row. A separate continuing-appropriation actual-expenditure row of ₱190,891,303.38 appears below it and is not added to that printed total by this portal."
+      ],
+      "metrics": [
+        {
+          "id": "receipts",
+          "label": "Total receipts",
+          "centavos": 115898541711,
+          "help": "The report’s receipts total; this older layout differs from operating income.",
+          "sourcePage": 5
+        },
+        {
+          "id": "expenditure",
+          "label": "Total expenditures (reported)",
+          "centavos": 96783412149,
+          "help": "Includes the expenditure categories in the printed total; not just operating costs.",
+          "sourcePage": 10
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Receipts by fund",
+        "totalCentavos": 115898541711,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 100502242607
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 15396299104
+          }
+        ],
+        "note": "Uses the printed source or fund totals. Older receipts layouts are not relabelled as operating-income returns."
+      },
+      "expenseBreakdown": {
+        "title": "Reported expenditure breakdown",
+        "totalCentavos": 96783412149,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 85469200736
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 11314211413
+          }
+        ],
+        "note": "Uses the categories or fund totals in the reported expenditure total. These are not individual payments."
+      },
+      "development": null
+    },
+    {
+      "id": "2017-q1",
+      "year": 2017,
+      "quarter": "Q1",
+      "label": "Q1 2017 return",
+      "sourceId": "2016-annual",
+      "citedPages": [5, 6],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [
+        "This Q1 2017 return appears on pages 5–6 of the PDF filed in the city’s 2016 directory. The PDF heading determines the period here."
+      ],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 53517245149,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 5
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 8067127209,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 5
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 89301000,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 6
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 53517245149,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 44713752949
+          },
+          {
+            "label": "External sources",
+            "centavos": 8803492200
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 8067127209,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 7827689794
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 239437415
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2016-q4",
+      "year": 2016,
+      "quarter": "Q4",
+      "label": "Q4 2016 return",
+      "sourceId": "2016-annual",
+      "citedPages": [7, 8],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 108633178118,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 7
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 62592280073,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 7
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 28209154624,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 8
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 108633178118,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 77793313818
+          },
+          {
+            "label": "External sources",
+            "centavos": 30839864300
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 62592280073,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 55188040510
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 7404239563
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2016-q3",
+      "year": 2016,
+      "quarter": "Q3",
+      "label": "Q3 2016 return",
+      "sourceId": "2016-annual",
+      "citedPages": [9, 10],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 85893039979,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 9
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 33953365204,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 9
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 8916930625,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 10
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 85893039979,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 62153141679
+          },
+          {
+            "label": "External sources",
+            "centavos": 23739898300
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 33953365204,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 27615932746
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 6337432458
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2016-q2",
+      "year": 2016,
+      "quarter": "Q2",
+      "label": "Q2 2016 return",
+      "sourceId": "2016-annual",
+      "citedPages": [3, 4],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 67584037214,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 3
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 21627317451,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 3
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 1423812125,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 4
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 67584037214,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 51554105014
+          },
+          {
+            "label": "External sources",
+            "centavos": 16029932200
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 21627317451,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 16674714812
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 4952602639
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    },
+    {
+      "id": "2016-q1",
+      "year": 2016,
+      "quarter": "Q1",
+      "label": "Q1 2016 return",
+      "sourceId": "2016-annual",
+      "citedPages": [1, 2],
+      "checkedOn": "2026-11-09",
+      "scope": "General Fund + Special Education Fund (SEF)",
+      "periodBasis": "The form identifies a quarter but does not define exact start and end dates. Figures are preserved as reported; returns are not added together or treated as quarter-only amounts.",
+      "notes": [],
+      "metrics": [
+        {
+          "id": "income",
+          "label": "Operating income",
+          "centavos": 47168918065,
+          "help": "Reported local and external income, not the budget target.",
+          "sourcePage": 1
+        },
+        {
+          "id": "operating",
+          "label": "Operating expenditure",
+          "centavos": 10589474340,
+          "help": "Reported costs of running city services. Capital is separate.",
+          "sourcePage": 1
+        },
+        {
+          "id": "capital",
+          "label": "Capital expenditure",
+          "centavos": 84038750,
+          "help": "Reported purchases or construction of assets.",
+          "sourcePage": 2
+        }
+      ],
+      "incomeBreakdown": {
+        "title": "Where income came from",
+        "totalCentavos": 47168918065,
+        "rows": [
+          {
+            "label": "Local sources",
+            "centavos": 38998951965
+          },
+          {
+            "label": "External sources",
+            "centavos": 8169966100
+          }
+        ],
+        "note": "Local sources include taxes and non-tax revenue. External sources include national tax shares and other outside receipts shown in the return."
+      },
+      "expenseBreakdown": {
+        "title": "Operating expenditure by fund",
+        "totalCentavos": 10589474340,
+        "rows": [
+          {
+            "label": "General Fund",
+            "centavos": 6231047883
+          },
+          {
+            "label": "Special Education Fund",
+            "centavos": 4358426457
+          }
+        ],
+        "note": "These are fund totals, not individual payments or project costs."
+      },
+      "development": null
+    }
+  ]
+}

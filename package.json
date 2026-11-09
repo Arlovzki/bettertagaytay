@@ -18,7 +18,12 @@
     "convert-yaml": "node scripts/yaml-to-json.js",
     "dev:yaml": "npm run convert-yaml && npm run dev",
     "setup": "node scripts/setup-starter-kit.js",
-    "test": "node --test tests/*.test.mjs server/visits/*.test.mjs"
+    "test": "node --test tests/*.test.mjs server/visits/*.test.mjs",
+    "dev:transparency": "npm run dev --prefix apps/transparency",
+    "build:transparency": "npm run build --prefix apps/transparency",
+    "check:transparency": "npm run check --prefix apps/transparency",
+    "lint:transparency": "npm run lint --prefix apps/transparency",
+    "test:transparency": "npm test --prefix apps/transparency"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

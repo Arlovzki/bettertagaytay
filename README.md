@@ -77,6 +77,16 @@ The [service and document release notes](docs/service-and-document-release.md) d
 
 The [visual identity notes](docs/design-identity-recommendation.md) describe the lake-blue palette, responsive homepage, shared component styling, image credits and verification scope.
 
+## Tagaytay transparency portal
+
+The separate [transparency application](apps/transparency/README.md) compares national
+budget proposals naming Tagaytay and shows historical appropriations with source
+links and CSV exports. Run `npm ci --prefix apps/transparency`, then
+`npm run dev:transparency` to open it on port 5132. Build with
+`npm run build:transparency` and validate the live data with
+`npm run check:transparency`. The [reference review](docs/transparency-portal-reference-review.md)
+records the peer portal findings and Tagaytay coverage decisions.
+
 ## Website audit and visit counter
 
 See [the website audit](docs/website-audit.md) for fixes, verification, official source updates, and remaining content issues. [Visit counter documentation](docs/visit-counter.md) covers storage, privacy, configuration, and Terraform maintenance.

@@ -35,10 +35,10 @@ resource "aws_amplify_app" "site" {
     build_compute_type = "STANDARD_8GB"
   }
 
-  # Serve image/font/data files directly, including the new WebP photographs.
+  # Serve static assets directly, including photographs and reviewed source PDFs.
   # Extensionless routes continue to load the React application's entry point.
   custom_rule {
-    source = "</^[^.]+$|\\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|webp)$)([^.]+$)/>"
+    source = "</^[^.]+$|\\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|webp|pdf)$)([^.]+$)/>"
     target = "/index.html"
     status = "200"
   }

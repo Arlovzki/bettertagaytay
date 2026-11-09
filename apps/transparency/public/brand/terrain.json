@@ -1,0 +1,121 @@
+{
+  "name": "Tagaytay area elevation contours",
+  "generatedAt": "2026-11-05T17:27:25+00:00",
+  "source": "Mapzen / AWS Terrain Tiles",
+  "sourceUrl": "https://registry.opendata.aws/terrain-tiles/",
+  "sourceDocumentation": "https://github.com/tilezen/joerd/blob/master/docs/data-sources.md",
+  "attributionUrl": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "credit": "SRTM and GMTED2010 terrain data courtesy of the U.S. Geological Survey, via Mapzen / AWS Terrain Tiles",
+  "displayCredit": "USGS SRTM/GMTED \u00b7 Mapzen",
+  "areaReference": "https://www.openstreetmap.org/relation/1491134",
+  "areaReferenceCredit": "OpenStreetMap contributors, ODbL",
+  "cityBounds": [120.8841843, 14.0762697, 121.0498374, 14.16693],
+  "requestedBounds": [120.8691843, 14.0612697, 121.0648374, 14.18193],
+  "actualBounds": [
+    120.86917877197266, 14.060988991380844, 121.06487274169922,
+    14.182181891543863
+  ],
+  "projection": "EPSG:3857",
+  "orientation": "north-up",
+  "intervalMetres": 25,
+  "minimumContourMetres": 25,
+  "majorIntervalMetres": 100,
+  "tileZoom": 12,
+  "gridSize": [571, 365],
+  "elevationRangeMetres": [-221.0, 741.0],
+  "sampleSpacingMetres": 37.06,
+  "simplificationTolerancePixels": 0.35,
+  "maximumContourResidualMetresBeforeSimplification": 4.092726157978177e-12,
+  "originalVertices": 57055,
+  "retainedVertices": 15420,
+  "contourCount": 259,
+  "contoursByElevation": {
+    "25": 6,
+    "50": 4,
+    "75": 6,
+    "100": 4,
+    "125": 5,
+    "150": 1,
+    "175": 6,
+    "200": 10,
+    "225": 10,
+    "250": 12,
+    "275": 7,
+    "300": 3,
+    "325": 8,
+    "350": 19,
+    "375": 17,
+    "400": 30,
+    "425": 13,
+    "450": 22,
+    "475": 9,
+    "500": 14,
+    "525": 6,
+    "550": 13,
+    "575": 10,
+    "600": 6,
+    "625": 8,
+    "650": 6,
+    "675": 2,
+    "700": 1,
+    "725": 1
+  },
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/3423/1884.png",
+      "sha256": "630181ebf5e1164030571057cb860c030729c38b7d4c92d8bf8d052224d129ab",
+      "upstreamSources": ["srtm/N14E120.tif"]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/3424/1884.png",
+      "sha256": "a56cb47913d025cdaa8002657369f93820ea5084f1955a4aa82803a8cf252e40",
+      "upstreamSources": ["srtm/N14E120.tif", "srtm/N14E121.tif"]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/3425/1884.png",
+      "sha256": "6d4e197b5f815718a7cf3e21149d6c462e5508f5993ba306f920545f8a156020",
+      "upstreamSources": ["srtm/N14E121.tif"]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/3423/1885.png",
+      "sha256": "197621f3254f2a4686ce64591c8a7bbe52860e4a144730e2e39a4958cfd355da",
+      "upstreamSources": ["srtm/N14E120.tif"]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/3424/1885.png",
+      "sha256": "486f59e4c58bfbcb06105c3a5d0e839860f672de0eacf8a2b420c246be8aa60b",
+      "upstreamSources": ["srtm/N14E121.tif", "srtm/N14E120.tif"]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/3425/1885.png",
+      "sha256": "99126af10d5709db35a37dd5f24f87c70b5744803193d713bc56fca225fb3857",
+      "upstreamSources": ["srtm/N14E121.tif"]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/3423/1886.png",
+      "sha256": "45b669b31952e06d97812120af081ebe14bc4f4bfa17b490697d7adc644103f8",
+      "upstreamSources": [
+        "srtm/N14E120.tif",
+        "gmted/10N120E_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/3424/1886.png",
+      "sha256": "5501583ece355ef420809548500043648640a19312b6a0b971bf68887d55cd26",
+      "upstreamSources": [
+        "srtm/N14E121.tif",
+        "srtm/N14E120.tif",
+        "gmted/10N120E_20101117_gmted_mea075.tif"
+      ]
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/12/3425/1886.png",
+      "sha256": "33dd1fac645c572c5ab4f8480cca5feb0e2ef6c7b2d7a96bff2a52512d568e1a",
+      "upstreamSources": [
+        "srtm/N14E121.tif",
+        "gmted/10N120E_20101117_gmted_mea075.tif"
+      ]
+    }
+  ],
+  "assetSha256": "44bdff8b6d078c45e39895705e6cb43987ab44fd701bf47707ac29bed4613350"
+}

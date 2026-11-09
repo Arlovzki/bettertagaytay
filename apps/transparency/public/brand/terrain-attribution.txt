@@ -1,0 +1,22 @@
+Tagaytay elevation contours
+
+25 m elevation intervals, with 100 m major contours. North-up view of the
+Tagaytay city extent plus a small surrounding buffer. Decorative display;
+this is not an official boundary, survey or navigation map.
+
+SRTM and GMTED2010 terrain data courtesy of the U.S. Geological Survey,
+via Mapzen / AWS Terrain Tiles.
+Source: https://registry.opendata.aws/terrain-tiles/
+Provider attribution: https://github.com/tilezen/joerd/blob/master/docs/attribution.md
+
+Area reference: OpenStreetMap contributors, ODbL.
+https://www.openstreetmap.org/relation/1491134
+https://www.openstreetmap.org/copyright
+
+Processing manifest: /brand/terrain.json
+Rebuild instructions:
+https://github.com/Arlovzki/bettertagaytay/blob/main/scripts/terrain/README.md
+
+This asset is reused from the BetterTagaytay civic website. It is separate
+from any photograph and its license. The BetterGov.ph portal foundation
+is MIT licensed: /LICENSE.txt

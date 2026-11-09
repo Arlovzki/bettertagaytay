@@ -1,0 +1,2357 @@
+{
+  "defaultPeriod": "2026-q3",
+  "checkedOn": "2026-11-09",
+  "periods": [
+    {
+      "id": "2026-q3",
+      "year": 2026,
+      "quarter": "Q3",
+      "label": "Q3 2026",
+      "source": {
+        "id": "development-2026-q3",
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2026/Q3/Utilization%20of%20the%2020%20of%20the%20National%20Tax%20Allotment%20Q3%202026.pdf",
+        "copyUrl": "/city-finances/2026-q3/development-fund-q3-2026.pdf",
+        "sha256": "fa48cc4a48ab0f3a2afb4dd9458e1f7502c8aa81bf8f3538180ba2ea00e35c94",
+        "bytes": 428589,
+        "pages": 1,
+        "listingYear": 2026,
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The report lists 20 projects, including resettlement land, road and drainage work, and upgrades to Tagaytay Arena. Only the Maharlika West lot has an incurred amount.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed project costs",
+          "centavos": 16618400000,
+          "basis": "calculated-sum",
+          "help": "Sum of 20 project rows, excluding the balance.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "5,025.12 m² lot",
+              "centavos": 5618400000
+            },
+            {
+              "label": "Concrete bridge",
+              "centavos": 450000000
+            },
+            {
+              "label": "Road concreting",
+              "centavos": 1000000000
+            },
+            {
+              "label": "Drainage improvement",
+              "centavos": 800000000
+            },
+            {
+              "label": "Road widening and concreting",
+              "centavos": 300000000
+            },
+            {
+              "label": "Bleacher chairs with backing",
+              "centavos": 2300000000
+            },
+            {
+              "label": "Interior painting and rubberized flooring",
+              "centavos": 500000000
+            },
+            {
+              "label": "Lighting fixtures",
+              "centavos": 1000000000
+            },
+            {
+              "label": "Retractable bleachers",
+              "centavos": 1500000000
+            },
+            {
+              "label": "Plastering, railings and ramps",
+              "centavos": 200000000
+            },
+            {
+              "label": "Hybrid lamps and lamp posts",
+              "centavos": 675000000
+            },
+            {
+              "label": "Air-conditioning units",
+              "centavos": 350000000
+            },
+            {
+              "label": "Air-conditioning units",
+              "centavos": 350000000
+            },
+            {
+              "label": "Additional septic tank at the housing project",
+              "centavos": 100000000
+            },
+            {
+              "label": "Asphalt patching",
+              "centavos": 200000000
+            },
+            {
+              "label": "Day care building, second floor",
+              "centavos": 230000000
+            },
+            {
+              "label": "Multipurpose court roof construction or extension",
+              "centavos": 95000000
+            },
+            {
+              "label": "Service entrance main feeder",
+              "centavos": 125000000
+            },
+            {
+              "label": "Water tank and pipeline",
+              "centavos": 25000000
+            },
+            {
+              "label": "Two mini dump trucks",
+              "centavos": 800000000
+            }
+          ]
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 5618400000,
+          "basis": "reported-row",
+          "help": "Maharlika West resettlement lot. The other 19 entries are blank.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": [
+        "The printed total includes a separate ₱1,038.00 balance. The report leaves completion percentages and dates blank."
+      ]
+    },
+    {
+      "id": "2026-q2",
+      "year": 2026,
+      "quarter": "Q2",
+      "label": "Q2 2026",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2026/Q2/Utilization%20of%20the%2020%20of%20the%20National%20Tax%20Allotment%20Q2%202026.pdf",
+        "sha256": "3d6f27a3caad7387e1110934e2a4e454d5f77c5884e361102c15c04bdca9d488",
+        "bytes": 306110,
+        "pages": 1,
+        "listingYear": 2026,
+        "copyUrl": "/city-finances/development/2026-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The report lists the resettlement land programme and a 5,025.12 m² lot in Maharlika West. Only the lot row shows a cost incurred, with a check dated April 13, 2026.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 16618503800,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 5618400000,
+          "basis": "reported-row",
+          "help": "Maharlika West resettlement lot. The programme row is blank.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2026-q1",
+      "year": 2026,
+      "quarter": "Q1",
+      "label": "Q1 2026",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2026/Q1/Utilization%20of%20the%2020%20of%20the%20National%20Tax%20Allotment%20Q1%202026.pdf",
+        "sha256": "adb7990cf43d07cca3b8792b2fd1a705835db61f19d2ac0e92be868a84957576",
+        "bytes": 302509,
+        "pages": 1,
+        "listingYear": 2026,
+        "copyUrl": "/city-finances/development/2026-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The report lists a resettlement land programme and a separate lot entry in Maharlika West. It gives no incurred amounts or completion percentages.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed programme cost",
+          "centavos": 16618503800,
+          "basis": "reported-row",
+          "help": "Amount shown beside the resettlement land programme.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "lot",
+          "label": "Listed lot cost",
+          "centavos": 5618400000,
+          "basis": "reported-row",
+          "help": "Separate entry for a 5,025.12 m² lot in Maharlika West.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": [
+        "The form does not give a combined total. The programme and lot figures are shown separately to avoid counting the lot twice."
+      ]
+    },
+    {
+      "id": "2025-q4",
+      "year": 2025,
+      "quarter": "Q4",
+      "label": "Q4 2025",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2025/Q4/NTAU.pdf",
+        "sha256": "0522a665e855b0764064bef9e22e14af6a44e409795b18d6afc4887848377c6f",
+        "bytes": 394900,
+        "pages": 1,
+        "listingYear": 2025,
+        "copyUrl": "/city-finances/development/2025-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement land, citywide CCTV, two road projects and drainage. The city marks the two road projects and the drainage work complete, and reports 10% completion for CCTV.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed project costs",
+          "centavos": 14525100000,
+          "basis": "calculated-sum",
+          "help": "Calculated from five entries. The form has no cost total.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Resettlement land",
+              "centavos": 12000000000
+            },
+            {
+              "label": "Citywide CCTV",
+              "centavos": 2227000000
+            },
+            {
+              "label": "Concrete work on Vilbay Street",
+              "centavos": 49450000
+            },
+            {
+              "label": "Asphalt work on Heroes Road",
+              "centavos": 199000000
+            },
+            {
+              "label": "Drainage on Daang Luma",
+              "centavos": 49650000
+            }
+          ]
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 12000000000,
+          "basis": "reported-row",
+          "help": "Iruhin East resettlement lot. The four other entries are blank.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2025-q3",
+      "year": 2025,
+      "quarter": "Q3",
+      "label": "Q3 2025",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2025/Q3/dfu3.pdf",
+        "sha256": "bdbc1f2f45cda41ed9a62d63f1548bdcc0a7a74179bdd72f5490ab9c2147df11",
+        "bytes": 377751,
+        "pages": 1,
+        "listingYear": 2025,
+        "copyUrl": "/city-finances/development/2025-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement land, citywide CCTV, two road projects and drainage. The city marks Vilbay Street concrete work and Daang Luma drainage complete. It lists CCTV and Heroes Road asphalt as “For implementation.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed project costs",
+          "centavos": 14528371120,
+          "basis": "calculated-sum",
+          "help": "Calculated from five entries. The form has no cost total.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Resettlement land",
+              "centavos": 12000000000
+            },
+            {
+              "label": "Citywide CCTV",
+              "centavos": 2228371120
+            },
+            {
+              "label": "Concrete work on Vilbay Street",
+              "centavos": 50000000
+            },
+            {
+              "label": "Asphalt work on Heroes Road",
+              "centavos": 200000000
+            },
+            {
+              "label": "Drainage on Daang Luma",
+              "centavos": 50000000
+            }
+          ]
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 12000000000,
+          "basis": "reported-row",
+          "help": "Iruhin East resettlement lot. The four other entries are blank.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2025-q2",
+      "year": 2025,
+      "quarter": "Q2",
+      "label": "Q2 2025",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2025/Q2/ntau.pdf",
+        "sha256": "faf31d4a9ea8feb5b5b29efc8d90225774026776b00053d83a0710260e72903e",
+        "bytes": 363117,
+        "pages": 1,
+        "listingYear": 2025,
+        "copyUrl": "/city-finances/development/2025-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement land, citywide CCTV, two road projects and drainage.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed project costs",
+          "centavos": 14528371120,
+          "basis": "calculated-sum",
+          "help": "Calculated from five entries. The form has no cost total.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Resettlement land",
+              "centavos": 12000000000
+            },
+            {
+              "label": "Citywide CCTV",
+              "centavos": 2228371120
+            },
+            {
+              "label": "Concrete work on Vilbay Street",
+              "centavos": 50000000
+            },
+            {
+              "label": "Asphalt work on Heroes Road",
+              "centavos": 200000000
+            },
+            {
+              "label": "Drainage on Daang Luma",
+              "centavos": 50000000
+            }
+          ]
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 12000000000,
+          "basis": "reported-row",
+          "help": "Iruhin East resettlement lot. The four other entries are blank.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2025-q1",
+      "year": 2025,
+      "quarter": "Q1",
+      "label": "Q1 2025",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2025/Q1/ira.pdf",
+        "sha256": "b1469b6b3f22050dc2a60c13309e7f10b59fe63a94ce7a917e43c8c017647672",
+        "bytes": 380112,
+        "pages": 1,
+        "listingYear": 2025,
+        "copyUrl": "/city-finances/development/2025-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement land, citywide CCTV, two road projects and drainage. The remarks refer to purchase requests dated February 17.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed project costs",
+          "centavos": 14528371120,
+          "basis": "calculated-sum",
+          "help": "Calculated from five entries. The form has no cost total.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Resettlement land",
+              "centavos": 12000000000
+            },
+            {
+              "label": "Citywide CCTV",
+              "centavos": 2228371120
+            },
+            {
+              "label": "Concrete work on Vilbay Street",
+              "centavos": 50000000
+            },
+            {
+              "label": "Asphalt work on Heroes Road",
+              "centavos": 200000000
+            },
+            {
+              "label": "Drainage on Daang Luma",
+              "centavos": 50000000
+            }
+          ]
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2024-q4",
+      "year": 2024,
+      "quarter": "Q4",
+      "label": "Q4 2024",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2024/Q4/ira.pdf",
+        "sha256": "8e2fb081a62ea2c3e90c40dc0d9e2ba2524526126edc022ee7636ec5ed281f77",
+        "bytes": 310936,
+        "pages": 1,
+        "listingYear": 2024,
+        "copyUrl": "/city-finances/development/2024-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The city lists resettlement land in Iruhin East. The lot entry gives an incurred amount of ₱120 million and cites a check dated August 13, 2024.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed programme cost",
+          "centavos": 12285607940,
+          "basis": "reported-row",
+          "help": "Cost shown for resettlement land acquisition.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 12000000000,
+          "basis": "reported-row",
+          "help": "Resettlement lot in Iruhin East.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "carryover",
+          "label": "Continuing appropriation",
+          "centavos": 285607940,
+          "basis": "reported-row",
+          "help": "Separate “Continuing Appropriations Lot” line.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": [
+        "The report places the continuing appropriation in the incurred-cost column. It is shown separately because the line describes an appropriation, not an additional payment."
+      ]
+    },
+    {
+      "id": "2024-q3",
+      "year": 2024,
+      "quarter": "Q3",
+      "label": "Q3 2024",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2024/Q3/NTA.pdf",
+        "sha256": "60fe5e30099e161234fe246865b061996cd0d1ad8758bea9635a2d04d2915cba",
+        "bytes": 325279,
+        "pages": 1,
+        "listingYear": 2024,
+        "copyUrl": "/city-finances/development/2024-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The city lists resettlement land in Iruhin East. The lot entry gives an incurred amount of ₱120 million and cites a check dated August 13, 2024.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed programme cost",
+          "centavos": 12285607940,
+          "basis": "reported-row",
+          "help": "Cost shown for resettlement land acquisition.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 12000000000,
+          "basis": "reported-row",
+          "help": "Resettlement lot in Iruhin East.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2024-q2",
+      "year": 2024,
+      "quarter": "Q2",
+      "label": "Q2 2024",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2024/Q2/NTA.pdf",
+        "sha256": "1bcc4e2eaa00a55b39fb40d8c59c55563c46430feabaeda83a7d085af940c703",
+        "bytes": 316517,
+        "pages": 1,
+        "listingYear": 2024,
+        "copyUrl": "/city-finances/development/2024-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The city lists land acquisition for a resettlement site. It leaves location, project dates, completion and incurred cost blank.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed programme cost",
+          "centavos": 12285607940,
+          "basis": "reported-row",
+          "help": "Cost shown for resettlement land acquisition.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2024-q1",
+      "year": 2024,
+      "quarter": "Q1",
+      "label": "Q1 2024",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2024/Q1/ira1.pdf",
+        "sha256": "55eed0bb9156b30c90923fed3418b0b391c917a936b21a39f7a29f78b7fcc742",
+        "bytes": 327087,
+        "pages": 1,
+        "listingYear": 2024,
+        "copyUrl": "/city-finances/development/2024-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The city lists land acquisition for a resettlement site. It leaves location, project dates, completion and incurred cost blank.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed programme cost",
+          "centavos": 12285607940,
+          "basis": "reported-row",
+          "help": "Cost shown for resettlement land acquisition.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2023-q4",
+      "year": 2023,
+      "quarter": "Q4",
+      "label": "Q4 2023",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2023/Q4/ira%204th.pdf",
+        "sha256": "1a583c055d1e08609226ffcafb7a8af5bcdcb13ff90e2ddcab5a2c6792c13f15",
+        "bytes": 348190,
+        "pages": 1,
+        "listingYear": 2023,
+        "copyUrl": "/city-finances/development/2023-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The report lists Tenement Housing Building 3 in Patutong Malaki South. The city records 17.50% completion and describes the incurred figure as “15% mobilization.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed project cost",
+          "centavos": 11633276880,
+          "basis": "reported-row",
+          "help": "Cost shown for Tenement Housing Building 3.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 3307500000,
+          "basis": "reported-row",
+          "help": "Tenement Housing Building 3.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": [
+        "The report lists a different location from Q1–Q3. Its mobilization amount and completion percentage are separate figures."
+      ]
+    },
+    {
+      "id": "2023-q3",
+      "year": 2023,
+      "quarter": "Q3",
+      "label": "Q3 2023",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2023/Q3/ira%203rd.pdf",
+        "sha256": "93fe4ad73c8b28b9f962fc471b4a9ba69e5ba28a6f8b13e59cbcfa4428f92e80",
+        "bytes": 348841,
+        "pages": 1,
+        "listingYear": 2023,
+        "copyUrl": "/city-finances/development/2023-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The report lists Tenement Housing Building 3 in Mendez Crossing East. The form records 15% completion and also says “No Disbursements.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed project cost",
+          "centavos": 11633276880,
+          "basis": "reported-row",
+          "help": "Cost shown for Tenement Housing Building 3.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 1744991532,
+          "basis": "reported-row",
+          "help": "Tenement Housing Building 3.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": [
+        "The report shows both a cost incurred and a “No Disbursements” remark. The incurred figure is not presented as a payment."
+      ]
+    },
+    {
+      "id": "2023-q2",
+      "year": 2023,
+      "quarter": "Q2",
+      "label": "Q2 2023",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2023/Q2/ira.pdf",
+        "sha256": "36f4150ee4da5606e822f204a0299811928f2cf79914b4c2f7a4996072793970",
+        "bytes": 353761,
+        "pages": 1,
+        "listingYear": 2023,
+        "copyUrl": "/city-finances/development/2023-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The report lists Tenement Housing Building 3 in Mendez Crossing East. The form records 7.50% completion and also says “No Disbursements.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed project cost",
+          "centavos": 11633276880,
+          "basis": "reported-row",
+          "help": "Cost shown for Tenement Housing Building 3.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 872495766,
+          "basis": "reported-row",
+          "help": "Tenement Housing Building 3.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": [
+        "The report shows both a cost incurred and a “No Disbursements” remark. The incurred figure is not presented as a payment."
+      ]
+    },
+    {
+      "id": "2023-q1",
+      "year": 2023,
+      "quarter": "Q1",
+      "label": "Q1 2023",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2023/Q1/ira1st.pdf",
+        "sha256": "a3af693ed8ce869ee2c7429ef65c32d8119d1e1bf24be8141a9d71a4c3df546d",
+        "bytes": 297251,
+        "pages": 1,
+        "listingYear": 2023,
+        "copyUrl": "/city-finances/development/2023-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The report lists Tenement Housing Building 3 in Mendez Crossing East. The form gives no incurred cost or completion percentage and says “No Disbursements.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed project cost",
+          "centavos": 11633276880,
+          "basis": "reported-row",
+          "help": "Cost shown for Tenement Housing Building 3.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2022-q4",
+      "year": 2022,
+      "quarter": "Q4",
+      "label": "Q4 2022",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2022/Q4/IRA%20Q4.pdf",
+        "sha256": "9fe8e763a85b4a9e772ac31934492c6d28659c8d15e0be5cab288377f5dae0cf",
+        "bytes": 455601,
+        "pages": 1,
+        "listingYear": 2022,
+        "copyUrl": "/city-finances/development/2022-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The report lists housing, completion of Ospital ng Tagaytay, road works and drainage. The incurred total covers housing, Ospital ng Tagaytay and several road lots. The city marks the housing and hospital entries 100% complete.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 13601383680,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Reported cost incurred to date",
+          "centavos": 10070806780,
+          "basis": "printed-total",
+          "help": "Total in the city’s incurred-cost column.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2022-q3",
+      "year": 2022,
+      "quarter": "Q3",
+      "label": "Q3 2022",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2022/Q3/IRA%20Q3.pdf",
+        "sha256": "afbde03a577b23b8d38429ed8ac8cb323abcc72725fe07ecc760401ca50d8423",
+        "bytes": 428515,
+        "pages": 1,
+        "listingYear": 2022,
+        "copyUrl": "/city-finances/development/2022-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The report lists housing, completion of Ospital ng Tagaytay, road works and drainage. The incurred total covers ₱29.7 million for Ospital ng Tagaytay and ₱798,000 for one road lot.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 13601383680,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Reported cost incurred to date",
+          "centavos": 3049800000,
+          "basis": "printed-total",
+          "help": "Total in the city’s incurred-cost column.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2022-q2",
+      "year": 2022,
+      "quarter": "Q2",
+      "label": "Q2 2022",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2022/Q2/IRA%20Q2.pdf",
+        "sha256": "5977d108bdcc92dd80b64d808384dd7e506a6ab585e6819cb942c7938da8f6e1",
+        "bytes": 401574,
+        "pages": 1,
+        "listingYear": 2022,
+        "copyUrl": "/city-finances/development/2022-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The report lists housing, completion of Ospital ng Tagaytay, road works and drainage. The report itemizes several road lots. The incurred-cost total is a dash.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 13201327780,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The incurred-cost total is a dash.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2022-q1",
+      "year": 2022,
+      "quarter": "Q1",
+      "label": "Q1 2022",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2022/Q1/IRA%20Q1.pdf",
+        "sha256": "0dd1c8063d2a63be699e8a3296c66b12277176b561f616775677c1d96d9cdf1f",
+        "bytes": 350082,
+        "pages": 1,
+        "listingYear": 2022,
+        "copyUrl": "/city-finances/development/2022-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The report lists housing, completion of Ospital ng Tagaytay, road works and drainage. The remarks say “No Disbursement” for the listed programmes.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 13201327780,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The incurred-cost total is a dash.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2021-q4",
+      "year": 2021,
+      "quarter": "Q4",
+      "label": "Q4 2021",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2021/IRA%20Q4%202021.pdf",
+        "sha256": "44484b0fcfd98b95c22e0e78af941cde9251c9aba55fe91087550da0fdaab81c",
+        "bytes": 552881,
+        "pages": 1,
+        "listingYear": 2021,
+        "copyUrl": "/city-finances/development/2021-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The city reports incurred costs for tenement housing and relief supplies. It records 30% completion for the housing project in Patutong Malaki South, separately from the cost figure.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 9573548320,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Reported cost incurred to date",
+          "centavos": 9067728320,
+          "basis": "printed-total",
+          "help": "Total in the city’s incurred-cost column.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2021-q2",
+      "year": 2021,
+      "quarter": "Q2",
+      "label": "Q2 2021",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2021/ira.pdf",
+        "sha256": "8f67f41fb69a9582c3b2361cfacfacf49d920d8b275f5285ad631ad7baa3d813",
+        "bytes": 342732,
+        "pages": 1,
+        "listingYear": 2021,
+        "copyUrl": "/city-finances/development/2021-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The return lists housing, space for COVID-19 patients, and food assistance, vitamins and vaccines. The remarks say “No Disbursement” and the incurred column is blank.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 9573548320,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2021-q1",
+      "year": 2021,
+      "quarter": "Q1",
+      "label": "Q1 2021",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2021/IRA%20Utilization%20Q1.pdf",
+        "sha256": "93f1b1d408c0be83c92bfba4a7b2dd1b7b38fc471db2703025e8ece68b3d394a",
+        "bytes": 369947,
+        "pages": 1,
+        "listingYear": 2021,
+        "copyUrl": "/city-finances/development/2021-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The return lists housing, space for COVID-19 patients, and food assistance, vitamins and vaccines. The remarks say “No Disbursement” and the incurred column is blank.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 9573548320,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2020-annual",
+      "year": 2020,
+      "quarter": "annual",
+      "label": "Calendar year 2020",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2020/IRA%204th%20q%202020.pdf",
+        "sha256": "6de5b9e138998cc8ecb075ca9371a242ef25b8fa6ceaf407220225b06a9a6e75",
+        "bytes": 1093421,
+        "pages": 2,
+        "listingYear": 2020,
+        "copyUrl": "/city-finances/development/2020-annual.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1, 2],
+      "summary": "This full-year report covers housing and resettlement land, land for roads, and the forest park. Its incurred-cost total covers resettlement and road land entries.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 8982109080,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 2,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Reported cost incurred to date",
+          "centavos": 6515280000,
+          "basis": "printed-total",
+          "help": "Total in the city’s incurred-cost column.",
+          "sourcePage": 2,
+          "components": []
+        }
+      ],
+      "notes": [
+        "The city lists this PDF under Q4, but the heading on page 1 says “For Calendar Year 2020.” The totals are on page 2."
+      ]
+    },
+    {
+      "id": "2020-q3",
+      "year": 2020,
+      "quarter": "Q3",
+      "label": "Q3 2020",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2020/IRA%203rd%20q%202020.pdf",
+        "sha256": "2da94955016c0fb3edec271f0983cc8a83a36e6fd1aa9d9b6662d1ae54bee752",
+        "bytes": 320987,
+        "pages": 1,
+        "listingYear": 2020,
+        "copyUrl": "/city-finances/development/2020-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The form lists resettlement housing, road land and construction, and the forest park at Tagaytay Centrum. The incurred figure covers road lots in San Jose and Maitim II East.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 8982109080,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Reported cost incurred to date",
+          "centavos": 2634480000,
+          "basis": "printed-total",
+          "help": "Total in the city’s incurred-cost column.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2020-q2",
+      "year": 2020,
+      "quarter": "Q2",
+      "label": "Q2 2020",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2020/IRA%202nd%20q%202020.pdf",
+        "sha256": "113fb6b74af141eef08d58378ff35a6c5962e37730716956db02f34a394f7269",
+        "bytes": 339324,
+        "pages": 1,
+        "listingYear": 2020,
+        "copyUrl": "/city-finances/development/2020-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The form lists resettlement housing, road land and construction, and the forest park at Tagaytay Centrum. The incurred figure is for a road lot in San Jose.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 8982109080,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Reported cost incurred to date",
+          "centavos": 2438180000,
+          "basis": "printed-total",
+          "help": "Total in the city’s incurred-cost column.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2020-q1",
+      "year": 2020,
+      "quarter": "Q1",
+      "label": "Q1 2020",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2020/IRA%201st%20q%202020.pdf",
+        "sha256": "02e49072715c7a9e14c38f0475750063f687c3e320160360c672b04e204fd18e",
+        "bytes": 350080,
+        "pages": 1,
+        "listingYear": 2020,
+        "copyUrl": "/city-finances/development/2020-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The form lists resettlement housing, road land and construction, and the forest park at Tagaytay Centrum. The remarks say “No Disbursement” for the three programmes.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 8982109080,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2019-q4",
+      "year": 2019,
+      "quarter": "Q4",
+      "label": "Q4 2019",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2019/IRA%204th%20q%202019.pdf",
+        "sha256": "b6ceab8e0b673c6ec5c390e850242044f383ca5284197b6eda569f2ae895daca",
+        "bytes": 297078,
+        "pages": 1,
+        "listingYear": 2019,
+        "copyUrl": "/city-finances/development/2019-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement sites, a skateboard track and completion of the slaughterhouse. The city marks the skateboard track in Kaybagal South 100% complete. The cost column also lists ₱564,742.60 under Supplemental Budget #3.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 7966126340,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 1980000000,
+          "basis": "reported-row",
+          "help": "Kaybagal South skateboard track. Other incurred fields are blank.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2019-q3",
+      "year": 2019,
+      "quarter": "Q3",
+      "label": "Q3 2019",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2019/IRA%203rd%20q%202019.pdf",
+        "sha256": "41c507ac938bcdcd6a00d6567de9486b2b56ba7b830c9d6b79afb8b5f3425e0f",
+        "bytes": 523552,
+        "pages": 1,
+        "listingYear": 2019,
+        "copyUrl": "/city-finances/development/2019-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement sites, a skateboard track and completion of the slaughterhouse. The city marks the skateboard track in Kaybagal South 100% complete.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 7909652080,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 1980000000,
+          "basis": "reported-row",
+          "help": "Kaybagal South skateboard track. Other incurred fields are blank.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2019-q2",
+      "year": 2019,
+      "quarter": "Q2",
+      "label": "Q2 2019",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2019/IRA%202nd%20q%202019.pdf",
+        "sha256": "9086b6c7581fc3c0989b81253c66637f9a79e05b0be962743dd7640e607e9287",
+        "bytes": 110838,
+        "pages": 1,
+        "listingYear": 2019,
+        "copyUrl": "/city-finances/development/2019-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement sites, a skateboard track and completion of the slaughterhouse. The remarks say “No Disbursement” for the three entries.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 7909652080,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2019-q1",
+      "year": 2019,
+      "quarter": "Q1",
+      "label": "Q1 2019",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2019/IRA%201st%20q%202019.pdf",
+        "sha256": "9c5c312cec9056edaf54840cc0c8075a74b4d9c0cd51bb6a238f3735fd495c95",
+        "bytes": 461807,
+        "pages": 1,
+        "listingYear": 2019,
+        "copyUrl": "/city-finances/development/2019-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement sites, a skateboard track and completion of the slaughterhouse. The remarks say “No Disbursement” for the three entries.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 7909652080,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2018-q4",
+      "year": 2018,
+      "quarter": "Q4",
+      "label": "Q4 2018",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2018/IRA%204th%20q%202018.pdf",
+        "sha256": "f0a5b4b247ee5c1d9998bb5666a874b1eed45f771d4c2025cdebe3a0c44fda9a",
+        "bytes": 254502,
+        "pages": 1,
+        "listingYear": 2018,
+        "copyUrl": "/city-finances/development/2018-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The form lists housing in Mendez Crossing East and Tolentino East. It marks the Mendez Crossing East entry 100% complete, while the Tolentino East entry says “No Disbursement.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 7129197360,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred in the listed entry",
+          "centavos": 6330000000,
+          "basis": "reported-row",
+          "help": "Mendez Crossing East housing. The other housing entry is blank.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2018-q3",
+      "year": 2018,
+      "quarter": "Q3",
+      "label": "Q3 2018",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2018/IRA%203rd%20q%202018.pdf",
+        "sha256": "d8fd8825021097d75db8fabd2bd2a19e8489f8e20e4bec35f09a11ad81b650d8",
+        "bytes": 701454,
+        "pages": 1,
+        "listingYear": 2018,
+        "copyUrl": "/city-finances/development/2018-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The form lists acquisition, development and construction of resettlement sites as one programme. The remarks say “No Disbursement.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 7179197360,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2018-q2",
+      "year": 2018,
+      "quarter": "Q2",
+      "label": "Q2 2018",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2018/IRA%202nd%20q%202018.pdf",
+        "sha256": "f2be51805aca2dce75187683d04b3535a1fd41a1a8fbd8a0c119831aaff33506",
+        "bytes": 366726,
+        "pages": 1,
+        "listingYear": 2018,
+        "copyUrl": "/city-finances/development/2018-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The form lists acquisition, development and construction of resettlement sites as one programme. The remarks say “No Disbursement.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 7179197360,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2018-q1",
+      "year": 2018,
+      "quarter": "Q1",
+      "label": "Q1 2018",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2018/IRA%201st%20q%202018.pdf",
+        "sha256": "60178de39ba1f70ec35158ce0842153e78d0b8614b7090621fb163cbfe3daf5c",
+        "bytes": 727589,
+        "pages": 1,
+        "listingYear": 2018,
+        "copyUrl": "/city-finances/development/2018-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The form lists acquisition, development and construction of resettlement sites as one programme. The remarks say “No Disbursement.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 7179197360,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2017-q4",
+      "year": 2017,
+      "quarter": "Q4",
+      "label": "Q4 2017",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2017/IRA%204th%20q%202017.pdf",
+        "sha256": "ba9a388298b52d3c0d560e84871536f3ae402c609ca16efb19c5af25884224a2",
+        "bytes": 291471,
+        "pages": 1,
+        "listingYear": 2017,
+        "copyUrl": "/city-finances/development/2017-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The report lists a garbage truck, construction of Ospital ng Tagaytay, a slaughterhouse and a multipurpose session hall. The remarks say “No Disbursement” and leave incurred costs blank.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 6605028800,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2017-q3",
+      "year": 2017,
+      "quarter": "Q3",
+      "label": "Q3 2017",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2017/IRA%203rd%20q%202017.pdf",
+        "sha256": "4cc07e63b7e9af223a7a4cb6133cb461086867b0bc9db25e179361fd094973c1",
+        "bytes": 707573,
+        "pages": 1,
+        "listingYear": 2017,
+        "copyUrl": "/city-finances/development/2017-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The report lists a garbage truck, construction of Ospital ng Tagaytay, a slaughterhouse and a multipurpose session hall. The remarks say “No Disbursement” and leave incurred costs blank.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 6605028920,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2017-q2",
+      "year": 2017,
+      "quarter": "Q2",
+      "label": "Q2 2017",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2017/IRA%202nd%20q%202017.pdf",
+        "sha256": "a2d4c938df6b38a23ae0c0970ba91d1896c034c635c368e51e1e5d08172208a9",
+        "bytes": 648718,
+        "pages": 1,
+        "listingYear": 2017,
+        "copyUrl": "/city-finances/development/2017-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The report lists a garbage truck, construction of Ospital ng Tagaytay, a slaughterhouse and a multipurpose session hall. The remarks say “No Disbursement” and leave incurred costs blank.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 6605028920,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2017-q1",
+      "year": 2017,
+      "quarter": "Q1",
+      "label": "Q1 2017",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2017/IRA%201st%20q%202017.pdf",
+        "sha256": "b483f0478f18eed7fe3029bc87831afa11905322a072aeac8719c3282404b135",
+        "bytes": 15783148,
+        "pages": 1,
+        "listingYear": 2017,
+        "copyUrl": "/city-finances/development/2017-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The report lists a garbage truck, construction of Ospital ng Tagaytay, a slaughterhouse and a multipurpose session hall. The remarks say “No Disbursement” and leave incurred costs blank.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 6605028920,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2016-q4",
+      "year": 2016,
+      "quarter": "Q4",
+      "label": "Q4 2016",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2016/IRA%204th%20q%202016.pdf",
+        "sha256": "7308e8cc098acae626ceeb95032623b4d37b84f01041703ee7755a22e527974f",
+        "bytes": 530569,
+        "pages": 1,
+        "listingYear": 2016,
+        "copyUrl": "/city-finances/development/2016-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The city marks four entries 100% complete: resettlement land, road and drainage work, and two dump truck entries. This form separates the amount set aside from individual project costs.",
+      "figures": [
+        {
+          "id": "appropriation",
+          "label": "Reported appropriation",
+          "centavos": 5841108860,
+          "basis": "printed-total",
+          "help": "Amount set aside, printed in the appropriation column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "cost",
+          "label": "Cost of entries with figures",
+          "centavos": 3848429400,
+          "basis": "calculated-sum",
+          "help": "Calculated from four project rows.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Resettlement land",
+              "centavos": 1950000000
+            },
+            {
+              "label": "Road and drainage work",
+              "centavos": 940675000
+            },
+            {
+              "label": "First dump truck entry",
+              "centavos": 591000000
+            },
+            {
+              "label": "Second dump truck entry",
+              "centavos": 366754400
+            }
+          ]
+        },
+        {
+          "id": "incurred",
+          "label": "Incurred cost in entries with figures",
+          "centavos": 3848429400,
+          "basis": "calculated-sum",
+          "help": "Calculated from four incurred-cost rows.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Resettlement land",
+              "centavos": 1950000000
+            },
+            {
+              "label": "Road and drainage work",
+              "centavos": 940675000
+            },
+            {
+              "label": "First dump truck entry",
+              "centavos": 591000000
+            },
+            {
+              "label": "Second dump truck entry",
+              "centavos": 366754400
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2016-q3",
+      "year": 2016,
+      "quarter": "Q3",
+      "label": "Q3 2016",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2016/IRA%203rd%20q%202016.pdf",
+        "sha256": "ece4200340e91e45d293a7459431035fdae79669ef8779a5aa08d9f7bf7090e7",
+        "bytes": 474561,
+        "pages": 1,
+        "listingYear": 2016,
+        "copyUrl": "/city-finances/development/2016-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The listed costs cover resettlement land, road and drainage work, and streetlights. The remarks say “No Disbursement.” The form also lists dump trucks without a cost amount.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 5841108860,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2016-q2",
+      "year": 2016,
+      "quarter": "Q2",
+      "label": "Q2 2016",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2016/IRA%202nd%20q%202016.pdf",
+        "sha256": "6d1abb002af98d50e5291c53db2c1d8e727609e178ea4446578a727459952d04",
+        "bytes": 234158,
+        "pages": 1,
+        "listingYear": 2016,
+        "copyUrl": "/city-finances/development/2016-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The listed costs cover resettlement land, road and drainage work, and streetlights. The remarks say “No Disbursement.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 5841108860,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2016-q1",
+      "year": 2016,
+      "quarter": "Q1",
+      "label": "Q1 2016",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2016/IRA%201st%20q%202016.pdf",
+        "sha256": "8b02ff7095c44ffef84d80404a2245851489ef9c2d914405a98304a2ea10cd67",
+        "bytes": 317450,
+        "pages": 1,
+        "listingYear": 2016,
+        "copyUrl": "/city-finances/development/2016-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The listed costs cover resettlement land, road and drainage work, and streetlights. The remarks say “No Disbursement.”",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Reported total cost",
+          "centavos": 5841108860,
+          "basis": "printed-total",
+          "help": "Total in the city’s cost column.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2015-q4",
+      "year": 2015,
+      "quarter": "Q4",
+      "label": "Q4 2015",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2015/IRA%204th%20q%202015.pdf",
+        "sha256": "7f0fc4c290e45ca644a47b5f6472973066a750507f7f96e8efb3d6cadd273374",
+        "bytes": 390876,
+        "pages": 1,
+        "listingYear": 2015,
+        "copyUrl": "/city-finances/development/2015-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The report marks two barangay road entries and the dump truck purchase 100% complete. The resettlement housing entry says “No Disbursement” and leaves the amounts blank.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Cost of entries with figures",
+          "centavos": 661784000,
+          "basis": "calculated-sum",
+          "help": "Calculated from three entries. The form has no cost total.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Barangay road, Guinhawa North",
+              "centavos": 192080000
+            },
+            {
+              "label": "Barangay road, Maharlika East",
+              "centavos": 54000000
+            },
+            {
+              "label": "Dump trucks",
+              "centavos": 415704000
+            }
+          ]
+        },
+        {
+          "id": "incurred",
+          "label": "Incurred cost in entries with figures",
+          "centavos": 661784000,
+          "basis": "calculated-sum",
+          "help": "Calculated from three entries. Housing has no amount.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Barangay road, Guinhawa North",
+              "centavos": 192080000
+            },
+            {
+              "label": "Barangay road, Maharlika East",
+              "centavos": 54000000
+            },
+            {
+              "label": "Dump trucks",
+              "centavos": 415704000
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2015-q3",
+      "year": 2015,
+      "quarter": "Q3",
+      "label": "Q3 2015",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2015/IRA%203rd%20q%202015.pdf",
+        "sha256": "8616da458f9f0bce09db140aa579ae74929eb2c9871ecd47f5cb3df9e01b0ae5",
+        "bytes": 675293,
+        "pages": 1,
+        "listingYear": 2015,
+        "copyUrl": "/city-finances/development/2015-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement housing, barangay roads and dump trucks. Its remarks say “No Disbursement” for the three programmes.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed costs",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The cost column is blank.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2015-q2",
+      "year": 2015,
+      "quarter": "Q2",
+      "label": "Q2 2015",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2015/IRA%202nd%20q%202015.pdf",
+        "sha256": "fafbd85113314e1a6078b843eea20a1c8e7bafcf5be84d1766c55d46a9dcc6c6",
+        "bytes": 336360,
+        "pages": 1,
+        "listingYear": 2015,
+        "copyUrl": "/city-finances/development/2015-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement housing, barangay roads and dump trucks. Its remarks say “No Disbursement” for the three programmes.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed costs",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The cost column is blank.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2015-q1",
+      "year": 2015,
+      "quarter": "Q1",
+      "label": "Q1 2015",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2015/IRA%201st%20q%202015.pdf",
+        "sha256": "0b51a248a06bcfa581ac9ec370a5a6d642c62adf591045e3883872b114145be0",
+        "bytes": 477854,
+        "pages": 1,
+        "listingYear": 2015,
+        "copyUrl": "/city-finances/development/2015-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The report lists resettlement housing, barangay roads and dump trucks. Its remarks say “No Disbursement” for the three programmes.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed costs",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The cost column is blank.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The city does not provide a numeric incurred amount.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "2014-q4",
+      "year": 2014,
+      "quarter": "Q4",
+      "label": "Q4 2014",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2014/IRA%204th%20q%202014.pdf",
+        "sha256": "b48b22cb3d305955fb6dec08ee8dfc84bdd083300d20766dbd705e6fc8c376c5",
+        "bytes": 347339,
+        "pages": 1,
+        "listingYear": 2014,
+        "copyUrl": "/city-finances/development/2014-q4.pdf",
+        "listingQuarter": "Q4"
+      },
+      "citedPages": [1],
+      "summary": "The report gives figures for 6 solid waste and Clean and Green entries and marks each 100% complete. The housing and Mahogany Market lines say “No Disbursement” and have blank amounts.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Cost of entries with figures",
+          "centavos": 1249142200,
+          "basis": "calculated-sum",
+          "help": "Calculated from 6 entries. The form has no cost total.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Solid waste management, February entry",
+              "centavos": 315000000
+            },
+            {
+              "label": "Solid waste management, first June entry",
+              "centavos": 352800000
+            },
+            {
+              "label": "Solid waste management, second June entry",
+              "centavos": 336000000
+            },
+            {
+              "label": "Solid waste management, July entry",
+              "centavos": 195300000
+            },
+            {
+              "label": "Clean and Green, Ninoy Monument",
+              "centavos": 48725000
+            },
+            {
+              "label": "Clean and Green, Silang Crossing Rotonda",
+              "centavos": 1317200
+            }
+          ]
+        },
+        {
+          "id": "incurred",
+          "label": "Incurred cost in entries with figures",
+          "centavos": 1249142200,
+          "basis": "calculated-sum",
+          "help": "Calculated from 6 entries. Other fields are blank.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Solid waste management, February entry",
+              "centavos": 315000000
+            },
+            {
+              "label": "Solid waste management, first June entry",
+              "centavos": 352800000
+            },
+            {
+              "label": "Solid waste management, second June entry",
+              "centavos": 336000000
+            },
+            {
+              "label": "Solid waste management, July entry",
+              "centavos": 195300000
+            },
+            {
+              "label": "Clean and Green, Ninoy Monument",
+              "centavos": 48725000
+            },
+            {
+              "label": "Clean and Green, Silang Crossing Rotonda",
+              "centavos": 1317200
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "These sums cover only entries with amounts. They do not establish the full fund budget."
+      ]
+    },
+    {
+      "id": "2014-q3",
+      "year": 2014,
+      "quarter": "Q3",
+      "label": "Q3 2014",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2014/IRA%203rd%20q%202014.pdf",
+        "sha256": "c1b8afc0aacf104b2c2da3de136aa749e7d40b6b2180dfa8519b77a33efd232b",
+        "bytes": 349028,
+        "pages": 1,
+        "listingYear": 2014,
+        "copyUrl": "/city-finances/development/2014-q3.pdf",
+        "listingQuarter": "Q3"
+      },
+      "citedPages": [1],
+      "summary": "The report gives figures for 6 solid waste and Clean and Green entries and marks each 100% complete. The housing and Mahogany Market lines say “No Disbursement” and have blank amounts.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Cost of entries with figures",
+          "centavos": 1249142200,
+          "basis": "calculated-sum",
+          "help": "Calculated from 6 entries. The form has no cost total.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Solid waste management, February entry",
+              "centavos": 315000000
+            },
+            {
+              "label": "Solid waste management, first June entry",
+              "centavos": 352800000
+            },
+            {
+              "label": "Solid waste management, second June entry",
+              "centavos": 336000000
+            },
+            {
+              "label": "Solid waste management, July entry",
+              "centavos": 195300000
+            },
+            {
+              "label": "Clean and Green, Ninoy Monument",
+              "centavos": 48725000
+            },
+            {
+              "label": "Clean and Green, Silang Crossing Rotonda",
+              "centavos": 1317200
+            }
+          ]
+        },
+        {
+          "id": "incurred",
+          "label": "Incurred cost in entries with figures",
+          "centavos": 1249142200,
+          "basis": "calculated-sum",
+          "help": "Calculated from 6 entries. Other fields are blank.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Solid waste management, February entry",
+              "centavos": 315000000
+            },
+            {
+              "label": "Solid waste management, first June entry",
+              "centavos": 352800000
+            },
+            {
+              "label": "Solid waste management, second June entry",
+              "centavos": 336000000
+            },
+            {
+              "label": "Solid waste management, July entry",
+              "centavos": 195300000
+            },
+            {
+              "label": "Clean and Green, Ninoy Monument",
+              "centavos": 48725000
+            },
+            {
+              "label": "Clean and Green, Silang Crossing Rotonda",
+              "centavos": 1317200
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "These sums cover only entries with amounts. They do not establish the full fund budget."
+      ]
+    },
+    {
+      "id": "2014-q2",
+      "year": 2014,
+      "quarter": "Q2",
+      "label": "Q2 2014",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2014/IRA%202nd%20q%202014.pdf",
+        "sha256": "8a139fe75e4a52625a3a2459868faf596ce0fa786b7ce753e21bb5158b50b73b",
+        "bytes": 234911,
+        "pages": 1,
+        "listingYear": 2014,
+        "copyUrl": "/city-finances/development/2014-q2.pdf",
+        "listingQuarter": "Q2"
+      },
+      "citedPages": [1],
+      "summary": "The report gives figures for 2 solid waste and Clean and Green entries and marks each 100% complete. The housing and Mahogany Market lines say “No Disbursement” and have blank amounts.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Cost of entries with figures",
+          "centavos": 363725000,
+          "basis": "calculated-sum",
+          "help": "Calculated from 2 entries. The form has no cost total.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Solid waste management, February entry",
+              "centavos": 315000000
+            },
+            {
+              "label": "Clean and Green, Ninoy Monument",
+              "centavos": 48725000
+            }
+          ]
+        },
+        {
+          "id": "incurred",
+          "label": "Incurred cost in entries with figures",
+          "centavos": 363725000,
+          "basis": "calculated-sum",
+          "help": "Calculated from 2 entries. Other fields are blank.",
+          "sourcePage": 1,
+          "components": [
+            {
+              "label": "Solid waste management, February entry",
+              "centavos": 315000000
+            },
+            {
+              "label": "Clean and Green, Ninoy Monument",
+              "centavos": 48725000
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "These sums cover only entries with amounts. They do not establish the full fund budget."
+      ]
+    },
+    {
+      "id": "2014-q1",
+      "year": 2014,
+      "quarter": "Q1",
+      "label": "Q1 2014",
+      "source": {
+        "title": "20% Development Fund Utilization",
+        "url": "https://www.tagaytay.gov.ph/pdf/fd2014/IRA%201st%20q%202014.pdf",
+        "sha256": "d37f609d2cb0942dcbc1c85848e24769ee43f45620b2c9d0e05adc95ebb88865",
+        "bytes": 261211,
+        "pages": 1,
+        "listingYear": 2014,
+        "copyUrl": "/city-finances/development/2014-q1.pdf",
+        "listingQuarter": "Q1"
+      },
+      "citedPages": [1],
+      "summary": "The report shows the social development, economic development and environmental management headings. It names no individual projects and gives no monetary amounts.",
+      "figures": [
+        {
+          "id": "cost",
+          "label": "Listed costs",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The cost column is blank.",
+          "sourcePage": 1,
+          "components": []
+        },
+        {
+          "id": "incurred",
+          "label": "Cost incurred to date",
+          "centavos": null,
+          "basis": "not-stated",
+          "help": "The remarks say “No Disbursement.” The incurred-cost field is blank.",
+          "sourcePage": 1,
+          "components": []
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "unavailablePeriods": [
+    {
+      "id": "2021-q3",
+      "year": 2021,
+      "quarter": "Q3",
+      "label": "Q3 2021",
+      "url": "https://www.tagaytay.gov.ph/pdf/fd2021/ira%20q3.pdf",
+      "reason": "The city’s PDF link returned HTTP 404 when checked."
+    }
+  ]
+}
