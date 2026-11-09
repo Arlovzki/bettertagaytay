@@ -209,7 +209,7 @@ test('the multi-year library supports combined filters without exposing placehol
   );
 });
 
-test('hosting rewrites app routes while preserving source PDFs and other static assets', () => {
+test('hosting reserves the SPA rewrite for live project pages', () => {
   const terraform = readFileSync(
     new URL('../../../terraform/hosting/main.tf', import.meta.url),
     'utf8'
@@ -219,10 +219,12 @@ test('hosting rewrites app routes while preserving source PDFs and other static 
   const decoded: unknown = JSON.parse(source[1]);
   assert.ok(typeof decoded === 'string');
   const rule = new RegExp(decoded.slice(2, -2));
-  assert.equal(rule.test('/city-finances'), true);
-  assert.equal(rule.test('/services/business'), true);
   assert.equal(rule.test('/projects/dpwh/a-project'), true);
   for (const path of [
+    '/city-finances',
+    '/services/business',
+    '/sitemap.xml',
+    '/robots.txt',
     '/city-finances/2026-q3/receipts-q3-2026.pdf',
     '/brand/tagaytay-ridge-960.webp',
     '/assets/index.js',

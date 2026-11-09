@@ -24,7 +24,7 @@ import {
   type GaaRow,
 } from '../lib/gaa';
 import { usePortal, type Async } from '../lib/portal-context';
-import { useTitle } from '../lib/use-title';
+import { usePageSeo } from '../lib/use-page-seo';
 
 const PAGE = 100;
 const FIRST = GAA_YEARS[0];
@@ -33,7 +33,7 @@ const LAST = GAA_YEARS[GAA_YEARS.length - 1];
 export default function Enacted() {
   const { config, client, districts } = usePortal();
   const name = shortNameOf(config);
-  useTitle(`Enacted budgets ${FIRST}–${LAST} · ${name}`);
+  usePageSeo();
   const places = config.scope.places ?? [];
 
   const [progress, setProgress] = useState<{

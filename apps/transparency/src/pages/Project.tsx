@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import type { Envelope, ProjectDetail, Version } from '../api/types';
-import { DATASET_KEYS, shortNameOf, type DatasetKey } from '../config';
+import { ApiError } from '../api/client';
+import { DATASET_KEYS, type DatasetKey } from '../config';
 import {
   Await,
   Disclaimers,
@@ -13,7 +14,7 @@ import { phpDelta, phpFull } from '../lib/format';
 import { usePortal, type Async } from '../lib/portal-context';
 import { projectKey } from '../lib/scope';
 import { reportHref } from '../lib/report';
-import { useTitle } from '../lib/use-title';
+import { usePageSeo } from '../lib/use-page-seo';
 
 const VERSIONS: Version[] = ['nep', 'hgab2', 'hgab3', 'api'];
 const FALLBACK_VERSION_LABELS: Record<Version, string> = {
@@ -33,6 +34,15 @@ export default function Project() {
     value: Async<Envelope<ProjectDetail>>;
   } | null>(null);
   const key = `${dataset}/${id}/${attempt}`;
+  const current: Async<Envelope<ProjectDetail>> =
+    state?.key === key ? state.value : { status: 'loading' };
+  usePageSeo(
+    current.status === 'ready' ? current.value.data.title : undefined,
+    !valid ||
+      (current.status === 'error' &&
+        current.error instanceof ApiError &&
+        current.error.status === 404)
+  );
 
   useEffect(() => {
     if (!valid) return;
@@ -64,8 +74,6 @@ export default function Project() {
       </main>
     );
   }
-  const current: Async<Envelope<ProjectDetail>> =
-    state?.key === key ? state.value : { status: 'loading' };
   return (
     <main id="main-content" tabIndex={-1} className="page main">
       <p className="crumbs">
@@ -86,7 +94,6 @@ function ProjectView({ env }: { env: Envelope<ProjectDetail> }) {
   const { config, overview, scope, client } = usePortal();
   const location = useLocation();
   const p = env.data;
-  useTitle(`${p.title} · ${shortNameOf(config)}`);
 
   const ov = overview.status === 'ready' ? overview.value.data : null;
   const program = ov?.datasets.find(d => d.key === p.dataset);

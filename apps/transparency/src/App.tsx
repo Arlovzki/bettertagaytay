@@ -8,6 +8,18 @@ import Home from './pages/Home';
 import Project from './pages/Project';
 import Enacted from './pages/Enacted';
 import CityFinances from './pages/CityFinances';
+import { usePageSeo } from './lib/use-page-seo';
+
+function NotFound() {
+  usePageSeo(undefined, true);
+  return (
+    <main id="main-content" tabIndex={-1} className="page main">
+      <p className="state">
+        This page does not exist. <Link to="/">See every project</Link>
+      </p>
+    </main>
+  );
+}
 
 export default function App() {
   const { config } = usePortal();
@@ -41,16 +53,7 @@ export default function App() {
         <Route path="/city-finances" element={<CityFinances />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects/:dataset/:id" element={<Project />} />
-        <Route
-          path="*"
-          element={
-            <main id="main-content" tabIndex={-1} className="page main">
-              <p className="state">
-                This page does not exist. <Link to="/">See every project</Link>
-              </p>
-            </main>
-          }
-        />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>

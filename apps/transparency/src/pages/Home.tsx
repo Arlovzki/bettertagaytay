@@ -23,7 +23,7 @@ import {
   type ScopeResult,
   type Summary,
 } from '../lib/scope';
-import { useTitle } from '../lib/use-title';
+import { usePageSeo } from '../lib/use-page-seo';
 
 const PAGE = 100;
 
@@ -48,8 +48,8 @@ const SORTS: Record<
 };
 
 export default function Home() {
-  const { scope, overview, config } = usePortal();
-  useTitle(`${shortNameOf(config)} Transparency`);
+  const { scope, overview } = usePortal();
+  usePageSeo();
   const datasets =
     overview.status === 'ready' ? overview.value.data.datasets : [];
   return (

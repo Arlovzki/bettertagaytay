@@ -1,31 +1,15 @@
 import yaml from 'js-yaml';
-
-// Type definitions for the services data
-export interface Subcategory {
-  name: string;
-  slug: string;
-  description?: string;
-}
-
-export interface Category {
-  category: string;
-  slug: string;
-  description: string;
-  icon: string;
-  subcategories?: Subcategory[]; // Keep for backward compatibility
-}
-
-export interface CategoryData {
-  categories: Category[];
-  description: string;
-}
-
-export interface CategoryIndexData {
-  title?: string;
-  description?: string;
-  layout?: 'grid' | 'list';
-  pages: Subcategory[];
-}
+import type {
+  CategoryData,
+  CategoryIndexData,
+  Subcategory,
+} from './categoryTypes';
+export type {
+  Category,
+  CategoryData,
+  CategoryIndexData,
+  Subcategory,
+} from './categoryTypes';
 
 // Import the YAML file as raw text
 import servicesYamlContent from './services.yaml?raw';

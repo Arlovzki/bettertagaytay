@@ -11,7 +11,7 @@ import {
   percent,
 } from '../lib/city-finances';
 import { date, php } from '../lib/format';
-import { useTitle } from '../lib/use-title';
+import { usePageSeo } from '../lib/use-page-seo';
 
 const CityFundHistory = lazy(() => import('../components/CityFundHistory'));
 
@@ -255,7 +255,7 @@ function CityIncomeSummary() {
 }
 
 export default function CityFinances() {
-  useTitle('City finances | Tagaytay Transparency');
+  usePageSeo();
   const { hash } = useLocation();
   const [params] = useSearchParams();
   const showFund = params.get('report') === 'development';

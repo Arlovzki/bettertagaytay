@@ -35,12 +35,24 @@ resource "aws_amplify_app" "site" {
     build_compute_type = "STANDARD_8GB"
   }
 
-  # Serve static assets directly, including photographs and reviewed source PDFs.
-  # Extensionless routes continue to load the React application's entry point.
+  # Keep the hostname, sitemap, and page canonicals consistent.
   custom_rule {
-    source = "</^[^.]+$|\\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|webp|pdf)$)([^.]+$)/>"
-    target = "/index.html"
+    source = "https://www.bettertagaytay.org"
+    target = "https://bettertagaytay.org"
+    status = "301"
+  }
+
+  # Project pages fetch live data. Other routes and public files have build output.
+  custom_rule {
+    source = "</^/projects/(dpwh|fmr|hfep|nia)/[^/]+/?$/>"
+    target = "/project-shell.html"
     status = "200"
+  }
+
+  custom_rule {
+    source = "/<*>"
+    target = "/404.html"
+    status = "404-200"
   }
 
   lifecycle {

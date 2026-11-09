@@ -13,6 +13,7 @@ export default defineConfig({
   },
   logo: '/brand/bettertagaytay.png',
   siteUrl: 'https://transparency.bettertagaytay.org',
+  shareImage: '/brand/transparency-share.png',
   buildYourOwnStrip: false,
   scope: {
     offices: [],

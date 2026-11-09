@@ -70,6 +70,7 @@ const Services: React.FC = () => {
   if (!categoryData) {
     return (
       <Section className="p-3 mb-12">
+        <SEO title="Category not found" noIndex />
         <Breadcrumbs className="mb-8" />
         <Banner
           type="error"

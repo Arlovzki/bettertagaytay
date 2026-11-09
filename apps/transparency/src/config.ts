@@ -63,6 +63,8 @@ export interface PortalConfig {
   logo?: string;
   /** Canonical URL of this deployment, for link previews. */
   siteUrl?: string;
+  /** Optional social preview image, relative to the site or an absolute URL. */
+  shareImage?: string;
   /**
    * The blue "Create your own transparency portal" strip above the masthead,
    * linking to the source on GitHub. On unless set to false.

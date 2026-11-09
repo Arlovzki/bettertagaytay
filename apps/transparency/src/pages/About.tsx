@@ -10,7 +10,7 @@ import { usePortal } from '../lib/portal-context';
 import type { ScopeResult } from '../lib/scope';
 import { departmentShort, loadGaa, type GaaResult } from '../lib/gaa';
 import type { Async } from '../lib/portal-context';
-import { useTitle } from '../lib/use-title';
+import { usePageSeo } from '../lib/use-page-seo';
 
 /** The API's `rules`, in words for readers rather than developers. */
 const READING_RULES = [
@@ -23,8 +23,8 @@ const READING_RULES = [
 ];
 
 export default function About() {
-  const { scope, overview, config } = usePortal();
-  useTitle(`About the data · ${shortNameOf(config)}`);
+  const { scope, overview } = usePortal();
+  usePageSeo();
   return (
     <main id="main-content" tabIndex={-1} className="page main about-page">
       <Await state={scope} what="the portal’s queries">
