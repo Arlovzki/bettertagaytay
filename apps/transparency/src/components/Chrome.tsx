@@ -4,6 +4,7 @@ import { usePortal } from '../lib/portal-context';
 import { date } from '../lib/format';
 import { NATIONAL_URL, SOURCE_CODE_URL } from '../lib/links';
 import { CITY_DOCUMENTS } from '../lib/city-finances';
+import { VisitCounter } from './VisitCounter';
 
 const BETTERGOV_LOGO = '/brand/bettergov-horizontal-primary.png';
 
@@ -143,12 +144,17 @@ export function Footer() {
     <footer className="footer">
       <div className="page footer-inner">
         <div className="footer-top">
-          <p className="footer-identity">
-            <a href={config.operator.url || 'https://bettertagaytay.org'}>
-              {config.operator.name}
-            </a>
-            <span>Community-run. Not an official city website.</span>
-          </p>
+          <div>
+            <p className="footer-identity">
+              <a href={config.operator.url || 'https://bettertagaytay.org'}>
+                {config.operator.name}
+              </a>
+              <span>Community-run. Not an official city website.</span>
+            </p>
+            {config.visitCounterUrl && (
+              <VisitCounter endpoint={config.visitCounterUrl} />
+            )}
+          </div>
           <nav className="footer-nav" aria-label="Footer">
             <Link to="/about">About the data</Link>
             <Link to="/city-finances">City finances</Link>

@@ -65,6 +65,8 @@ export interface PortalConfig {
   siteUrl?: string;
   /** Optional social preview image, relative to the site or an absolute URL. */
   shareImage?: string;
+  /** Optional HTTPS endpoint for a cumulative visit count for this portal. */
+  visitCounterUrl?: string;
   /**
    * The blue "Create your own transparency portal" strip above the masthead,
    * linking to the source on GitHub. On unless set to false.

@@ -1522,11 +1522,19 @@ code {
   align-items: center;
   min-height: 44px;
 }
-.footer-source {
+.footer-source,
+.footer-visits {
   color: var(--ink-3);
   font-size: 12.5px;
   line-height: 1.6;
   margin: 0;
+}
+.footer-visits {
+  margin-top: 5px;
+}
+.footer-visits strong {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
 }
 .footer-details {
   flex: 0 1 380px;

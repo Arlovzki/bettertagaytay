@@ -28,6 +28,14 @@ variable "allowed_origins" {
   ]
 }
 
+variable "transparency_origins" {
+  type = list(string)
+  default = [
+    "https://transparency.bettertagaytay.org",
+    "https://transparency.d2hrjmoigt8q4w.amplifyapp.com",
+  ]
+}
+
 resource "aws_dynamodb_table" "visits" {
   name         = "bettertagaytay-visits"
   billing_mode = "PAY_PER_REQUEST"
@@ -95,8 +103,9 @@ resource "aws_lambda_function" "counter" {
   reserved_concurrent_executions = 5
   environment {
     variables = {
-      TABLE_NAME      = aws_dynamodb_table.visits.name
-      ALLOWED_ORIGINS = join(",", var.allowed_origins)
+      TABLE_NAME           = aws_dynamodb_table.visits.name
+      ALLOWED_ORIGINS      = join(",", var.allowed_origins)
+      TRANSPARENCY_ORIGINS = join(",", var.transparency_origins)
     }
   }
   depends_on = [aws_iam_role_policy.counter]

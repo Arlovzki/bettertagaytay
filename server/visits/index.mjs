@@ -10,8 +10,9 @@ const TableName = process.env.TABLE_NAME;
 
 export const handler = createHandler({
   allowedOrigins: (process.env.ALLOWED_ORIGINS ?? '').split(','),
+  transparencyOrigins: (process.env.TRANSPARENCY_ORIGINS ?? '').split(','),
   store: {
-    async record(sessionId, expiresAt) {
+    async record(totalId, visitId, expiresAt) {
       try {
         await client.send(
           new TransactWriteItemsCommand({
@@ -20,7 +21,7 @@ export const handler = createHandler({
                 Put: {
                   TableName,
                   Item: {
-                    id: { S: `visit#${sessionId}` },
+                    id: { S: visitId },
                     expiresAt: { N: String(expiresAt) },
                   },
                   ConditionExpression: 'attribute_not_exists(id)',
@@ -29,7 +30,7 @@ export const handler = createHandler({
               {
                 Update: {
                   TableName,
-                  Key: { id: { S: 'total' } },
+                  Key: { id: { S: totalId } },
                   UpdateExpression: 'ADD visits :one',
                   ExpressionAttributeValues: { ':one': { N: '1' } },
                 },
@@ -48,11 +49,11 @@ export const handler = createHandler({
         throw error;
       }
     },
-    async total() {
+    async total(totalId) {
       const result = await client.send(
         new GetItemCommand({
           TableName,
-          Key: { id: { S: 'total' } },
+          Key: { id: { S: totalId } },
           ConsistentRead: true,
         })
       );

@@ -14,6 +14,8 @@ export default defineConfig({
   logo: '/brand/bettertagaytay.png',
   siteUrl: 'https://transparency.bettertagaytay.org',
   shareImage: '/brand/transparency-share.png',
+  visitCounterUrl:
+    'https://lzp6uydkp5rug7xicnuc4ngim40acvgh.lambda-url.ap-southeast-1.on.aws/transparency',
   buildYourOwnStrip: false,
   scope: {
     offices: [],

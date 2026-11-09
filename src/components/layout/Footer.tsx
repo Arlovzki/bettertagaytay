@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import VisitCounter from '../VisitCounter';
 import RidgeDivider from '../ui/RidgeDivider';
 import terrain from '../../data/terrain.json';
+import { transparencyPortal } from '../../data/navigation';
 
 export default function Footer() {
   const { t } = useTranslation('common');
@@ -15,6 +16,10 @@ export default function Footer() {
     {
       labelKey: 'nav.transparency',
       href: '/government/transparency-documents',
+    },
+    {
+      labelKey: transparencyPortal.translationKey,
+      href: transparencyPortal.href,
     },
     {
       labelKey: 'nav.fullDisclosure',

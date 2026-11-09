@@ -7,6 +7,12 @@ interface Category {
   subcategories?: { name: string; slug: string }[];
 }
 
+export const transparencyPortal = {
+  label: 'Transparency Portal',
+  href: 'https://transparency.bettertagaytay.org/',
+  translationKey: 'nav.transparencyPortal',
+};
+
 export const mainNavigation: NavigationItem[] = [
   { label: 'Home', href: '/', translationKey: 'nav.home' },
   {
@@ -53,6 +59,7 @@ export const mainNavigation: NavigationItem[] = [
     href: '/documents',
     translationKey: 'nav.transparency',
     children: [
+      transparencyPortal,
       {
         label: 'Document Library',
         href: '/documents',
